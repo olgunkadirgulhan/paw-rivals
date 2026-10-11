@@ -17,6 +17,24 @@
       ],
       "room": "office",
       "seed": 220658
+    },
+    {
+      "id": "y20l2fI27l0",
+      "date": "2026-10-11 18:33",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Vacuum & Thunder) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "corgi",
+      "gags": [
+        "vacuum",
+        "thunder",
+        "fish",
+        "sunbeam"
+      ],
+      "room": "library",
+      "seed": 335354
     }
   ]
 }
