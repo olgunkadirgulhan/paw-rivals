@@ -19,6 +19,7 @@ def configured():
 
 
 def client():
+    import yt_retry  # noqa: F401  geçici 401'leri tekrar dener
     creds = Credentials(None, refresh_token=os.environ['YT_REFRESH_TOKEN'], client_id=os.environ['YT_CLIENT_ID'],
                         client_secret=os.environ['YT_CLIENT_SECRET'], token_uri='https://oauth2.googleapis.com/token')
     return build('youtube', 'v3', credentials=creds, cache_discovery=False)
