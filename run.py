@@ -109,6 +109,36 @@ def pick_plan(hist, rnd, perf=({}, {})):
     return dict(format=fmt, cat=cat, dog=dog, gags=gags, room=room, seed=rnd.randrange(10 ** 6))
 
 
+# durum başına açıklama satırı (kedi ne yapar, köpek ne yapar) ve konuya özel etiket
+LINES = {
+    'doorbell': ('🔔', 'Doorbell: the cat keeps sleeping, the dog loses its mind', 'doorbell'),
+    'vacuum': ('🧹', 'Vacuum: the cat says NOPE, the dog goes to war', 'vacuum'),
+    'food': ('🍽️', 'Dinner: the cat is unimpressed, the dog inhales it', 'dinnertime'),
+    'cup': ('🥛', 'Glass on the table: the cat knocks it off on purpose, the dog by accident', 'catlogic'),
+    'bath': ('🛁', 'Bath time: the cat declares war, the dog jumps right in', 'bathtime'),
+    'box': ('📦', 'Empty box: if it fits the cat sits, the dog destroys it', 'ififitsisits'),
+    'laser': ('🔴', 'Red dot: the cat chases it into a wall, the dog chases its own tail', 'laserpointer'),
+    'cucumber': ('🥒', 'Cucumber: the cat jumps to the ceiling, the dog eats it', 'cucumbercat'),
+    'ball': ('🎾', 'Fetch: the cat takes a nap, the dog wants to go AGAIN', 'fetch'),
+    'mirror': ('🪞', 'Mirror: the cat hisses at itself, the dog makes a new best friend', 'mirror'),
+    'squeaky': ('🐤', 'Squeaky toy: one squeak for the cat, a hundred for the dog', 'squeakytoy'),
+    'bed': ('🛏️', 'New bed: the cat picks the box, the dog picks violence', 'petbed'),
+    'thunder': ('⛈️', 'Thunder: the cat hides, the dog needs a hug', 'thunderstorm'),
+    'treat': ('🦴', 'Treat: the cat does no tricks, the dog does ALL the tricks', 'treats'),
+    'cake': ('🎂', 'Birthday cake: the cat blows out the candle, the dog eats the cake', 'birthday'),
+    'mail': ('✉️', 'Mail: the cat sits on it, the dog shreds it', 'mailman'),
+    'sunbeam': ('☀️', 'Sunny spot: the cat melts, the dog overheats', 'sunbathing'),
+    'bubbles': ('🫧', 'Bubbles: the cat feels betrayed, the dog has the best day ever', 'bubbles'),
+    'fish': ('🐠', 'Goldfish: the cat gets splashed, the dog wants a friend', 'goldfish'),
+    'yarn': ('🧶', 'Yarn: the cat gets tangled, the dog redecorates', 'yarn'),
+}
+HOOKS = ['Same situation. Totally different reactions. 😂', 'Cats and dogs will never agree on this. 🐱🐶',
+         'Every pet owner has seen this happen. 🤣', 'Your cat vs your dog, be honest. 👀',
+         'One house, two very different pets. 🏠', 'Who handled it better? 🏆']
+ASKS = ['Team cat or team dog? Comment 1 or 2! 👇', 'Which one is YOUR pet: 1 or 2? 👇',
+        'Who won: the cat (1) or the dog (2)? 👇', 'Is your pet a 1 or a 2? Tell us below! 👇']
+
+
 def metadata(plan, hist, rnd):
     names = [paws.GAGS[k]['name'] for k in plan['gags']]
     g = f'{names[0]} & {names[1]}'
@@ -117,13 +147,15 @@ def metadata(plan, hist, rnd):
     opts = [t.format(g=g) for t in TITLES[plan['format']]]
     rnd.shuffle(opts)
     title = next((t for t in opts if t not in used), opts[0] + f' #{len(hist["videos"]) + 1}')
-    desc = (f'Team Cat or Team Dog? Comment 1 or 2! 👇\n\n'
-            f'{cat} the cat and {dog} the dog face the same situations: {", ".join(n.lower() for n in names[:-1])} '
-            f'and {names[-1].lower()}. Same moment, totally different reactions.\n\n'
-            f'New Paw Rivals Shorts every day. Subscribe and pick your side! 🐾\n\n'
-            f'#shorts #catvsdog #cats #dogs #funnyanimals #animation')
+    lines = '\n'.join(f'{LINES[k][0]} {LINES[k][1]}' for k in plan['gags'] if k in LINES)
+    tags_h = ' '.join(f'#{LINES[k][2]}' for k in plan['gags'][:2] if k in LINES)
+    desc = (f'{rnd.choice(HOOKS)}\n\n'
+            f'Starring {cat} the cat and {dog} the dog:\n{lines}\n\n'
+            f'{rnd.choice(ASKS)}\n\n'
+            f'New Paw Rivals cat vs dog Shorts every day. Subscribe and pick your side! 🐾\n\n'
+            f'#shorts #catvsdog #funnyanimals {tags_h}')
     tags = ['paw rivals', 'cat vs dog', 'cats vs dogs', 'funny cats', 'funny dogs', 'funny animals', 'pet animation',
-            '3d animation', 'cartoon', 'team cat', 'team dog', cat.lower(), dog.lower()] + [n.lower() for n in names]
+            'animated shorts', 'cat logic', 'dog logic', 'team cat', 'team dog', cat.lower(), dog.lower()] + [n.lower() for n in names]
     return title, desc, tags
 
 
