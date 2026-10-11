@@ -26,7 +26,8 @@ def psfx(name, dur=None):
         tt = t_arr(dur); s = lpf(noise(dur), 30) * (0.5 + 0.5 * np.sin(2 * np.pi * 26 * tt)) + 0.3 * osc(np.full(len(tt), 52.0), 'saw') * (np.sin(2 * np.pi * 26 * tt) > 0)
         x, g = lpf(s, 8) * bell(dur, 0.3), 0.5
     elif name == 'squeak':
-        d = 0.18; x, g = osc(np.concatenate([np.geomspace(1500, 2700, int(SR * d * 0.4)), np.geomspace(2700, 1700, int(SR * d * 0.6))])) * bell(d, 0.5), 0.35
+        d = 0.18; n_ = int(SR * d); n1 = int(n_ * 0.4)
+        x, g = osc(np.concatenate([np.geomspace(1500, 2700, n1), np.geomspace(2700, 1700, n_ - n1)])) * bell(d, 0.5), 0.35
     elif name == 'crash':
         d = 0.9; tt = t_arr(d)
         x = np.diff(noise(d), prepend=0) * dec(d, 7) + sum(np.sin(2 * np.pi * fr * tt) * dec(d, k) * 0.3 for fr, k in ((2300, 9), (3100, 11), (4200, 14), (5100, 8)))
@@ -54,6 +55,19 @@ def psfx(name, dur=None):
         elif name == 'swipe': x, g = lpf(noise(0.18), 3) * bell(0.18, 2), 0.5
         elif name == 'zoom': x, g = sweep(300, 1400, 0.5) * bell(0.5) * 0.4 + lpf(noise(0.5), 8) * bell(0.5, 2), 0.5
         else: x, g = sweep(140, 50, 0.25) * dec(0.25, 14), 0.8
+    elif name == 'rain':
+        x, g = lpf(noise(dur), 2) * (0.7 + 0.3 * rng.uniform(0, 1, int(SR * dur))) * np.clip(t_arr(dur) / 0.3, 0, 1), 0.18
+    elif name == 'thunder':
+        d = 1.8; tt = t_arr(d)
+        x = lpf(noise(d), 40) * (np.exp(-tt * 2.2) + 0.6 * np.exp(-np.abs(tt - 0.35) * 8)) + 0.6 * np.diff(noise(d), prepend=0) * np.exp(-tt * 30)
+        g = 1.0
+    elif name == 'sneeze':
+        d1, d2 = 0.3, 0.25
+        a = osc(np.geomspace(500, 900, int(SR * d1)), 'saw') * bell(d1, 0.8) * 0.4
+        b = np.diff(noise(d2), prepend=0) * dec(d2, 12)
+        x, g = np.concatenate([lpf(a, 6), b]), 0.6
+    elif name == 'pant':
+        tt = t_arr(dur); x, g = lpf(noise(dur), 5) * (np.sin(2 * np.pi * 4.5 * tt) > 0.1) * bell(dur, 0.2), 0.35
     else:
         return sfx(name, dur)
     return x / (np.abs(x).max() + 1e-9) * g

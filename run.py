@@ -18,7 +18,9 @@ PLAYLISTS = HERE / 'playlists.json'
 
 TITLES = {
     'catdog': ['Cat vs Dog: {g} 😂', 'CAT vs DOG ({g}) 🐱🐶', 'How Cats vs Dogs React to {g} 😂', 'Team Cat or Team Dog? {g} 🤔',
-               'Cats vs Dogs: {g} Edition 😹', '{g}: Cat vs Dog 🐶🐱'],
+               'Cats vs Dogs: {g} Edition 😹', '{g}: Cat vs Dog 🐶🐱', 'Cat Logic vs Dog Logic: {g} 🤣',
+               'Cat Owners vs Dog Owners Know This ({g}) 😂', 'Which Pet Wins? {g} 🏆', 'Cat vs Dog Reaction: {g} 😳',
+               'POV: Your Cat vs Your Dog ({g}) 🐾', 'Same Situation, Cat vs Dog: {g} 😂'],
 }
 TAGS = {'catdog': 'catvsdog'}
 
@@ -63,7 +65,7 @@ def weights(keys, perf, prior=None):
     return [max(prior.get(k, 1.0), 1.0 + 5.0 * perf[k] / top) if top and k in perf else prior.get(k, 1.0) for k in keys]
 
 
-PET_ROOMS = ('living', 'kitchen', 'bedroom', 'office', 'library', 'greenhouse', 'hotel', 'cafe')
+PET_ROOMS = ('living', 'kitchen', 'bedroom', 'office', 'library', 'greenhouse', 'hotel', 'cafe', 'bathroom', 'garage', 'diner', 'studio')
 
 
 def pick_plan(hist, rnd, perf=({}, {})):

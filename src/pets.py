@@ -92,7 +92,7 @@ def pet(img, sp, o):
     legh = 74 * k * (1 - lie)
     by = gy - legh - bh * 0.42 - jump + (bh * 0.1 * lie)
     put_shadow(img, x, gy + 4, bw * 1.1 * max(0.35, 1 - jump / 600), 42 * k)
-    tcol = col if df.get('mark') != 'tux' else col
+    tcol = df.get('point', col) if df.get('mark') == 'points' else col
     tip = df['light'] if df.get('mark') in ('tux',) else None
     tail(img, sp, (x - f * bw * 0.42, by - bh * 0.12), f, k, dict(o, tip=tip), tcol)
     # bacaklar (uzak çift koyu, arkada)
@@ -130,6 +130,11 @@ def pet(img, sp, o):
     elif mark == 'calico':
         put_sphere(img, (235, 140, 60), x - f * bw * 0.2, by - bh * 0.15, bw * 0.38, bh * 0.5, 0.2)
         put_sphere(img, (50, 45, 50), x + f * bw * 0.05, by - bh * 0.3, bw * 0.24, bh * 0.3, 0.2)
+    elif mark == 'cow':
+        for dx, dy, r in ((-0.22, -0.18, 70), (0.12, -0.25, 46), (-0.34, 0.1, 40)):
+            put_sphere(img, (40, 40, 48), x + f * dx * bw, by + dy * bh, r * k, r * k * 0.8, 0.2)
+    elif mark == 'saddle':
+        put_sphere(img, (40, 36, 34), x - f * bw * 0.08, by - bh * 0.22, bw * 0.62, bh * 0.5, 0.25)
     elif mark == 'tabby':
         d = ImageDraw.Draw(img)
         for j in range(4):
@@ -157,13 +162,17 @@ def pet(img, sp, o):
             elif ears == 'back': tipx, tipy = hx + s * 118 * k, hy - 118 * k
             else: tipx, tipy = hx + s * 84 * k, hy - 172 * k
             b1 = (hx + s * 22 * k, hy - 88 * k); b2 = (hx + s * 102 * k, hy - 38 * k)
-            d.polygon([(L(b1[0]), L(b1[1])), (L(tipx), L(tipy)), (L(b2[0]), L(b2[1]))], fill=darken(col, 0.06))
+            d.polygon([(L(b1[0]), L(b1[1])), (L(tipx), L(tipy)), (L(b2[0]), L(b2[1]))], fill=df.get('point', darken(col, 0.06)))
             ix_, iy_ = lerp(b1[0], b2[0], 0.5), lerp(b1[1], b2[1], 0.5)
             d.polygon([(L(lerp(b1[0], ix_, 0.35)), L(lerp(b1[1], iy_, 0.35))), (L(lerp(ix_, tipx, 0.72)), L(lerp(iy_, tipy, 0.72))),
                        (L(lerp(b2[0], ix_, 0.35)), L(lerp(b2[1], iy_, 0.35)))], fill=(250, 170, 185))
     put_sphere(img, col, hx, hy, hw, hh, 0.35)
     if mark == 'calico':
         put_sphere(img, (235, 140, 60), hx - 50 * k, hy - 50 * k, 110 * k, 90 * k, 0.2)
+    if mark == 'points':
+        put_sphere(img, df['point'], hx + f * 6 * k, hy + 26 * k, 170 * k, 150 * k, 0.2)
+    if mark == 'cow':
+        put_sphere(img, (40, 40, 48), hx + 52 * k, hy - 46 * k, 100 * k, 84 * k, 0.2)
     if mark == 'patch':
         put_sphere(img, darken(col, 0.35), hx + 48 * k, hy - 10 * k, 96 * k, 92 * k, 0.2)
     if mark in ('mask', 'tux') or not cat:
