@@ -1,0 +1,46 @@
+name: comments
+# Yeni videolara ilk yorum + yorumlara kişisel cevap (tools/auto_reply.py), saatte bir
+on:
+  schedule:
+    - cron: "29 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: comments
+  cancel-in-progress: false
+
+jobs:
+  reply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q google-api-python-client google-auth requests
+      - name: Paw Rivals
+        continue-on-error: true
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          CHANNEL_NAME: "Paw Rivals"
+          CHANNEL_ABOUT: "Animated cat vs dog Shorts: same situation, two very different reactions."
+          CHANNEL_KIND: general
+          CHANNEL_LANG: en
+          STATE_FILE: comment_replies.json
+          REQUESTS_FILE: viewer_requests.json
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FIRST_QUESTIONS: '["Team cat or team dog? 🐱🐶", "Which reaction is more like YOUR pet? 👇", "Which situation should we do next? 💡", "Does your cat do this too? 😹", "Does your dog do this too? 🐶", "Which one made you laugh more, 1 or 2? 😂", "Name a situation and we''ll make it! 👇", "Who won this round, cat or dog? 🏆", "Tag a friend who is a cat person 😼", "Tag a friend who is a dog person 🐕", "What''s your pet''s name? 🐾", "Would your pet do 1 or 2? 🤔", "Which part was the funniest? 😂", "Cat people vs dog people: who''s here? 🙋", "What should the cat do next time? 😹"]'
+        run: python tools/auto_reply.py
+      - run: |
+          git config user.name "comment-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add comment_replies*.json viewer_requests*.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "comments: $(date -u +%F-%H%M)"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep 5; done
