@@ -84,6 +84,9 @@ def pet(img, sp, o):
     k = o.get('scale', 1.0); f = o.get('f', 1); x = o.get('x', CX); gy = o.get('gy', GY); jump = o.get('jump', 0.0)
     sx, sy = o.get('sx', 1.0), o.get('sy', 1.0); puff = o.get('puff', 0.0); wet = o.get('wet', 0.0)
     lie = o.get('lie', 0.0); t = o.get('t', 0.0)
+    if SPEAKER[0] == sp:   # dudak senkronu: replik sırasında ağız sesle açılır
+        lvl = speaking(t)
+        if lvl > 0.12: o = dict(o, mouth='open', mo=min(1.0, 0.35 + 0.9 * lvl))
     col, light = df['color'], df['light']
     if wet:
         col = lerpc(col, (70, 85, 110), 0.35 * wet); light = lerpc(light, (150, 165, 190), 0.35 * wet)

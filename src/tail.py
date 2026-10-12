@@ -109,9 +109,12 @@ def render_frame(i):
     elif T < INTRO + GAG * len(gags):
         k = int((T - INTRO) // GAG); gl = T - INTRO - k * GAG; g = gags[k]
         title = g['title']; tstart = INTRO + k * GAG
+        SPEAKER[0] = top_sp if gl < NDUR else None
         img = bg(g['wall'], top_sp); sn = g['fn'](img, top_sp, min(gl, NDUR), T)
         frame.paste(finish_panel(img, sn if gl < NDUR else 0, T, gl >= NDUR), (0, TOP))
+        SPEAKER[0] = bot_sp if gl >= NDUR else None
         img = bg(g['wall'], bot_sp); sp_ = g['fn'](img, bot_sp, gl - NDUR, T)
+        SPEAKER[0] = None
         frame.paste(finish_panel(img, sp_, T, gl < NDUR), (0, TOP + PH))
     else:
         title = Q; tstart = INTRO + GAG * len(gags)
@@ -136,21 +139,97 @@ def render_frame(i):
     return frame
 
 
-def _frame_bytes(i): return render_frame(i).tobytes()
+@lru_cache(2)
+def _first_frame(key):
+    return render_frame(0)
+
+
+def render_frame_loop(i):
+    """Shorts başa sarar: son 0.45 sn ilk kareye karışır (kesintisiz döngü → tekrar izlenme)."""
+    T = i / FPS; tot = total(); f = render_frame(i)
+    if T > tot - 0.45:
+        f = Image.blend(f, _first_frame(str(PLAN.get('seed'))), seg(T, tot - 0.45, tot))
+    return f
+
+
+def _frame_bytes(i): return render_frame_loop(i).tobytes()
+
+
+@lru_cache(None)
+def load_clip(f):
+    with wave.open(f) as w:
+        x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float64) / 32768
+    nz = np.nonzero(np.abs(x) > 0.02)[0]
+    return x[max(0, nz[0] - 200):nz[-1] + 800] if len(nz) else None
+
+
+def line_clip(gag, sp):
+    """Konuşan evcil hayvan repliği: voices/<Ses>/lines/<durum>_<N kedi|P köpek>.wav (yoksa None → sadece efektler)."""
+    import voice_lines as vl
+    voice, which = (vl.CAT_VOICE, 'N') if sp == 'cat' else (vl.DOG_VOICE, 'P')
+    f = os.path.join(HERE, 'voices', voice, 'lines', f'{gag}_{which}.wav')
+    x = load_clip(f) if os.path.exists(f) else None
+    return None if x is None else x / (np.abs(x).max() + 1e-9) * 0.8
+
+
+LINE_AT = 2.3   # replik panelin vurucu anında (saniye)
+
+
+def audio_events():
+    """(efektler, sesler): [(t0, dizi)], [(t0, dizi, tür)] — tür 'cat'/'dog' (dudak senkronu)."""
+    A, B, Q, top_sp, bot_sp = FORMATS[PLAN['format']]
+    fx, vox = [], []
+    for t0 in (0.0, 0.45): fx.append((t0, psfx('pop')))
+    for k, key in enumerate(PLAN['gags']):
+        g = GAGS[key]; base = INTRO + k * GAG
+        for ev in g[top_sp]: fx.append((base + ev[0], psfx(ev[1], *ev[2:])))
+        for ev in g[bot_sp]: fx.append((base + NDUR + ev[0], psfx(ev[1], *ev[2:])))
+        for sp, off in ((top_sp, 0.0), (bot_sp, NDUR)):
+            x = line_clip(key, sp)
+            if x is not None: vox.append((base + off + LINE_AT, x[:int(SR * (NDUR - LINE_AT + 0.6))], sp))
+    end = INTRO + GAG * len(PLAN['gags'])
+    fx += [(end, psfx('ding')), (end + 0.6, psfx('meow_small')), (end + 1.2, psfx('bark'))]
+    return fx, vox
+
+
+@lru_cache(4)
+def speech_levels(key):
+    _, vox = audio_events()
+    nf = int(total() * FPS) + 2
+    lv = {'cat': np.zeros(nf), 'dog': np.zeros(nf)}
+    hop = SR // FPS
+    for t0, x, sp in vox:
+        k = len(x) // hop
+        if k == 0: continue
+        rms = np.sqrt((x[:k * hop].reshape(k, hop) ** 2).mean(axis=1))
+        i0 = int(round(t0 * FPS)); seg_ = lv[sp][i0:i0 + k]; seg_ += rms[:len(seg_)]
+    for w in lv: lv[w] /= (lv[w].max() + 1e-9)
+    return lv
+
+
+SPEAKER = [None]
+
+
+def speaking(t):
+    w = SPEAKER[0]
+    if w is None: return 0.0
+    lv = speech_levels(str(PLAN.get('seed')) + PLAN.get('cat', '') + PLAN.get('dog', '') + ','.join(PLAN.get('gags', [])))[w]
+    i = int(t * FPS)
+    return float(lv[i]) if 0 <= i < len(lv) else 0.0
 
 
 def build_audio(path):
-    tot = total(); n = int(SR * tot); mix = music(tot, PLAN['seed'])
-    A, B, Q, top_sp, bot_sp = FORMATS[PLAN['format']]
-    def place(t0, x):
+    tot = total(); n = int(SR * tot); mus = music(tot, PLAN['seed'])
+    mix = np.zeros(n); vo = np.zeros(n)
+    fx, vox = audio_events()
+    for t0, x in fx:
         i0 = int(t0 * SR); mix[i0:i0 + len(x)] += x[:max(0, n - i0)]
-    for t0 in (0.0, 0.45): place(t0, psfx('pop'))
-    for k, key in enumerate(PLAN['gags']):
-        g = GAGS[key]; base = INTRO + k * GAG
-        for ev in g[top_sp]: place(base + ev[0], psfx(ev[1], *ev[2:]))
-        for ev in g[bot_sp]: place(base + NDUR + ev[0], psfx(ev[1], *ev[2:]))
-    end = INTRO + GAG * len(PLAN['gags'])
-    place(end, psfx('ding')); place(end + 0.6, psfx('meow_small')); place(end + 1.2, psfx('bark'))
+    for t0, x, _ in vox:
+        i0 = int(t0 * SR); vo[i0:i0 + len(x)] += x[:max(0, n - i0)]
+    env = np.convolve(np.abs(vo), np.ones(int(SR * 0.25)) / int(SR * 0.25), mode='same')
+    duck = 1 - 0.65 * np.clip(env / (env.max() + 1e-9) * 4, 0, 1)   # konuşurken müzik kısılır
+    mix = mus[:n] * duck + mix + vo * 1.15
+    mix *= np.clip((tot - t_arr(tot)[:n]) / 0.25, 0, 1)   # döngüye temiz geçiş
     mix = mix / np.abs(mix).max() * 0.92
     pcm = (np.repeat(mix[:, None], 2, axis=1) * 32767).astype(np.int16)
     with wave.open(path, 'wb') as w:
