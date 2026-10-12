@@ -122,7 +122,8 @@ def pick_plan(hist, rnd, perf=({}, {})):
     seen_sets = {tuple(sorted(v['gags'])) for v in past}
     last_first = past[-1]['gags'][0] if past else None
     for _ in range(200):
-        n, left, gags = 4, list(pool), []
+        n = rnd.choices([2, 3, 4], weights=[4, 4, 2])[0]   # rakip analizi: viral Shorts 8-20 sn
+        left, gags = list(pool), []
         while len(gags) < n:                         # ağırlıklı, tekrarsız seçim
             g = rnd.choices(left, weights=[gw[k] for k in left])[0]
             gags.append(g); left.remove(g)
