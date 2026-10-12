@@ -35,6 +35,23 @@
       ],
       "room": "library",
       "seed": 335354
+    },
+    {
+      "id": "dSIjNWafnH4",
+      "date": "2026-10-12 14:21",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? New Bed & Box 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "max",
+      "gags": [
+        "bed",
+        "box",
+        "ball"
+      ],
+      "room": "studio",
+      "seed": 302062
     }
   ]
 }
