@@ -68,6 +68,23 @@
       ],
       "room": "diner",
       "seed": 954852
+    },
+    {
+      "id": "AtGtvgihEvc",
+      "date": "2026-10-12 23:21",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Glass & Mail 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "beagle",
+      "gags": [
+        "cup",
+        "mail",
+        "doorbell"
+      ],
+      "room": "hotel",
+      "seed": 658695
     }
   ]
 }
