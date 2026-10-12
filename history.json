@@ -52,6 +52,22 @@
       ],
       "room": "studio",
       "seed": 302062
+    },
+    {
+      "id": "84O3WQk4uhY",
+      "date": "2026-10-12 18:31",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Bath & Dinner 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "corgi",
+      "gags": [
+        "bath",
+        "food"
+      ],
+      "room": "diner",
+      "seed": 954852
     }
   ]
 }
