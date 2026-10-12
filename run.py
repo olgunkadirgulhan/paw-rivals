@@ -68,6 +68,28 @@ def weights(keys, perf, prior=None):
 PET_ROOMS = ('living', 'kitchen', 'bedroom', 'office', 'library', 'greenhouse', 'hotel', 'cafe', 'bathroom', 'garage', 'diner', 'studio')
 
 
+_TREND = None
+
+
+def trend_gags(pool):
+    """2026-10-12 trendler: YouTube arama önerilerinde adı geçen durumlar. Hata/erişim yoksa boş."""
+    global _TREND
+    if _TREND is None:
+        _TREND = ''
+        try:
+            import requests
+            for q in ('cat vs dog', 'cats vs dogs', 'funny cats', 'funny dogs'):
+                r = requests.get('https://suggestqueries.google.com/complete/search',
+                                 params={'client': 'firefox', 'ds': 'yt', 'hl': 'en', 'q': q}, timeout=6)
+                _TREND += ' ' + ' '.join(r.json()[1]).lower()
+        except Exception:
+            pass
+    hits = [k for k in pool if any(w in _TREND for w in paws.GAGS[k]['name'].lower().split() if len(w) > 3)]
+    if hits:
+        print('trend durumları:', hits, flush=True)
+    return hits
+
+
 def pick_plan(hist, rnd, perf=({}, {})):
     fperf, gperf = perf
     past = [v for v in hist['videos'] if v.get('kind', 'short') == 'short' and v.get('format')][-12:]  # derlemeler hariç
@@ -85,6 +107,8 @@ def pick_plan(hist, rnd, perf=({}, {})):
     pool = [k for k, g in paws.GAGS.items() if month in g.get('months', range(1, 13))
             and (not g.get('debut') or k in shown or today > g['debut'])]
     gw = dict(zip(pool, weights(pool, gperf)))
+    for k in trend_gags(pool):                          # günün 'cat vs dog …' aramalarında geçen durum 3x
+        gw[k] *= 3.0
     # tekrar cezası: son 6 videoda her kullanım ağırlığı 4'te birine indirir, son videodakiler hiç seçilmez;
     # hiç kullanılmamış gag 2 kat öne çıkar (viral gag'ler her videoya girip içeriği tekrarlamasın)
     recent = [g for v in past[-6:] for g in v.get('gags', [])]
