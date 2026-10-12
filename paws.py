@@ -1874,8 +1874,10 @@ def line_clip(gag, sp):
     """Konuşan evcil hayvan repliği: voices/<Ses>/lines/<durum>_<N kedi|P köpek>.wav (yoksa None → sadece efektler)."""
     import voice_lines as vl
     voice, which = (vl.CAT_VOICE, 'N') if sp == 'cat' else (vl.DOG_VOICE, 'P')
-    f = os.path.join(HERE, 'voices', voice, 'lines', f'{gag}_{which}.wav')
-    x = load_clip(f) if os.path.exists(f) else None
+    cands = [f for f in (os.path.join(HERE, 'voices', voice, 'lines', f'{gag}_{which}{suf}.wav') for suf in ('', '2', '3'))
+             if os.path.exists(f)]   # 3 varyanttan videoya göre biri
+    if not cands: return None
+    x = load_clip(cands[random.Random(f"{PLAN.get('seed')}-{gag}-{sp}").randrange(len(cands))])
     return None if x is None else x / (np.abs(x).max() + 1e-9) * 0.8
 
 
