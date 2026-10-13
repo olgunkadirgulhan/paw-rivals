@@ -17,7 +17,7 @@ import imageio_ffmpeg
 HERE = os.path.dirname(os.path.abspath(__file__))
 W, H, FPS, S = 1080, 1920, 30, 2
 TOP, PH = 170, 875
-FONT = os.path.join(HERE, 'fonts', 'LuckiestGuy-Regular.ttf')
+FONT = os.path.join(HERE, 'fonts', 'Chewy-Regular.ttf')   # 2026-10-13: Bloop'tan (Luckiest Guy) ayrı yazı tipi
 INTRO, GAG, OUTRO, NDUR = 1.4, 8.0, 3.2, 4.0
 SR = 44100
 

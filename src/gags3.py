@@ -222,7 +222,7 @@ def psurprise(img, spec, tt, gt):
     elif kind == 'bunny': critter(img, 'bunny', lerp(1200, 860, k), GY + 10 - 90 * abs(math.sin((tt - 2.9) * 9)) * (1 - k), gt)
     elif kind == 'turtle': critter(img, 'turtle', lerp(1150, 830, seg(tt, 2.9, 4.0)), GY + 10, gt)
     elif kind == 'kitten': pet(img, 'cat', dict(idle('cat', gt), x=lerp(1200, 860, k), scale=0.45, eyes='wide', f=-1, run=1.0 if k < 1 else 0))
-    pop(img, SURPRISES[kind][0], 600, 560, 3.1, tt, (255, 255, 255), 60, 6)
+    pop(img, SURPRISES[kind][0], 640, 400, 3.1, tt, (255, 255, 255), 58, 6)
 
 
 def make_pgag(spec):

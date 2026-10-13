@@ -97,11 +97,21 @@ def outro_panel(sp, gt):
     return img
 
 
+PAW_BAR = (52, 30, 28)
+
+
+def paw_vs(d, cx, cy):
+    col, ol = (255, 140, 110), (52, 30, 28)
+    d.ellipse([cx - 56, cy - 34, cx + 56, cy + 58], fill=col, outline=ol, width=6)
+    for dx, dy in ((-60, -46), (-22, -74), (22, -74), (60, -46)):
+        d.ellipse([cx + dx - 20, cy + dy - 22, cx + dx + 20, cy + dy + 22], fill=col, outline=ol, width=5)
+
+
 def render_frame(i):
     T = i / FPS
     gags = [GAGS[k] for k in PLAN['gags']]
     A, B, Q, top_sp, bot_sp = FORMATS[PLAN['format']]
-    frame = Image.new('RGB', (W, H), (24, 20, 38))
+    frame = Image.new('RGB', (W, H), PAW_BAR)   # 2026-10-13: Bloop'tan ayrı kimlik (sıcak kakao zemin)
     if T < INTRO:
         title = f'{A} VS {B}'; tstart = 0.0; g = gags[0]
         for sp, y in ((top_sp, TOP), (bot_sp, TOP + PH)):
@@ -124,11 +134,11 @@ def render_frame(i):
     put_text_px(frame, title, W // 2, TOP // 2 + 4, 70, (255, 255, 255), scale=back(seg(T, tstart, tstart + 0.25)), max_w=1030)
     for y0, txt, c in ((TOP, f'1. {A}', (240, 140, 50)), (TOP + PH, f'2. {B}', (70, 140, 230))):
         spr = text_spr(txt, 44, (255, 255, 255))
-        d.rounded_rectangle([22, y0 + 22, 22 + spr.width + 28, y0 + 22 + spr.height + 20], radius=16, fill=c, outline=DARK, width=4)
-        frame.paste(spr, (36, y0 + 32), spr)
+        d.rounded_rectangle([22, y0 + 22, 22 + spr.width + 44, y0 + 22 + spr.height + 20], radius=(spr.height + 20) // 2, fill=c, outline=(255, 255, 255), width=4)
+        frame.paste(spr, (44, y0 + 32), spr)
     d.rectangle([0, TOP + PH - 5, W, TOP + PH + 5], fill=DARK)
-    d.ellipse([W // 2 - 56, TOP + PH - 56, W // 2 + 56, TOP + PH + 56], fill=(255, 210, 50), outline=DARK, width=6)
-    put_text_px(frame, 'VS', W // 2, TOP + PH + 2, 54, (255, 255, 255))
+    paw_vs(d, W // 2, TOP + PH)                    # VS yerine pati izi
+    put_text_px(frame, 'VS', W // 2, TOP + PH + 14, 44, (255, 255, 255))
     if T < INTRO:
         put_text_px(frame, A, W // 2, TOP + 300, 150, (255, 170, 80), scale=back(seg(T, 0.0, 0.25)), rot=-5, max_w=1000)
         put_text_px(frame, B, W // 2, TOP + PH + 300, 150, (120, 180, 255), scale=back(seg(T, 0.45, 0.7)), rot=5, max_w=1000)
