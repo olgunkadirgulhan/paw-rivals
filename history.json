@@ -102,6 +102,23 @@
       ],
       "room": "kitchen",
       "seed": 416770
+    },
+    {
+      "id": "4lk6a3sVaHc",
+      "date": "2026-10-13 17:21",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Dinner & Laser 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "pepper",
+      "gags": [
+        "food",
+        "laser",
+        "sunbeam"
+      ],
+      "room": "bathroom",
+      "seed": 401582
     }
   ]
 }
