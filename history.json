@@ -85,6 +85,23 @@
       ],
       "room": "hotel",
       "seed": 658695
+    },
+    {
+      "id": "lF_49TdU3-4",
+      "date": "2026-10-13 13:22",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Squeaky Toy & Goldfish) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "goldie",
+      "gags": [
+        "squeaky",
+        "fish",
+        "cucumber"
+      ],
+      "room": "kitchen",
+      "seed": 416770
     }
   ]
 }
