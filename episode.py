@@ -22,6 +22,12 @@ from PIL import Image, ImageDraw, ImageFont  # noqa: E402
 OW, OH = 1920, 1080
 PARTS = int(os.environ.get('EP_PARTS') or 7)
 CARD = 2.5
+# 2026-10-13 kurgular (kullanıcı: tekrar olmasın diye kurguları artır, Bloop'taki gibi): her bölüm farklı yapı
+KURGUS = ['matchups', 'rivalry', 'tournament', 'day', 'ranked', 'room']
+DAY = {'food': '7:30 AM', 'cup': '8:00 AM', 'mail': '9:00 AM', 'vacuum': '10:00 AM', 'doorbell': '11:00 AM', 'box': '12:00 PM',
+       'sunbeam': '1:00 PM', 'laser': '3:00 PM', 'ball': '4:00 PM', 'squeaky': '4:30 PM', 'cucumber': '5:00 PM', 'treat': '6:00 PM',
+       'fish': '6:30 PM', 'cake': '7:00 PM', 'bath': '8:00 PM', 'bubbles': '8:30 PM', 'mirror': '9:00 PM', 'yarn': '9:30 PM',
+       'thunder': '10:30 PM', 'bed': '11:00 PM'}
 FF = None
 YELLOW, WHITE = (255, 230, 60), (255, 255, 255)
 
@@ -69,14 +75,14 @@ def background(kind=None):
     return img
 
 
-def panel_png(path, k, n, plan):
+def panel_png(path, k, n, plan, label=None, head='TODAY THEY FACE'):
     img = background(); d = ImageDraw.Draw(img)
-    text(d, (330, 300), f'#{k}', 120, YELLOW)
+    text(d, (330, 300), label or f'#{k}', 120 if not label or len(label) < 6 else 70, YELLOW, maxw=600)
     text(d, (330, 520), orbit.CATS[plan['cat']]['name'].upper(), 64, (255, 180, 90))
     text(d, (330, 610), 'VS', 50, WHITE)
     text(d, (330, 700), orbit.DOGS[plan['dog']]['name'].upper(), 64, (140, 200, 255))
     text(d, (330, 900), f'{k} / {n}', 40, (230, 200, 220))
-    text(d, (OW - 330, 200), 'TODAY THEY FACE', 46, YELLOW)
+    text(d, (OW - 330, 200), head, 46, YELLOW, maxw=600)
     for i, g in enumerate(plan['gags']):
         text(d, (OW - 330, 360 + i * 170), strip(orbit.GAGS[g]['title']).upper(), 50, WHITE, maxw=520)
     text(d, (OW - 330, 900), 'TEAM CAT OR TEAM DOG?', 40, YELLOW)
@@ -92,9 +98,9 @@ def card_mp4(path, lines, kind=None, seconds=CARD):
        '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', str(orbit.FPS), '-c:a', 'aac', '-ar', '44100', '-ac', '2', '-shortest', str(path))
 
 
-def part(out, k, n, plan):
+def part(out, k, n, plan, label=None, head='TODAY THEY FACE'):
     raw = orbit.render_video(plan, str(out / f'raw{k}'))
-    pan = out / f'panel{k}.png'; panel_png(pan, k, n, plan)
+    pan = out / f'panel{k}.png'; panel_png(pan, k, n, plan, label, head)
     dst = out / f'part{k}.mp4'
     ff('-loop', '1', '-i', str(pan), '-i', raw, '-filter_complex',
        f'[1:v]scale=-2:{OH}[v];[0:v][v]overlay=(W-w)/2:0:shortest=1,format=yuv420p[o]',
@@ -136,17 +142,38 @@ def main():
     if len(plans) < min(4, PARTS):
         print(f'yeni plan yetmiyor ({len(plans)}) → bölüm atlandı'); return
     n_ep = len(eps) + 1
+    kurgu = KURGUS[(n_ep - 1) % len(KURGUS)]
+    if eps and eps[-1].get('kurgu') == kurgu:
+        kurgu = KURGUS[n_ep % len(KURGUS)]
+    c0, d0 = orbit.CATS[plans[0]['cat']]['name'], orbit.DOGS[plans[0]['dog']]['name']
+    if kurgu == 'rivalry':                               # tek kedi vs tek köpek, bütün bölüm boyunca
+        for p in plans: p['cat'], p['dog'] = plans[0]['cat'], plans[0]['dog']
+    if kurgu == 'room':                                  # bütün bölüm tek mekânda
+        r0 = rnd.choice(orbit.ROOMS)
+        for p in plans: p['room'] = r0
+    if kurgu == 'day':                                   # sabahtan geceye
+        plans.sort(key=lambda p: min(datetime.strptime(DAY.get(g, '12:00 PM'), '%I:%M %p') for g in p['gags']))
+        for p in plans: p['gags'].sort(key=lambda g: datetime.strptime(DAY.get(g, '12:00 PM'), '%I:%M %p'))
+    n = len(plans)
+    stages = (['QUARTERFINAL 1', 'QUARTERFINAL 2', 'QUARTERFINAL 3', 'QUARTERFINAL 4', 'SEMIFINAL 1', 'SEMIFINAL 2', 'FINAL']
+              if n == 7 else [f'ROUND {i + 1}' for i in range(n - 1)] + ['FINAL'])
+    labels = {'tournament': stages, 'ranked': [f'#{n - i}' for i in range(n)],
+              'day': [DAY.get(p['gags'][0], '') for p in plans], 'rivalry': [f'ROUND {i + 1}' for i in range(n)]}.get(kurgu, [f'#{i + 1}' for i in range(n)])
+    head = {'ranked': 'MOST CHAOTIC, RANKED', 'day': 'THEIR DAY CONTINUES', 'tournament': 'THE BRACKET', 'rivalry': 'THE RIVALRY'}.get(kurgu, 'TODAY THEY FACE')
+    print(f'kurgu: {kurgu}', flush=True)
     out = HERE / 'output' / f'episode-{n_ep}'; out.mkdir(parents=True, exist_ok=True)
     names = [strip(orbit.GAGS[g]['title']) for p in plans for g in p['gags']]
     files = []
     intro = out / 'intro.mp4'
-    card_mp4(intro, [('PAW RIVALS', 380, 150, WHITE), (f'EPISODE {n_ep}', 560, 90, YELLOW),
-                     (f'{len(plans) * 3} SITUATIONS: CATS VS DOGS', 720, 56, WHITE)])
+    big = {'matchups': f'{len(plans) * 3} SITUATIONS: CATS VS DOGS', 'rivalry': f'{c0.upper()} VS {d0.upper()}: THE RIVALRY',
+           'tournament': 'CAT VS DOG TOURNAMENT', 'day': 'A DAY WITH A CAT AND A DOG', 'ranked': f'TOP {len(plans)} PET CHAOS MOMENTS',
+           'room': f'{plans[0]["room"].upper()} CHAOS'}[kurgu]
+    card_mp4(intro, [('PAW RIVALS', 380, 150, WHITE), (f'EPISODE {n_ep}', 560, 90, YELLOW), (big, 720, 56, WHITE)])
     files.append(intro)
     chapters = [('0:00', 'Intro')]; t = CARD
     for k, p in enumerate(plans, 1):
         orbit.configure(p)
-        f = part(out, k, len(plans), p); files.append(f)
+        f = part(out, k, len(plans), p, labels[k - 1], head); files.append(f)
         chapters.append((stamp(t), f"{orbit.CATS[p['cat']]['name']} vs {orbit.DOGS[p['dog']]['name']}: " +
                          ', '.join(strip(orbit.GAGS[g]['title']).title() for g in p['gags'])))
         t += dur(f)
@@ -166,9 +193,14 @@ def main():
     text(d, (330, 420), 'CAT', 130, (255, 180, 90)); text(d, (330, 580), 'VS DOG', 120, (140, 200, 255))
     text(d, (OW - 330, 500), f'EPISODE {n_ep}', 90, WHITE)
     thumb = thumb.resize((1280, 720)); thumb.save(out / 'thumb.png')
-    title = rnd.choice([f'Cats vs Dogs: {len(names)} Situations, Totally Different Reactions 😂 | Episode {n_ep}',
-                        f'Cat vs Dog: {", ".join(names[:3])} & More 🐱🐶 Paw Rivals Episode {n_ep}',
-                        f'Paw Rivals Episode {n_ep}: Cats and Dogs React to {len(names)} Situations 😂'])[:100]
+    title = {'matchups': rnd.choice([f'Cats vs Dogs: {len(names)} Situations, Totally Different Reactions 😂',
+                                     f'Cat vs Dog: {", ".join(names[:3])} & More 🐱🐶']),
+             'rivalry': f'{c0} vs {d0}: Cat vs Dog Rivalry, {len(names)} Rounds 🐱🐶',
+             'tournament': f'Cat vs Dog Tournament: Quarterfinals to the Final 🏆',
+             'day': f'A Day With a Cat and a Dog: Morning to Night 🐱🐶',
+             'ranked': f'Top {len(plans)} Cat vs Dog Chaos Moments, Ranked 🏆',
+             'room': f'{plans[0]["room"].title()} Chaos: Cats vs Dogs, {len(names)} Situations 😂'}[kurgu]
+    title = f'{title} | Paw Rivals Ep {n_ep}'[:100]
     facts = '\n'.join(f'{c[0]} {c[1]}' for c in chapters)
     desc = (f'Paw Rivals episode {n_ep}: {len(names)} everyday situations, and the cats and dogs react in totally different ways.\n\n'
             + facts + '\n\nTeam cat or team dog? Comment below 👇\n\n#catvsdog #cats #dogs #pets #animation')
@@ -192,7 +224,7 @@ def main():
         except Exception as e: print('playlist:', e)  # noqa: E701
     now = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')
     hist['videos'].append(dict(id=vid, date=now, kind='episode', title=title, privacy=privacy,
-                               items=[[g] for p in plans for g in p['gags']], parts=plans))
+                               items=[[g] for p in plans for g in p['gags']], parts=plans, kurgu=kurgu))
     run.HISTORY.write_text(json.dumps(hist, indent=2, ensure_ascii=False) + '\n')
 
 
