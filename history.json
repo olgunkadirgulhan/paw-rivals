@@ -135,6 +135,23 @@
       ],
       "room": "garage",
       "seed": 648116
+    },
+    {
+      "id": "QbWjO8_7jKE",
+      "date": "2026-10-13 21:22",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Bubbles & Box 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "choco",
+      "gags": [
+        "bubbles",
+        "box",
+        "vacuum"
+      ],
+      "room": "diner",
+      "seed": 191722
     }
   ]
 }
