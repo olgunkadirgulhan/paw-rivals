@@ -1278,7 +1278,8 @@ def treat_bone(img, x, y, ang=0.0, s=1.0):
 
 def hand(img, x, y):
     d = ImageDraw.Draw(img)
-    d.rounded_rectangle(box(x - 46, -20, x + 46, y - 50), radius=L(30), fill=(70, 110, 190))
+    if y - 50 > -20:   # el ekranın üstündeyken kol yüksekliği negatif olur (render çöküyordu)
+        d.rounded_rectangle(box(x - 46, -20, x + 46, y - 50), radius=L(30), fill=(70, 110, 190))
     put_sphere(img, (240, 195, 160), x, y - 20, 104, 92, 0.3)
 
 
