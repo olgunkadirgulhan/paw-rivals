@@ -119,6 +119,22 @@
       ],
       "room": "bathroom",
       "seed": 401582
+    },
+    {
+      "id": "Uy1touKXXKU",
+      "date": "2026-10-13 19:21",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Birthday Cake & Mirror 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "biscuit",
+      "gags": [
+        "cake",
+        "mirror"
+      ],
+      "room": "garage",
+      "seed": 648116
     }
   ]
 }
