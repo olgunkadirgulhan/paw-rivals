@@ -94,6 +94,18 @@ def pcat(img, spec, tt, gt):
                  eyes='closed' if tt > 1.3 else 'half', mouth='flat', tail='down', walk=tt * 6 if tt < 0.9 else 0)
         pet(img, 'cat', o)
         if tt > 1.6: zzz(img, tt, 760, 420)
+    elif m == 'bat':          # patiyle oynar, sonunda kaçırır
+        taps = sum(1 for t0 in (0.7, 1.2, 1.7, 2.2) if tt >= t0)
+        x0 = 640 + 45 * taps + (500 * sm(seg(tt, 2.2, 2.9)) if tt >= 2.2 else 0)
+        o.update(x=lerp(CX, 500, sm(seg(tt, 0.1, 0.6))), paw=1.0 if any(t0 <= tt < t0 + 0.2 for t0 in (0.7, 1.2, 1.7, 2.2)) else 0.0,
+                 eyes='wide' if tt < 2.4 else 'open', look=(1, 0.6) if tt < 2.4 else (1, 0), sy=0.9, tail='up', wag=18)
+        pet(img, 'cat', o); pprop(img, spec, x0, GY - 40 - 30 * abs(math.sin(tt * 9)) * (tt < 2.9), 0.8, x0)
+        pop(img, 'TAP. TAP.', 860, 360, 0.7, tt, (255, 255, 255), 60, 0, 1.6)
+    elif m == 'groom':        # nesneyi umursamadan kendini yalar
+        o.update(paw=0.9 if 0.6 <= tt < 2.4 else 0.0, mouth='tongue' if 0.6 <= tt < 2.4 and (tt * 4) % 1 < 0.6 else 'flat',
+                 eyes='closed' if 0.6 <= tt < 2.4 else 'half', head_dx=-10 if 0.6 <= tt < 2.4 else 0, tail='down', wag=3)
+        pet(img, 'cat', o); pprop(img, spec, *PP, 0.9)
+        pop(img, 'lick lick', 640, 360, 0.7, tt, (220, 220, 235), 56, 0, 1.6)
     pop(img, end, 540, 220, 2.6 if m != 'stare' else 3.0, tt, (255, 255, 255), 74, -4)
     return shake
 
@@ -142,8 +154,75 @@ def pdog(img, spec, tt, gt):
                  jump=50 * math.sin(math.pi * ((tt - 0.4) % 0.5) / 0.5) if k >= 0 else 0)
         pet(img, 'dog', o); pprop(img, spec, *PP, 0.9)
         if k >= 0: pop(img, 'WOOF!', 620 + (k % 2) * 160, 300 + (k % 3) * 40, 0.4 + k * 0.5, tt, (255, 255, 255), 90, -6 + k * 4, 0.45)
+    elif m == 'dig':          # kapıp toprağa gömer
+        grab = sm(seg(tt, 0.3, 0.9)); dig = 1.0 <= tt < 2.6
+        o.update(x=lerp(CX, 600, grab), head_dy=40 if dig else 0, head_dx=12 * math.sin(gt * 30) if dig else 0, eyes='wide' if dig else 'happy',
+                 mouth='tongue', wag=50, ws=26, paw=abs(math.sin(gt * 18)) if dig else 0)
+        info = pet(img, 'dog', o)
+        sink = sm(seg(tt, 1.2, 2.6))
+        if tt < 1.0: pprop(img, spec, lerp(PP[0], info['nose'][0] + 30, grab), lerp(PP[1], info['nose'][1] + 20, grab), 0.8)
+        else: pprop(img, spec, 780, GY - 20 + 50 * sink, 0.8 * (1 - 0.7 * sink))
+        if dig: particles(img, 403, 1.0, tt, 40, (760, GY - 10), (-260, 260), (-500, -200), 1400, [(120, 85, 55), (150, 105, 70)], (10, 22), life=0.6, emit=1.6)
+        if tt >= 1.2: put_sphere(img, (120, 85, 55), 780, GY + 6, 200 * sink, 50 * sink, 0.2)
+        pop(img, 'DIG DIG DIG!', 640, 300, 1.0, tt, (255, 225, 70), 96, -8, 1.6)
+    elif m == 'roll':         # sırtüstü yuvarlanır
+        o.update(lie=sm(seg(tt, 0.6, 1.0)), sy=1.0 - 0.1 * math.sin(gt * 10) * (tt > 1.0), eyes='happy', mouth='tongue', wag=80, ws=40,
+                 head_dx=10 * math.sin(gt * 8) if tt > 1.0 else 0)
+        pet(img, 'dog', o); pprop(img, spec, *PP, 0.9)
+        if tt > 1.0: particles(img, 404, 1.0, tt, 8, (CX, GY - 200), (-120, 120), (-240, -120), 0, [(255, 90, 140)], (16, 24), life=1.0, emit=1.8)
+        pop(img, 'WIGGLE WIGGLE', 640, 300, 1.0, tt, (255, 225, 70), 90, -6, 1.6)
     pop(img, end, 540, 220, 2.8, tt, (255, 225, 70), 78, -4)
+    if spec.get('surprise'): psurprise(img, spec, tt, gt)
     return shake
+
+
+def critter(img, kind, x, gy, gt, k=1.0):
+    """Sürpriz misafirler (2026-10-13): papağan, hamster, tavşan, kaplumbağa. Yavru kedi pet() ile çizilir."""
+    d = ImageDraw.Draw(img)
+    if kind == 'parrot':
+        y = gy; flap = math.sin(gt * 30) * 30
+        put_rot(img, sphere((40, 170, 80), 70, 140, 0.4), x - 40, y + 10, 30 + flap)
+        put_sphere(img, (50, 190, 90), x, y, 110, 140, 0.5); put_sphere(img, (230, 60, 50), x + 10, y + 30, 60, 60, 0.4)
+        put_sphere(img, (50, 190, 90), x + 20, y - 70, 90, 90, 0.5)
+        d = ImageDraw.Draw(img); d.polygon([(L(x + 55), L(y - 75)), (L(x + 100), L(y - 60)), (L(x + 55), L(y - 45))], fill=(250, 170, 40), outline=DARK)
+        d.ellipse(box(x + 25, y - 92, x + 45, y - 72), fill=(255, 255, 255), outline=DARK, width=L(3)); d.ellipse(box(x + 33, y - 86, x + 41, y - 78), fill=DARK)
+    elif kind == 'hamster':
+        put_sphere(img, (200, 230, 250), x, gy - 90, 190, 190, 0.8)
+        put_sphere(img, (235, 175, 110), x, gy - 70, 120, 95, 0.4)
+        for s_ in (-1, 1): put_sphere(img, (255, 190, 200), x + s_ * 35, gy - 120, 30, 30, 0.3)
+        d = ImageDraw.Draw(img)
+        for s_ in (-1, 1): d.ellipse(box(x + s_ * 22 - 6, gy - 90, x + s_ * 22 + 6, gy - 78), fill=DARK)
+    elif kind == 'bunny':
+        put_sphere(img, (250, 250, 250), x, gy - 60, 130, 110, 0.4)
+        for s_ in (-1, 1): put_rot(img, sphere((250, 250, 250), 36, 120, 0.4), x + 30 + s_ * 18, gy - 210, s_ * 10)
+        put_sphere(img, (250, 250, 250), x + 30, gy - 130, 90, 80, 0.4)
+        d = ImageDraw.Draw(img)
+        for s_ in (-1, 1): d.ellipse(box(x + 30 + s_ * 18 - 6, gy - 142, x + 30 + s_ * 18 + 6, gy - 130), fill=DARK)
+        put_sphere(img, (255, 150, 170), x + 30, gy - 118, 16, 12, 0.3)
+    elif kind == 'turtle':
+        d.chord(box(x - 90, gy - 120, x + 90, gy), 180, 360, fill=(70, 150, 80), outline=DARK, width=L(4))
+        for dx in (-45, 0, 45): d.ellipse(box(x + dx - 20, gy - 95, x + dx + 20, gy - 70), outline=(40, 110, 50), width=L(4))
+        put_sphere(img, (150, 200, 120), x + 105, gy - 50, 70, 60, 0.4)
+        d = ImageDraw.Draw(img); d.ellipse(box(x + 112, gy - 66, x + 124, gy - 54), fill=DARK)
+
+
+SURPRISES = {'parrot': ('SQUAWK! HELLO!', [(3.0, 'whoosh'), (3.3, 'meow_small')]), 'hamster': ('HAMSTER BALL!', [(3.0, 'whoosh_s'), (3.4, 'boing')]),
+             'bunny': ('WHO INVITED THE BUNNY?', [(3.0, 'boing'), (3.3, 'boing')]), 'turtle': ('...hi.', [(3.3, 'ding')]),
+             'kitten': ('MINI ME!', [(3.0, 'meow_small')])}
+
+
+def psurprise(img, spec, tt, gt):
+    """'Sonunu bekle': köpek panelinin sonunda sürpriz misafir gelir (başta 'WAIT FOR IT...' yazar)."""
+    kind = spec['surprise']
+    if tt < 2.9:
+        put_text(img, 'WAIT FOR IT...', 860, 830, 46, (255, 255, 255)); return
+    k = sm(seg(tt, 2.9, 3.5))
+    if kind == 'parrot': critter(img, 'parrot', lerp(1150, 760, k) - 900 * sm(seg(tt, 3.6, 4.0)), 330 + 40 * math.sin(gt * 5), gt)
+    elif kind == 'hamster': critter(img, 'hamster', lerp(1200, -150, seg(tt, 2.9, 3.9)), GY + 10, gt)
+    elif kind == 'bunny': critter(img, 'bunny', lerp(1200, 860, k), GY + 10 - 90 * abs(math.sin((tt - 2.9) * 9)) * (1 - k), gt)
+    elif kind == 'turtle': critter(img, 'turtle', lerp(1150, 830, seg(tt, 2.9, 4.0)), GY + 10, gt)
+    elif kind == 'kitten': pet(img, 'cat', dict(idle('cat', gt), x=lerp(1200, 860, k), scale=0.45, eyes='wide', f=-1, run=1.0 if k < 1 else 0))
+    pop(img, SURPRISES[kind][0], 600, 560, 3.1, tt, (255, 255, 255), 60, 6)
 
 
 def make_pgag(spec):
@@ -151,13 +230,17 @@ def make_pgag(spec):
         tt = max(t, 0.0)
         if t < 0:
             pet(img, sp, idle(sp, gt)); pprop(img, spec, *PP, 0.9); return 0.0
-        return pcat(img, spec, tt, gt) if sp == 'cat' else pdog(img, spec, tt, gt)
+        if sp == 'cat':
+            sh = pcat(img, spec, tt, gt)
+            if spec.get('surprise'): put_text(img, 'WAIT FOR IT...', 860, 830, 46, (255, 255, 255))
+            return sh
+        return pdog(img, spec, tt, gt)
     return fn
 
 
-PSFX_C = {'knock': [(1.3, 'click'), (2.0, 'smash')], 'sit_in': [(1.0, 'boing'), (1.8, 'purr', 1.4)], 'ignore': [(1.2, 'meow_flat')],
+PSFX_C = {'bat': [(0.7, 'click'), (1.2, 'click'), (1.7, 'click'), (2.2, 'whoosh_s')], 'groom': [(0.7, 'lick'), (1.3, 'lick'), (1.9, 'lick')], 'knock': [(1.3, 'click'), (2.0, 'smash')], 'sit_in': [(1.0, 'boing'), (1.8, 'purr', 1.4)], 'ignore': [(1.2, 'meow_flat')],
           'hiss': [(0.9, 'hiss')], 'stare': [(1.0, 'meow_small'), (2.2, 'whoosh'), (2.5, 'bang')], 'sleep_on': [(1.0, 'yawn'), (1.6, 'purr', 1.6)]}
-PSFX_D = {'zoomies': [(0.4, 'whoosh'), (1.1, 'whoosh'), (1.8, 'whoosh'), (2.6, 'bark')], 'chew': [(0.8, 'growl'), (1.3, 'crunch'), (1.8, 'crunch'), (2.3, 'crunch')],
+PSFX_D = {'dig': [(0.4, 'bark'), (1.0, 'rattle', 1.6)], 'roll': [(0.6, 'boing'), (1.2, 'bark'), (2.0, 'lick')], 'zoomies': [(0.4, 'whoosh'), (1.1, 'whoosh'), (1.8, 'whoosh'), (2.6, 'bark')], 'chew': [(0.8, 'growl'), (1.3, 'crunch'), (1.8, 'crunch'), (2.3, 'crunch')],
           'fetch': [(0.4, 'whoosh'), (1.3, 'bark'), (2.5, 'bark')], 'scared': [(0.7, 'whine'), (1.5, 'whine')],
           'love': [(0.8, 'bark'), (1.3, 'lick'), (1.9, 'lick')], 'bark': [(0.4 + k * 0.5, 'bark') for k in range(5)]}
 
@@ -206,14 +289,23 @@ PROWS = [
 ]
 
 
+# 2026-10-13 dağılım dengesi (kullanıcı: davranış değişsin, tekrar olmasın)
+CMODE = {'teddy': 'groom', 'frisbee': 'bat', 'shoe': 'groom', 'apple': 'bat', 'keys': 'bat', 'cheese': 'groom', 'bottle': 'bat', 'tennis': 'bat', 'cupcake': 'groom'}
+DMODE = {'shoe': 'dig', 'book': 'dig', 'plant': 'dig', 'sock': 'roll', 'pillow': 'roll', 'cheese': 'roll', 'present': 'dig', 'laptop': 'roll', 'carrot': 'dig'}
+SURPRISE_ORDER = ['parrot', 'kitten', 'bunny', 'hamster', 'turtle']
+
+
 def register_pfactory(rows, debut0='2026-10-15', per_group=5):
     from datetime import date as _date, timedelta as _td
     d0 = _date.fromisoformat(debut0)
     for i, r in enumerate(rows):
         gid, title, name, shape, c1, c2, c3, label, cm, dm, cend, dend = r
-        spec = dict(shape=shape, c1=c1, c2=c2, c3=c3, label=label, cat=cm, dog=dm, cend=cend, dend=dend)
+        cm, dm = CMODE.get(gid, cm), DMODE.get(gid, dm)
+        sur = SURPRISE_ORDER[(i // 2) % len(SURPRISE_ORDER)] if i % 2 == 0 else None      # durumların yarısında sürpriz misafir
+        spec = dict(shape=shape, c1=c1, c2=c2, c3=c3, label=label, cat=cm, dog=dm, cend=cend, dend=dend, surprise=sur)
         GAGS['p_' + gid] = dict(debut=str(d0 + _td(days=i // (per_group * 2))), fn=make_pgag(spec), title=title, name=name,
-                                wall=tuple(int(lerp(x, 240, 0.7)) for x in c1), cat=PSFX_C[cm], dog=PSFX_D[dm], factory=True)
+                                wall=tuple(int(lerp(x, 240, 0.7)) for x in c1), cat=PSFX_C[cm], dog=PSFX_D[dm] + (SURPRISES[sur][1] if sur else []),
+                                factory=True, cmode=cm, dmode=dm, surprise=sur)
 
 
 register_pfactory(PROWS)
