@@ -37,6 +37,11 @@ CATS = {
     'oreo': dict(name='Oreo', color=(248, 248, 248), light=(255, 255, 255), eye=(120, 200, 80), mark='cow'),
     'cocoa': dict(name='Cocoa', color=(135, 90, 60), light=(210, 175, 140), eye=(240, 190, 60), mark='tabby'),
     'pumpkin': dict(name='Pumpkin', color=(250, 175, 90), light=(255, 240, 215), eye=(100, 180, 230), mark='tux'),
+    # 2026-10-13: kullanıcı "oyuncuları artır" → 4 yeni kedi
+    'milo': dict(name='Milo', color=(205, 172, 120), light=(248, 232, 205), eye=(110, 190, 90), mark='tabby'),
+    'nala': dict(name='Nala', color=(240, 236, 228), light=(255, 255, 255), eye=(240, 190, 60), mark='calico'),
+    'bean': dict(name='Bean', color=(32, 32, 38), light=(255, 255, 255), eye=(240, 200, 60), mark='cow'),
+    'sage': dict(name='Sage', color=(225, 218, 205), light=(245, 240, 232), eye=(90, 170, 240), mark='points', point=(70, 62, 58)),
 }
 DOGS = {
     'goldie': dict(name='Goldie', color=(228, 172, 92), light=(250, 225, 180), eye=(70, 45, 30), mark=None),
@@ -49,6 +54,11 @@ DOGS = {
     'shiba': dict(name='Kenji', color=(196, 96, 46), light=(255, 240, 220), eye=(55, 35, 25), mark='mask'),
     'beagle': dict(name='Rocky', color=(200, 140, 80), light=(255, 255, 255), eye=(55, 35, 25), mark='saddle'),
     'cloud': dict(name='Cloud', color=(250, 250, 252), light=(255, 255, 255), eye=(45, 35, 30), mark=None),
+    # 2026-10-13: 4 yeni köpek
+    'choco': dict(name='Choco', color=(95, 62, 42), light=(165, 118, 85), eye=(45, 30, 20), mark=None),
+    'teddy': dict(name='Teddy', color=(192, 150, 112), light=(242, 222, 195), eye=(50, 35, 25), mark='patch'),
+    'ace': dict(name='Ace', color=(62, 58, 66), light=(215, 170, 115), eye=(55, 35, 25), mark='saddle'),
+    'domino': dict(name='Domino', color=(250, 250, 250), light=(255, 255, 255), eye=(55, 35, 25), mark='spots'),
 }
 
 # (üst etiket, alt etiket, kapanış sorusu, üst panel türü, alt panel türü)
