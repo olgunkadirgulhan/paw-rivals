@@ -170,6 +170,24 @@
       ],
       "room": "greenhouse",
       "seed": 910061
+    },
+    {
+      "id": "wiYPvtSz0aU",
+      "date": "2026-10-14 17:22",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: New Bed & Sunbeam 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "corgi",
+      "gags": [
+        "bed",
+        "sunbeam",
+        "vacuum",
+        "bath"
+      ],
+      "room": "studio",
+      "seed": 629843
     }
   ]
 }
