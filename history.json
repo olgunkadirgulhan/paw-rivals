@@ -152,6 +152,24 @@
       ],
       "room": "diner",
       "seed": 191722
+    },
+    {
+      "id": "womaWfVKJ8I",
+      "date": "2026-10-14 14:22",
+      "kind": "short",
+      "title": "Cats vs Dogs: Thunder & Yarn Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "husky",
+      "gags": [
+        "thunder",
+        "yarn",
+        "squeaky",
+        "ball"
+      ],
+      "room": "greenhouse",
+      "seed": 910061
     }
   ]
 }
