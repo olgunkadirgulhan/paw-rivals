@@ -188,6 +188,22 @@
       ],
       "room": "studio",
       "seed": 629843
+    },
+    {
+      "id": "6MQ4XepTvOs",
+      "date": "2026-10-14 19:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Thunder & Birthday Cake 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "goldie",
+      "gags": [
+        "thunder",
+        "cake"
+      ],
+      "room": "kitchen",
+      "seed": 177728
     }
   ]
 }
