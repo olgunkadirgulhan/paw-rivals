@@ -222,6 +222,144 @@
       ],
       "room": "living",
       "seed": 542029
+    },
+    {
+      "id": "TC8omyXqO-0",
+      "date": "2026-10-14 23:57",
+      "kind": "episode",
+      "title": "Cat vs Dog: A SUNNY SPOT ON THE FLOOR, WHEN AN EMPTY BOX ARRIVES, CUCUMBER BEHIND THEM & More 🐱🐶 | P",
+      "privacy": "public",
+      "items": [
+        [
+          "sunbeam"
+        ],
+        [
+          "box"
+        ],
+        [
+          "cucumber"
+        ],
+        [
+          "mail"
+        ],
+        [
+          "thunder"
+        ],
+        [
+          "mirror"
+        ],
+        [
+          "food"
+        ],
+        [
+          "laser"
+        ],
+        [
+          "bed"
+        ],
+        [
+          "cake"
+        ],
+        [
+          "cup"
+        ],
+        [
+          "vacuum"
+        ],
+        [
+          "doorbell"
+        ],
+        [
+          "yarn"
+        ],
+        [
+          "fish"
+        ],
+        [
+          "bubbles"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "bath"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "beagle",
+          "gags": [
+            "sunbeam",
+            "box",
+            "cucumber"
+          ],
+          "room": "garage",
+          "seed": 774622
+        },
+        {
+          "format": "catdog",
+          "cat": "cocoa",
+          "dog": "domino",
+          "gags": [
+            "mail",
+            "thunder",
+            "mirror"
+          ],
+          "room": "cafe",
+          "seed": 363306
+        },
+        {
+          "format": "catdog",
+          "cat": "bean",
+          "dog": "shiba",
+          "gags": [
+            "food",
+            "laser",
+            "bed"
+          ],
+          "room": "hotel",
+          "seed": 68151
+        },
+        {
+          "format": "catdog",
+          "cat": "luna",
+          "dog": "max",
+          "gags": [
+            "cake",
+            "cup",
+            "vacuum"
+          ],
+          "room": "kitchen",
+          "seed": 36504
+        },
+        {
+          "format": "catdog",
+          "cat": "tux",
+          "dog": "biscuit",
+          "gags": [
+            "doorbell",
+            "yarn",
+            "fish"
+          ],
+          "room": "cafe",
+          "seed": 941187
+        },
+        {
+          "format": "catdog",
+          "cat": "pumpkin",
+          "dog": "cloud",
+          "gags": [
+            "bubbles",
+            "ball",
+            "bath"
+          ],
+          "room": "kitchen",
+          "seed": 850640
+        }
+      ],
+      "kurgu": "matchups"
     }
   ]
 }
