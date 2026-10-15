@@ -376,6 +376,23 @@
       ],
       "room": "bedroom",
       "seed": 243988
+    },
+    {
+      "id": "PHWcJTX3jAU",
+      "date": "2026-10-15 17:21",
+      "kind": "short",
+      "title": "CAT vs DOG (New Bed & Cucumber) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "corgi",
+      "gags": [
+        "bed",
+        "cucumber",
+        "mirror"
+      ],
+      "room": "greenhouse",
+      "seed": 329107
     }
   ]
 }
