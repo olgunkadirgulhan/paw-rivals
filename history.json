@@ -360,6 +360,22 @@
         }
       ],
       "kurgu": "matchups"
+    },
+    {
+      "id": "EQPkvocFZHE",
+      "date": "2026-10-15 14:19",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Box & Yarn 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "teddy",
+      "gags": [
+        "box",
+        "yarn"
+      ],
+      "room": "bedroom",
+      "seed": 243988
     }
   ]
 }
