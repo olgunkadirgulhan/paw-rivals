@@ -393,6 +393,23 @@
       ],
       "room": "greenhouse",
       "seed": 329107
+    },
+    {
+      "id": "GnsEgp6-0yU",
+      "date": "2026-10-15 19:21",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Mail & Goldfish 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "goldie",
+      "gags": [
+        "mail",
+        "fish",
+        "doorbell"
+      ],
+      "room": "garage",
+      "seed": 574458
     }
   ]
 }
