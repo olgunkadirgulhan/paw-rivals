@@ -410,6 +410,23 @@
       ],
       "room": "garage",
       "seed": 574458
+    },
+    {
+      "id": "P7_SksClu0c",
+      "date": "2026-10-15 21:21",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Fetch & Yarn 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "ace",
+      "gags": [
+        "ball",
+        "yarn",
+        "laser"
+      ],
+      "room": "greenhouse",
+      "seed": 708227
     }
   ]
 }
