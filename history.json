@@ -427,6 +427,23 @@
       ],
       "room": "greenhouse",
       "seed": 708227
+    },
+    {
+      "id": "hMnY2HKDf0o",
+      "date": "2026-10-16 14:21",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Thunder & Birthday Cake 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "pepper",
+      "gags": [
+        "thunder",
+        "cake",
+        "p_teddy"
+      ],
+      "room": "cafe",
+      "seed": 733828
     }
   ]
 }
