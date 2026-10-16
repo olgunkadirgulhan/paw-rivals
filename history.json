@@ -444,6 +444,23 @@
       ],
       "room": "cafe",
       "seed": 733828
+    },
+    {
+      "id": "v4eYTdnjjqw",
+      "date": "2026-10-16 17:21",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Remote & Bath) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "choco",
+      "gags": [
+        "p_remote",
+        "bath",
+        "squeaky"
+      ],
+      "room": "office",
+      "seed": 369417
     }
   ]
 }
