@@ -461,6 +461,23 @@
       ],
       "room": "office",
       "seed": 369417
+    },
+    {
+      "id": "ekVg3qaLfcQ",
+      "date": "2026-10-16 19:21",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Dinner & Vase) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "domino",
+      "gags": [
+        "food",
+        "p_vase",
+        "p_pumpkin2"
+      ],
+      "room": "bedroom",
+      "seed": 111202
     }
   ]
 }
