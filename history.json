@@ -478,6 +478,22 @@
       ],
       "room": "bedroom",
       "seed": 111202
+    },
+    {
+      "id": "omDd_WpCH3I",
+      "date": "2026-10-16 21:20",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Pizza Box & Goldfish 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "teddy",
+      "gags": [
+        "p_pizzabox",
+        "fish"
+      ],
+      "room": "living",
+      "seed": 401454
     }
   ]
 }
