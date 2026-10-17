@@ -510,6 +510,22 @@
       ],
       "room": "hotel",
       "seed": 358959
+    },
+    {
+      "id": "qOA9cJEk8ZU",
+      "date": "2026-10-17 16:41",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Mail & Robot Toy 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "ace",
+      "gags": [
+        "mail",
+        "p_robot"
+      ],
+      "room": "cafe",
+      "seed": 425161
     }
   ]
 }
