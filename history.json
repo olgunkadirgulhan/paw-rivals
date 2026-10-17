@@ -494,6 +494,22 @@
       ],
       "room": "living",
       "seed": 401454
+    },
+    {
+      "id": "4K2FexpvInQ",
+      "date": "2026-10-17 14:19",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Keys & Feather) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "pepper",
+      "gags": [
+        "p_keys",
+        "p_feather"
+      ],
+      "room": "hotel",
+      "seed": 358959
     }
   ]
 }
