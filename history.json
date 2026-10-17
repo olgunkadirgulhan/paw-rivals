@@ -526,6 +526,22 @@
       ],
       "room": "cafe",
       "seed": 425161
+    },
+    {
+      "id": "rzhjFxgwtPA",
+      "date": "2026-10-17 18:54",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Glass & Thunder 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "cloud",
+      "gags": [
+        "cup",
+        "thunder"
+      ],
+      "room": "greenhouse",
+      "seed": 992046
     }
   ]
 }
