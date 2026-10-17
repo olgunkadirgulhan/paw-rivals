@@ -542,6 +542,23 @@
       ],
       "room": "greenhouse",
       "seed": 992046
+    },
+    {
+      "id": "KMwvujy-GzA",
+      "date": "2026-10-17 21:21",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Book & Phone 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "max",
+      "gags": [
+        "p_book",
+        "p_phone2",
+        "p_laptop"
+      ],
+      "room": "cafe",
+      "seed": 920529
     }
   ]
 }
