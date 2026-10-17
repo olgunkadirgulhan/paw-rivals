@@ -20,7 +20,7 @@ import run  # noqa: E402
 from PIL import Image, ImageDraw, ImageFont  # noqa: E402
 
 OW, OH = 1920, 1080
-PARTS = int(os.environ.get('EP_PARTS') or 5)        # 2026-10-17: günde 1 bölüm → 5 parça × 3 durum
+PARTS = int(os.environ.get('EP_PARTS') or 4)        # 2026-10-17: günde 2 bölüm → 4 parça × 3 durum (havuz 210)
 CARD = 2.5
 # 2026-10-13 kurgular (kullanıcı: tekrar olmasın diye kurguları artır, Bloop'taki gibi): her bölüm farklı yapı
 KURGUS = ['matchups', 'rivalry', 'tournament', 'day', 'ranked', 'room']
@@ -128,16 +128,17 @@ def main():
     eps = [v for v in hist['videos'] if v.get('kind') == 'episode']
     if eps and not no_upload:
         last = datetime.strptime(eps[-1]['date'], '%Y-%m-%d %H:%M').replace(tzinfo=timezone.utc)
-        if datetime.now(timezone.utc) - last < timedelta(hours=18):     # 2026-10-17: günde 1 bölüm
-            print(f'son bölüm {eps[-1]["date"]}: 18 saat dolmadı, atlandı'); return
+        today_n = sum(1 for v in eps if v['date'].startswith(datetime.now(timezone.utc).strftime('%Y-%m-%d')))
+        if today_n >= 2 or datetime.now(timezone.utc) - last < timedelta(hours=4):     # 2026-10-17: günde 2 bölüm
+            print(f'bugün {today_n} bölüm, son {eps[-1]["date"]}: atlandı'); return
     rnd = random.Random()
     sim = {'videos': list(hist['videos'])}; plans = []; perf = run.performance(hist)
-    recent = {g for v in eps[-6:] for g in (v.get('gags') or [x for x, *_ in v.get('items', [])])}   # son 6 bölümün durumları yasak
+    recent = {g for v in eps[-12:] for g in (v.get('gags') or [x for x, *_ in v.get('items', [])])}   # son 12 bölüm (6 gün) yasak
     for _ in range(PARTS * 40):
         if len(plans) == PARTS: break
         p = run.pick_plan(sim, rnd, perf)
         if len(p['gags']) < 3 or any(set(p['gags']) & set(q['gags']) for q in plans) or set(p['gags'][:3]) & recent:
-            continue   # bölümde aynı durum iki kez olmasın; son 6 bölümde geçen durum yok; her parça 3 durum
+            continue   # bölümde aynı durum iki kez olmasın; son 12 bölümde geçen durum yok; her parça 3 durum
         p['gags'] = p['gags'][:3]
         sim['videos'].append(dict(kind='short', **p)); plans.append(p)
     if len(plans) < PARTS:                               # yedek: eksik parçaları en uzun süredir görünmeyen taze durumlarla tamamla
