@@ -140,6 +140,18 @@ def main():
             continue   # bölümde aynı durum iki kez olmasın; son 6 bölümde geçen durum yok; her parça 3 durum
         p['gags'] = p['gags'][:3]
         sim['videos'].append(dict(kind='short', **p)); plans.append(p)
+    if len(plans) < PARTS:                               # yedek: eksik parçaları en uzun süredir görünmeyen taze durumlarla tamamla
+        used_now = {g for q in plans for g in q['gags']}
+        last_seen = {}
+        for i, v in enumerate(hist['videos']):
+            for g in (v.get('gags') or [x for x, *_ in v.get('items', [])]): last_seen[g] = i
+        today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+        fresh = [k for k, g in run.paws.GAGS.items() if k not in recent and k not in used_now
+                 and datetime.now(timezone.utc).month in g.get('months', range(1, 13)) and (not g.get('debut') or today > g['debut'])]
+        fresh.sort(key=lambda k: last_seen.get(k, -1))
+        while len(plans) < PARTS and len(fresh) >= 3:
+            p = run.pick_plan(sim, rnd, perf); p['gags'] = [fresh.pop(0) for _ in range(3)]
+            sim['videos'].append(dict(kind='short', **p)); plans.append(p)
     if len(plans) < min(4, PARTS):
         print(f'yeni plan yetmiyor ({len(plans)}) → bölüm atlandı'); return
     n_ep = len(eps) + 1
