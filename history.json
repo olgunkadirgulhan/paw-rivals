@@ -559,6 +559,102 @@
       ],
       "room": "cafe",
       "seed": 920529
+    },
+    {
+      "id": "5YsD0ydunNI",
+      "date": "2026-10-17 23:51",
+      "kind": "episode",
+      "title": "Oreo vs Rocky: Cat vs Dog Rivalry, 12 Rounds 🐱🐶 | Paw Rivals Ep 2",
+      "privacy": "public",
+      "items": [
+        [
+          "p_sock"
+        ],
+        [
+          "p_frisbee"
+        ],
+        [
+          "p_pizzabox"
+        ],
+        [
+          "p_pillow"
+        ],
+        [
+          "p_ornament"
+        ],
+        [
+          "p_shoe"
+        ],
+        [
+          "p_toymouse"
+        ],
+        [
+          "p_hat"
+        ],
+        [
+          "p_tube"
+        ],
+        [
+          "p_keys"
+        ],
+        [
+          "squeaky"
+        ],
+        [
+          "p_plant"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "oreo",
+          "dog": "beagle",
+          "gags": [
+            "p_sock",
+            "p_frisbee",
+            "p_pizzabox"
+          ],
+          "room": "garage",
+          "seed": 347577
+        },
+        {
+          "format": "catdog",
+          "cat": "oreo",
+          "dog": "beagle",
+          "gags": [
+            "p_pillow",
+            "p_ornament",
+            "p_shoe"
+          ],
+          "room": "diner",
+          "seed": 38921
+        },
+        {
+          "format": "catdog",
+          "cat": "oreo",
+          "dog": "beagle",
+          "gags": [
+            "p_toymouse",
+            "p_hat",
+            "p_tube"
+          ],
+          "room": "living",
+          "seed": 446188
+        },
+        {
+          "format": "catdog",
+          "cat": "oreo",
+          "dog": "beagle",
+          "gags": [
+            "p_keys",
+            "squeaky",
+            "p_plant"
+          ],
+          "room": "library",
+          "seed": 631443
+        }
+      ],
+      "kurgu": "rivalry"
     }
   ]
 }
