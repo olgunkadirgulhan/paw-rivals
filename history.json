@@ -672,6 +672,22 @@
       ],
       "room": "bathroom",
       "seed": 984254
+    },
+    {
+      "id": "kaB08oT5TDg",
+      "date": "2026-10-18 16:57",
+      "kind": "short",
+      "title": "Which Pet Wins? New Bed & Pumpkin 🏆",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "husky",
+      "gags": [
+        "bed",
+        "p_pumpkin2"
+      ],
+      "room": "living",
+      "seed": 156906
     }
   ]
 }
