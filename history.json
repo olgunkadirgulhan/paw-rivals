@@ -801,6 +801,23 @@
       ],
       "room": "studio",
       "seed": 578299
+    },
+    {
+      "id": "xQsKaa6CNtA",
+      "date": "2026-10-18 21:21",
+      "kind": "short",
+      "title": "CAT vs DOG (Frisbee & Tennis Ball) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "pepper",
+      "gags": [
+        "p_frisbee",
+        "p_tennis",
+        "cake"
+      ],
+      "room": "garage",
+      "seed": 94465
     }
   ]
 }
