@@ -688,6 +688,102 @@
       ],
       "room": "living",
       "seed": 156906
+    },
+    {
+      "id": "rlS7Bvk7aLU",
+      "date": "2026-10-18 18:32",
+      "kind": "episode",
+      "title": "Cat vs Dog Tournament: Quarterfinals to the Final 🏆 | Paw Rivals Ep 3",
+      "privacy": "public",
+      "items": [
+        [
+          "p_vase"
+        ],
+        [
+          "p_hairdryer"
+        ],
+        [
+          "p_duck"
+        ],
+        [
+          "p_bottle"
+        ],
+        [
+          "p_icecube"
+        ],
+        [
+          "p_lemon"
+        ],
+        [
+          "p_cheese"
+        ],
+        [
+          "p_carrot"
+        ],
+        [
+          "p_apple"
+        ],
+        [
+          "p_tennis"
+        ],
+        [
+          "p_broom"
+        ],
+        [
+          "treat"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "shadow",
+          "dog": "beagle",
+          "gags": [
+            "p_vase",
+            "p_hairdryer",
+            "p_duck"
+          ],
+          "room": "office",
+          "seed": 630733
+        },
+        {
+          "format": "catdog",
+          "cat": "cocoa",
+          "dog": "pepper",
+          "gags": [
+            "p_bottle",
+            "p_icecube",
+            "p_lemon"
+          ],
+          "room": "hotel",
+          "seed": 906086
+        },
+        {
+          "format": "catdog",
+          "cat": "milo",
+          "dog": "cloud",
+          "gags": [
+            "p_cheese",
+            "p_carrot",
+            "p_apple"
+          ],
+          "room": "kitchen",
+          "seed": 457337
+        },
+        {
+          "format": "catdog",
+          "cat": "tux",
+          "dog": "corgi",
+          "gags": [
+            "p_tennis",
+            "p_broom",
+            "treat"
+          ],
+          "room": "studio",
+          "seed": 526546
+        }
+      ],
+      "kurgu": "tournament"
     }
   ]
 }
