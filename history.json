@@ -784,6 +784,23 @@
         }
       ],
       "kurgu": "tournament"
+    },
+    {
+      "id": "hAjUpvT28-A",
+      "date": "2026-10-18 19:21",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Toy Mouse & Vase) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "choco",
+      "gags": [
+        "p_toymouse",
+        "p_vase",
+        "p_hairdryer"
+      ],
+      "room": "studio",
+      "seed": 578299
     }
   ]
 }
