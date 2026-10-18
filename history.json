@@ -655,6 +655,23 @@
         }
       ],
       "kurgu": "rivalry"
+    },
+    {
+      "id": "s0Fsqn2UElE",
+      "date": "2026-10-18 14:22",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? Vacuum & Fetch 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "domino",
+      "gags": [
+        "vacuum",
+        "ball",
+        "p_shoe"
+      ],
+      "room": "bathroom",
+      "seed": 984254
     }
   ]
 }
