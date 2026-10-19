@@ -914,6 +914,22 @@
         }
       ],
       "kurgu": "day"
+    },
+    {
+      "id": "iA7xoYl7wAg",
+      "date": "2026-10-19 14:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Goldfish & Leash 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "husky",
+      "gags": [
+        "fish",
+        "p_leash"
+      ],
+      "room": "office",
+      "seed": 63619
     }
   ]
 }
