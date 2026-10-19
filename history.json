@@ -946,6 +946,24 @@
       ],
       "room": "hotel",
       "seed": 563634
+    },
+    {
+      "id": "M9c4idlpn1Y",
+      "date": "2026-10-19 19:22",
+      "kind": "short",
+      "title": "Cat vs Dog: Ornament & Rubber Duck 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "corgi",
+      "gags": [
+        "p_ornament",
+        "p_duck",
+        "p_watermelon",
+        "p_burger"
+      ],
+      "room": "bathroom",
+      "seed": 645313
     }
   ]
 }
