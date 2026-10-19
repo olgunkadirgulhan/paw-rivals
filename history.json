@@ -930,6 +930,22 @@
       ],
       "room": "office",
       "seed": 63619
+    },
+    {
+      "id": "Kz_3Ews7oQQ",
+      "date": "2026-10-19 17:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Popcorn & Cucumber 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "beagle",
+      "gags": [
+        "p_popcorn",
+        "cucumber"
+      ],
+      "room": "hotel",
+      "seed": 563634
     }
   ]
 }
