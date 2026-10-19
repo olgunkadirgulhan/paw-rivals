@@ -1060,6 +1060,24 @@
         }
       ],
       "kurgu": "ranked"
+    },
+    {
+      "id": "naJocrJkelc",
+      "date": "2026-10-19 22:22",
+      "kind": "short",
+      "title": "Cat vs Dog: Carrot & Bath 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "biscuit",
+      "gags": [
+        "p_carrot",
+        "bath",
+        "p_cheese",
+        "p_plant"
+      ],
+      "room": "library",
+      "seed": 699800
     }
   ]
 }
