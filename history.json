@@ -818,6 +818,102 @@
       ],
       "room": "garage",
       "seed": 94465
+    },
+    {
+      "id": "qN8eMRjigCM",
+      "date": "2026-10-19 01:31",
+      "kind": "episode",
+      "title": "A Day With a Cat and a Dog: Morning to Night 🐱🐶 | Paw Rivals Ep 4",
+      "privacy": "public",
+      "items": [
+        [
+          "p_slipper"
+        ],
+        [
+          "p_fan"
+        ],
+        [
+          "p_remote"
+        ],
+        [
+          "p_donut"
+        ],
+        [
+          "p_suitcase"
+        ],
+        [
+          "p_present"
+        ],
+        [
+          "p_popcorn"
+        ],
+        [
+          "p_lamp"
+        ],
+        [
+          "p_egg"
+        ],
+        [
+          "p_basket"
+        ],
+        [
+          "p_bag"
+        ],
+        [
+          "p_cupcake"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "cocoa",
+          "dog": "shiba",
+          "gags": [
+            "p_slipper",
+            "p_fan",
+            "p_remote"
+          ],
+          "room": "diner",
+          "seed": 769530
+        },
+        {
+          "format": "catdog",
+          "cat": "luna",
+          "dog": "cloud",
+          "gags": [
+            "p_donut",
+            "p_suitcase",
+            "p_present"
+          ],
+          "room": "cafe",
+          "seed": 849070
+        },
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "ace",
+          "gags": [
+            "p_popcorn",
+            "p_lamp",
+            "p_egg"
+          ],
+          "room": "living",
+          "seed": 453756
+        },
+        {
+          "format": "catdog",
+          "cat": "oreo",
+          "dog": "goldie",
+          "gags": [
+            "p_basket",
+            "p_bag",
+            "p_cupcake"
+          ],
+          "room": "garage",
+          "seed": 415318
+        }
+      ],
+      "kurgu": "day"
     }
   ]
 }
