@@ -964,6 +964,102 @@
       ],
       "room": "bathroom",
       "seed": 645313
+    },
+    {
+      "id": "-I7Fe_0Ys0I",
+      "date": "2026-10-19 20:58",
+      "kind": "episode",
+      "title": "Top 4 Cat vs Dog Chaos Moments, Ranked 🏆 | Paw Rivals Ep 5",
+      "privacy": "public",
+      "items": [
+        [
+          "p_milk"
+        ],
+        [
+          "p_banana"
+        ],
+        [
+          "p_book"
+        ],
+        [
+          "p_clock"
+        ],
+        [
+          "p_blender"
+        ],
+        [
+          "p_cookiejar"
+        ],
+        [
+          "p_icecream"
+        ],
+        [
+          "p_trophy"
+        ],
+        [
+          "p_mug"
+        ],
+        [
+          "p_homework"
+        ],
+        [
+          "p_balloon"
+        ],
+        [
+          "p_umbrella"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "shadow",
+          "dog": "beagle",
+          "gags": [
+            "p_milk",
+            "p_banana",
+            "p_book"
+          ],
+          "room": "greenhouse",
+          "seed": 809
+        },
+        {
+          "format": "catdog",
+          "cat": "cocoa",
+          "dog": "corgi",
+          "gags": [
+            "p_clock",
+            "p_blender",
+            "p_cookiejar"
+          ],
+          "room": "living",
+          "seed": 314968
+        },
+        {
+          "format": "catdog",
+          "cat": "patches",
+          "dog": "choco",
+          "gags": [
+            "p_icecream",
+            "p_trophy",
+            "p_mug"
+          ],
+          "room": "office",
+          "seed": 611525
+        },
+        {
+          "format": "catdog",
+          "cat": "cocoa",
+          "dog": "pepper",
+          "gags": [
+            "p_homework",
+            "p_balloon",
+            "p_umbrella"
+          ],
+          "room": "bathroom",
+          "seed": 132381
+        }
+      ],
+      "kurgu": "ranked"
     }
   ]
 }
