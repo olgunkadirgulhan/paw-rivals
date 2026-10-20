@@ -1224,6 +1224,23 @@
       ],
       "room": "living",
       "seed": 251218
+    },
+    {
+      "id": "dLGdR-bTFGA",
+      "date": "2026-10-20 21:21",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Teddy & Newspaper 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "shiba",
+      "gags": [
+        "p_teddy",
+        "p_newspaper",
+        "p_shoe"
+      ],
+      "room": "hotel",
+      "seed": 559466
     }
   ]
 }
