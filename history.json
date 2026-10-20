@@ -1078,6 +1078,102 @@
       ],
       "room": "library",
       "seed": 699800
+    },
+    {
+      "id": "0oLL8IOxh6Y",
+      "date": "2026-10-20 02:06",
+      "kind": "episode",
+      "title": "Cafe Chaos: Cats vs Dogs, 12 Situations 😂 | Paw Rivals Ep 6",
+      "privacy": "public",
+      "items": [
+        [
+          "p_backpack"
+        ],
+        [
+          "p_snowglobe"
+        ],
+        [
+          "p_hotdog"
+        ],
+        [
+          "p_sandwich"
+        ],
+        [
+          "p_napkin"
+        ],
+        [
+          "p_taco"
+        ],
+        [
+          "p_gamepad"
+        ],
+        [
+          "p_brush"
+        ],
+        [
+          "p_basketball"
+        ],
+        [
+          "p_pizza"
+        ],
+        [
+          "p_candle"
+        ],
+        [
+          "p_towel"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "cocoa",
+          "dog": "bruno",
+          "gags": [
+            "p_backpack",
+            "p_snowglobe",
+            "p_hotdog"
+          ],
+          "room": "cafe",
+          "seed": 789873
+        },
+        {
+          "format": "catdog",
+          "cat": "patches",
+          "dog": "corgi",
+          "gags": [
+            "p_sandwich",
+            "p_napkin",
+            "p_taco"
+          ],
+          "room": "cafe",
+          "seed": 772795
+        },
+        {
+          "format": "catdog",
+          "cat": "cocoa",
+          "dog": "ace",
+          "gags": [
+            "p_gamepad",
+            "p_brush",
+            "p_basketball"
+          ],
+          "room": "cafe",
+          "seed": 369092
+        },
+        {
+          "format": "catdog",
+          "cat": "patches",
+          "dog": "bruno",
+          "gags": [
+            "p_pizza",
+            "p_candle",
+            "p_towel"
+          ],
+          "room": "cafe",
+          "seed": 722032
+        }
+      ],
+      "kurgu": "room"
     }
   ]
 }
