@@ -90,6 +90,15 @@ def trend_gags(pool):
     return hits
 
 
+HEROES = ('thunder', 'bed', 'bath', 'cucumber', 'vacuum', 'laser', 'food', 'cup', 'cake', 'mail', 'fish', 'doorbell', 'box', 'mirror')
+
+
+def hero_pool(pool, gperf, recent):
+    """kanıtlanmış klasikler + kendi verisinde ortalaması 40K'yı geçen durumlar + yeni klasik tetikleyiciler (havai fişek, veteriner…)"""
+    proven = set(HEROES) | {k for k, v in gperf.items() if v >= 40000}
+    return [k for k in pool if (k in proven or k in paws.CLASSIC_NEW) and k not in recent]
+
+
 def pick_plan(hist, rnd, perf=({}, {})):
     fperf, gperf = perf
     past = [v for v in hist['videos'] if v.get('kind', 'short') == 'short' and v.get('format')][-12:]  # derlemeler hariç
@@ -121,9 +130,15 @@ def pick_plan(hist, rnd, perf=({}, {})):
     gw = {k: (w if w > 0 else 1e-9) for k, w in gw.items()}
     seen_sets = {tuple(sorted(v['gags'])) for v in past}
     last_first = past[-1]['gags'][0] if past else None
+    # 2026-10-20 kahraman kuralı: hitlerin hepsi herkesin bildiği klasik durumlardan (gök gürültüsü 529K, yatak 242K,
+    # banyo 205K…). Her Short bir kahramanla açılır (başlık ilk iki durumdan yazılır); aynı kahraman son 2 videoda olmaz.
+    heroes = hero_pool(pool, gperf, {g for v in past[-2:] for g in v.get('gags', [])})
     for _ in range(200):
-        n = rnd.choices([2, 3, 4], weights=[4, 4, 2])[0]   # rakip analizi: viral Shorts 8-20 sn
+        n = rnd.choices([2, 3, 4], weights=[5, 4, 1])[0]   # 21-29 sn videolar 37 sn'liklerden açıkça iyi
         left, gags = list(pool), []
+        if heroes:
+            hw = [gw.get(k, 1.0) * (1.0 if k in HEROES else 0.6) for k in heroes]
+            gags.append(rnd.choices(heroes, weights=hw)[0]); left.remove(gags[0])
         while len(gags) < n:                         # ağırlıklı, tekrarsız seçim
             g = rnd.choices(left, weights=[gw[k] for k in left])[0]
             gags.append(g); left.remove(g)

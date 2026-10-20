@@ -129,7 +129,7 @@ def main():
     if eps and not no_upload:
         last = datetime.strptime(eps[-1]['date'], '%Y-%m-%d %H:%M').replace(tzinfo=timezone.utc)
         today_n = sum(1 for v in eps if v['date'].startswith(datetime.now(timezone.utc).strftime('%Y-%m-%d')))
-        if today_n >= 2 or datetime.now(timezone.utc) - last < timedelta(hours=4):     # 2026-10-17: günde 2 bölüm
+        if today_n >= 1 or datetime.now(timezone.utc) - last < timedelta(hours=36):    # 2026-10-20: haftada 3 bölüm
             print(f'bugün {today_n} bölüm, son {eps[-1]["date"]}: atlandı'); return
     rnd = random.Random()
     sim = {'videos': list(hist['videos'])}; plans = []; perf = run.performance(hist)

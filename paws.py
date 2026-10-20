@@ -2087,6 +2087,23 @@ PROWS3 = [
 ]
 register_pfactory(PROWS3, debut0='2026-10-19', per_group=15)
 
+
+# 2026-10-20 klasik evcil hayvan tetikleyicileri (veri: gök gürültüsü/banyo/salatalık gibi herkesin bildiği anlar en çok izlenen)
+# ay kısıtlı olanlar sadece kendi döneminde çıkar (Cadılar Bayramı ekim, ilk kar kış).
+PROWS4 = [
+    ('fireworks', 'WHEN THE FIREWORKS START', 'Fireworks', 'stick', (220, 50, 60), (250, 200, 60), None, '', 'hiss', 'scared', 'WHO INVITED THE SKY?', 'HOLD ME PLEASE!'),
+    ('vet', 'WHEN IT IS VET DAY', 'Vet Visit', 'box', (245, 245, 250), (90, 150, 230), (255, 255, 255), 'VET', 'hiss', 'scared', 'I KNOW THAT BOX.', 'I WAS A GOOD BOY!'),
+    ('nails', 'WHEN THE NAIL CLIPPERS COME OUT', 'Nail Clippers', 'stick', (190, 195, 205), (120, 125, 135), None, '', 'stare', 'roll', 'TOUCH MY PAWS. TRY.', 'BELLY RUB INSTEAD?'),
+    ('carrier', 'WHEN THE PET CARRIER COMES OUT', 'Pet Carrier', 'box', (150, 155, 165), (90, 95, 105), None, '', 'stare', 'love', 'I WAS NEVER HERE.', 'IS THIS MY NEW BED?'),
+    ('snow', 'WHEN IT SNOWS FOR THE FIRST TIME', 'First Snow', 'round', (250, 252, 255), (210, 225, 245), None, '', 'stare', 'zoomies', 'COLD. NO THANKS.', 'BEST DAY EVER!'),
+    ('trickortreat', 'WHEN TRICK-OR-TREATERS RING', 'Trick or Treat', 'box', (250, 140, 30), (40, 40, 45), (255, 255, 255), 'CANDY', 'sleep_on', 'bark', 'NOT MY HOLIDAY.', 'STRANGERS WITH CANDY!'),
+    ('costume', 'WHEN YOU PUT ON A HALLOWEEN COSTUME', 'Halloween Costume', 'hat', (40, 35, 50), (120, 60, 170), None, '', 'hiss', 'love', 'TAKE IT OFF.', 'I LOVE MY COSTUME!'),
+]
+register_pfactory(PROWS4, debut0='2026-10-20', per_group=50)
+GAGS['p_snow']['months'] = (11, 12, 1, 2)
+GAGS['p_trickortreat']['months'] = GAGS['p_costume']['months'] = (10,)
+CLASSIC_NEW = ('p_fireworks', 'p_vet', 'p_nails', 'p_carrier', 'p_snow', 'p_trickortreat', 'p_costume')
+
 rng = np.random.default_rng(1)
 def t_arr(d): return np.arange(int(SR * d)) / SR
 def noise(d): return rng.uniform(-1, 1, int(SR * d))
