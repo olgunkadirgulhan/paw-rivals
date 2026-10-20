@@ -1174,6 +1174,22 @@
         }
       ],
       "kurgu": "room"
+    },
+    {
+      "id": "NfdMZrP5YLM",
+      "date": "2026-10-20 14:20",
+      "kind": "short",
+      "title": "Pizza Box & Sock: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "shiba",
+      "gags": [
+        "p_pizzabox",
+        "p_sock"
+      ],
+      "room": "greenhouse",
+      "seed": 52364
     }
   ]
 }
