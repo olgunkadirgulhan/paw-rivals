@@ -1208,6 +1208,22 @@
       ],
       "room": "bedroom",
       "seed": 457257
+    },
+    {
+      "id": "EGxHUnR38uo",
+      "date": "2026-10-20 19:21",
+      "kind": "short",
+      "title": "Mirror & Candle: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "corgi",
+      "gags": [
+        "mirror",
+        "p_candle"
+      ],
+      "room": "living",
+      "seed": 251218
     }
   ]
 }
