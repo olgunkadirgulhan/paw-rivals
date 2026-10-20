@@ -1190,6 +1190,24 @@
       ],
       "room": "greenhouse",
       "seed": 52364
+    },
+    {
+      "id": "OQXv5WLzK6I",
+      "date": "2026-10-20 17:22",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Thunder & Hot Dog 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "goldie",
+      "gags": [
+        "thunder",
+        "p_hotdog",
+        "ball",
+        "p_hanger"
+      ],
+      "room": "bedroom",
+      "seed": 457257
     }
   ]
 }
