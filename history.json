@@ -1258,6 +1258,23 @@
       ],
       "room": "bathroom",
       "seed": 324722
+    },
+    {
+      "id": "-2DM98BJnf4",
+      "date": "2026-10-21 17:21",
+      "kind": "short",
+      "title": "Cat vs Dog: Glass & Soap 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "goldie",
+      "gags": [
+        "cup",
+        "p_soap",
+        "p_mango"
+      ],
+      "room": "garage",
+      "seed": 602804
     }
   ]
 }
