@@ -1293,6 +1293,22 @@
       ],
       "room": "bathroom",
       "seed": 366161
+    },
+    {
+      "id": "UZOZAgQpOZQ",
+      "date": "2026-10-21 21:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Box & Apple 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "beagle",
+      "gags": [
+        "box",
+        "p_apple"
+      ],
+      "room": "kitchen",
+      "seed": 643348
     }
   ]
 }
