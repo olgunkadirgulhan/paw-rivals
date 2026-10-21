@@ -1275,6 +1275,24 @@
       ],
       "room": "garage",
       "seed": 602804
+    },
+    {
+      "id": "IshOwtDg5iw",
+      "date": "2026-10-21 19:22",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Thunder & Paper Crown 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "husky",
+      "gags": [
+        "thunder",
+        "p_papercrown",
+        "p_bone",
+        "p_vet"
+      ],
+      "room": "bathroom",
+      "seed": 366161
     }
   ]
 }
