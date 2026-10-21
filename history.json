@@ -1241,6 +1241,23 @@
       ],
       "room": "hotel",
       "seed": 559466
+    },
+    {
+      "id": "Ok5Y1iinmRw",
+      "date": "2026-10-21 14:21",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Halloween Costume & Jacket 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "husky",
+      "gags": [
+        "p_costume",
+        "p_jacket",
+        "p_snowglobe"
+      ],
+      "room": "bathroom",
+      "seed": 324722
     }
   ]
 }
