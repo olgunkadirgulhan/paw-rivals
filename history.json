@@ -1439,6 +1439,23 @@
       ],
       "room": "diner",
       "seed": 497961
+    },
+    {
+      "id": "tylpjJRUQ6o",
+      "date": "2026-10-22 19:20",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Fireworks & Sock) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "bruno",
+      "gags": [
+        "p_fireworks",
+        "p_sock",
+        "p_mug"
+      ],
+      "room": "living",
+      "seed": 494053
     }
   ]
 }
