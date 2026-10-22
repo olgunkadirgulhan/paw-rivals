@@ -1405,6 +1405,22 @@
         }
       ],
       "kurgu": "matchups"
+    },
+    {
+      "id": "mgCNihoLAOs",
+      "date": "2026-10-22 14:21",
+      "kind": "short",
+      "title": "New Bed & Soccer Ball: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "ace",
+      "gags": [
+        "bed",
+        "p_soccer"
+      ],
+      "room": "bedroom",
+      "seed": 309089
     }
   ]
 }
