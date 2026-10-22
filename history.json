@@ -1456,6 +1456,23 @@
       ],
       "room": "living",
       "seed": 494053
+    },
+    {
+      "id": "ne-xY3lxK58",
+      "date": "2026-10-22 21:19",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Nail Clippers & Hourglass) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "goldie",
+      "gags": [
+        "p_nails",
+        "p_hourglass",
+        "p_homework"
+      ],
+      "room": "kitchen",
+      "seed": 859476
     }
   ]
 }
