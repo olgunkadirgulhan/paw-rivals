@@ -1421,6 +1421,24 @@
       ],
       "room": "bedroom",
       "seed": 309089
+    },
+    {
+      "id": "U-W-5SFlMyc",
+      "date": "2026-10-22 17:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Birthday Cake & Lava Lamp 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "max",
+      "gags": [
+        "cake",
+        "p_lavalamp",
+        "ball",
+        "p_slipper"
+      ],
+      "room": "diner",
+      "seed": 497961
     }
   ]
 }
