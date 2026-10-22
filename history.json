@@ -1309,6 +1309,102 @@
       ],
       "room": "kitchen",
       "seed": 643348
+    },
+    {
+      "id": "W0L7OlqJIds",
+      "date": "2026-10-22 00:12",
+      "kind": "episode",
+      "title": "Cats vs Dogs: 12 Situations, Totally Different Reactions 😂 | Paw Rivals Ep 7",
+      "privacy": "public",
+      "items": [
+        [
+          "p_pumpkin2"
+        ],
+        [
+          "p_tape"
+        ],
+        [
+          "p_cactus"
+        ],
+        [
+          "p_nails"
+        ],
+        [
+          "p_purse"
+        ],
+        [
+          "p_calendar"
+        ],
+        [
+          "p_hanger"
+        ],
+        [
+          "p_globe"
+        ],
+        [
+          "p_camera"
+        ],
+        [
+          "p_collar"
+        ],
+        [
+          "p_carrier"
+        ],
+        [
+          "p_catnip"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "shiba",
+          "gags": [
+            "p_pumpkin2",
+            "p_tape",
+            "p_cactus"
+          ],
+          "room": "studio",
+          "seed": 698378
+        },
+        {
+          "format": "catdog",
+          "cat": "milo",
+          "dog": "husky",
+          "gags": [
+            "p_nails",
+            "p_purse",
+            "p_calendar"
+          ],
+          "room": "living",
+          "seed": 710515
+        },
+        {
+          "format": "catdog",
+          "cat": "smokey",
+          "dog": "biscuit",
+          "gags": [
+            "p_hanger",
+            "p_globe",
+            "p_camera"
+          ],
+          "room": "bedroom",
+          "seed": 310023
+        },
+        {
+          "format": "catdog",
+          "cat": "bean",
+          "dog": "pepper",
+          "gags": [
+            "p_collar",
+            "p_carrier",
+            "p_catnip"
+          ],
+          "room": "hotel",
+          "seed": 403067
+        }
+      ],
+      "kurgu": "matchups"
     }
   ]
 }
