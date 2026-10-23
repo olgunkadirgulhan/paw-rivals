@@ -1473,6 +1473,23 @@
       ],
       "room": "kitchen",
       "seed": 859476
+    },
+    {
+      "id": "grSUmzTz5R0",
+      "date": "2026-10-23 14:21",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Cucumber & Lantern) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "max",
+      "gags": [
+        "cucumber",
+        "p_lantern",
+        "p_purse"
+      ],
+      "room": "diner",
+      "seed": 782649
     }
   ]
 }
