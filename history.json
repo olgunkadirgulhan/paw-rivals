@@ -1524,6 +1524,22 @@
       ],
       "room": "diner",
       "seed": 29094
+    },
+    {
+      "id": "mZlzM8HDvDI",
+      "date": "2026-10-23 21:19",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Mail & Frying Pan 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "choco",
+      "gags": [
+        "mail",
+        "p_pan"
+      ],
+      "room": "bathroom",
+      "seed": 598768
     }
   ]
 }
