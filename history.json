@@ -1507,6 +1507,23 @@
       ],
       "room": "studio",
       "seed": 28576
+    },
+    {
+      "id": "hyHf-V4gikI",
+      "date": "2026-10-23 19:19",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? Glass & Glasses 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "bruno",
+      "gags": [
+        "cup",
+        "p_glasses",
+        "p_paintbrush"
+      ],
+      "room": "diner",
+      "seed": 29094
     }
   ]
 }
