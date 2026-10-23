@@ -1490,6 +1490,23 @@
       ],
       "room": "diner",
       "seed": 782649
+    },
+    {
+      "id": "hAtQMAnqzTs",
+      "date": "2026-10-23 17:20",
+      "kind": "short",
+      "title": "Thunder & Piano: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "domino",
+      "gags": [
+        "thunder",
+        "p_piano",
+        "p_telescope"
+      ],
+      "room": "studio",
+      "seed": 28576
     }
   ]
 }
