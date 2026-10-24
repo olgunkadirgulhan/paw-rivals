@@ -1605,6 +1605,102 @@
       ],
       "room": "library",
       "seed": 891393
+    },
+    {
+      "id": "lernslpvDPg",
+      "date": "2026-10-24 23:14",
+      "kind": "episode",
+      "title": "Sage vs Max: Cat vs Dog Rivalry, 12 Rounds 🐱🐶 | Paw Rivals Ep 8",
+      "privacy": "public",
+      "items": [
+        [
+          "p_telescope"
+        ],
+        [
+          "p_crayons"
+        ],
+        [
+          "p_compass"
+        ],
+        [
+          "p_piano"
+        ],
+        [
+          "p_watermelon"
+        ],
+        [
+          "p_speaker"
+        ],
+        [
+          "p_costume"
+        ],
+        [
+          "p_tissuebox"
+        ],
+        [
+          "p_pinetree"
+        ],
+        [
+          "p_lavalamp"
+        ],
+        [
+          "p_pinecone"
+        ],
+        [
+          "p_map"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "max",
+          "gags": [
+            "p_telescope",
+            "p_crayons",
+            "p_compass"
+          ],
+          "room": "living",
+          "seed": 717199
+        },
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "max",
+          "gags": [
+            "p_piano",
+            "p_watermelon",
+            "p_speaker"
+          ],
+          "room": "hotel",
+          "seed": 946889
+        },
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "max",
+          "gags": [
+            "p_costume",
+            "p_tissuebox",
+            "p_pinetree"
+          ],
+          "room": "garage",
+          "seed": 861425
+        },
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "max",
+          "gags": [
+            "p_lavalamp",
+            "p_pinecone",
+            "p_map"
+          ],
+          "room": "studio",
+          "seed": 950031
+        }
+      ],
+      "kurgu": "rivalry"
     }
   ]
 }
