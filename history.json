@@ -1572,6 +1572,22 @@
       ],
       "room": "living",
       "seed": 716679
+    },
+    {
+      "id": "TopZXN-Xhes",
+      "date": "2026-10-24 19:20",
+      "kind": "short",
+      "title": "Hanger & Sleeping Bag: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "ace",
+      "gags": [
+        "p_hanger",
+        "p_sleepingbag"
+      ],
+      "room": "studio",
+      "seed": 506228
     }
   ]
 }
