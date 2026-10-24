@@ -1588,6 +1588,23 @@
       ],
       "room": "studio",
       "seed": 506228
+    },
+    {
+      "id": "94ZRs_fsmcQ",
+      "date": "2026-10-24 21:21",
+      "kind": "short",
+      "title": "Cats vs Dogs: Vet Visit & Toaster Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "corgi",
+      "gags": [
+        "p_vet",
+        "p_toaster",
+        "p_tennis"
+      ],
+      "room": "library",
+      "seed": 891393
     }
   ]
 }
