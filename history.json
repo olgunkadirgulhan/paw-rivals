@@ -1556,6 +1556,22 @@
       ],
       "room": "office",
       "seed": 686058
+    },
+    {
+      "id": "4T-OkuzRy10",
+      "date": "2026-10-24 17:01",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Teddy & Soap 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "domino",
+      "gags": [
+        "p_teddy",
+        "p_soap"
+      ],
+      "room": "living",
+      "seed": 716679
     }
   ]
 }
