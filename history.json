@@ -1540,6 +1540,22 @@
       ],
       "room": "bathroom",
       "seed": 598768
+    },
+    {
+      "id": "eSgmqdwVr-Q",
+      "date": "2026-10-24 14:20",
+      "kind": "short",
+      "title": "Cats vs Dogs: Birthday Cake & Garden Hose Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "ace",
+      "gags": [
+        "cake",
+        "p_hose"
+      ],
+      "room": "office",
+      "seed": 686058
     }
   ]
 }
