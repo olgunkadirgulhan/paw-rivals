@@ -1718,6 +1718,23 @@
       ],
       "room": "diner",
       "seed": 598165
+    },
+    {
+      "id": "H2vVHrrRrvQ",
+      "date": "2026-10-25 17:17",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Slipper & Map 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "shiba",
+      "gags": [
+        "p_slipper",
+        "p_map",
+        "p_papercrown"
+      ],
+      "room": "bedroom",
+      "seed": 517698
     }
   ]
 }
