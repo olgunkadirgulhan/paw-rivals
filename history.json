@@ -1701,6 +1701,23 @@
         }
       ],
       "kurgu": "rivalry"
+    },
+    {
+      "id": "8KJtL2sNaSc",
+      "date": "2026-10-25 14:21",
+      "kind": "short",
+      "title": "Cat vs Dog: Cucumber & Collar 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "ace",
+      "gags": [
+        "cucumber",
+        "p_collar",
+        "p_carrier"
+      ],
+      "room": "diner",
+      "seed": 598165
     }
   ]
 }
