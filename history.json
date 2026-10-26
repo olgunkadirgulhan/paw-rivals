@@ -1801,6 +1801,23 @@
       ],
       "room": "library",
       "seed": 280333
+    },
+    {
+      "id": "Azj4MCpjKfM",
+      "date": "2026-10-26 19:21",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Pumpkin & Mug 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "shiba",
+      "gags": [
+        "p_pumpkin2",
+        "p_mug",
+        "p_broom"
+      ],
+      "room": "cafe",
+      "seed": 307478
     }
   ]
 }
