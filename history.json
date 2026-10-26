@@ -1784,6 +1784,23 @@
       ],
       "room": "hotel",
       "seed": 943218
+    },
+    {
+      "id": "0ki5TRkzHv4",
+      "date": "2026-10-26 17:21",
+      "kind": "short",
+      "title": "Halloween Costume & Vacuum: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "teddy",
+      "gags": [
+        "p_costume",
+        "vacuum",
+        "p_raincoat"
+      ],
+      "room": "library",
+      "seed": 280333
     }
   ]
 }
