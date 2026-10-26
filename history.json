@@ -1818,6 +1818,22 @@
       ],
       "room": "cafe",
       "seed": 307478
+    },
+    {
+      "id": "lxyu5wiynYY",
+      "date": "2026-10-26 21:20",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? Fireworks & Pizza Box 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "max",
+      "gags": [
+        "p_fireworks",
+        "p_pizzabox"
+      ],
+      "room": "kitchen",
+      "seed": 787426
     }
   ]
 }
