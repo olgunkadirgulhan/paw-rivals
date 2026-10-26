@@ -1768,6 +1768,22 @@
       ],
       "room": "bedroom",
       "seed": 777132
+    },
+    {
+      "id": "w6FA52yuf3c",
+      "date": "2026-10-26 14:20",
+      "kind": "short",
+      "title": "Cat vs Dog: Thunder & Guitar 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "shiba",
+      "gags": [
+        "thunder",
+        "p_guitar"
+      ],
+      "room": "hotel",
+      "seed": 943218
     }
   ]
 }
