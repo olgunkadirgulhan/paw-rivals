@@ -1964,6 +1964,22 @@
       ],
       "room": "office",
       "seed": 510623
+    },
+    {
+      "id": "FxXz3hd79Ks",
+      "date": "2026-10-27 19:01",
+      "kind": "short",
+      "title": "Which Pet Wins? Hot Dog & Xylophone 🏆",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "pepper",
+      "gags": [
+        "p_hotdog",
+        "p_xylophone"
+      ],
+      "room": "diner",
+      "seed": 735042
     }
   ]
 }
