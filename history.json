@@ -1930,6 +1930,24 @@
         }
       ],
       "kurgu": "tournament"
+    },
+    {
+      "id": "8Ob9kkFxs1M",
+      "date": "2026-10-27 14:22",
+      "kind": "short",
+      "title": "Which Pet Wins? Box & Golf Ball 🏆",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "shiba",
+      "gags": [
+        "box",
+        "p_golfball",
+        "p_skateboard",
+        "p_noodles"
+      ],
+      "room": "garage",
+      "seed": 93564
     }
   ]
 }
