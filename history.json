@@ -1980,6 +1980,22 @@
       ],
       "room": "diner",
       "seed": 735042
+    },
+    {
+      "id": "y3przi4eTW0",
+      "date": "2026-10-27 21:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Pet Carrier & Snow Globe 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "goldie",
+      "gags": [
+        "p_carrier",
+        "p_snowglobe"
+      ],
+      "room": "office",
+      "seed": 580802
     }
   ]
 }
