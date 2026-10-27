@@ -1948,6 +1948,22 @@
       ],
       "room": "garage",
       "seed": 93564
+    },
+    {
+      "id": "sX2FqdiBCGI",
+      "date": "2026-10-27 17:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Doorbell & Yo-Yo 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "beagle",
+      "gags": [
+        "doorbell",
+        "p_yoyo"
+      ],
+      "room": "office",
+      "seed": 510623
     }
   ]
 }
