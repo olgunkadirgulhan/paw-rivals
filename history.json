@@ -1834,6 +1834,102 @@
       ],
       "room": "kitchen",
       "seed": 787426
+    },
+    {
+      "id": "lSS_o_zBdmw",
+      "date": "2026-10-27 00:34",
+      "kind": "episode",
+      "title": "Cat vs Dog Tournament: Quarterfinals to the Final 🏆 | Paw Rivals Ep 9",
+      "privacy": "public",
+      "items": [
+        [
+          "p_trickortreat"
+        ],
+        [
+          "p_scratcher"
+        ],
+        [
+          "p_shovel"
+        ],
+        [
+          "p_tent"
+        ],
+        [
+          "p_drum"
+        ],
+        [
+          "p_puzzle"
+        ],
+        [
+          "p_wallet"
+        ],
+        [
+          "p_headphones"
+        ],
+        [
+          "p_lunchbox"
+        ],
+        [
+          "p_toyblock"
+        ],
+        [
+          "p_skateboard"
+        ],
+        [
+          "p_beachball"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "bean",
+          "dog": "shiba",
+          "gags": [
+            "p_trickortreat",
+            "p_scratcher",
+            "p_shovel"
+          ],
+          "room": "greenhouse",
+          "seed": 29476
+        },
+        {
+          "format": "catdog",
+          "cat": "tux",
+          "dog": "pepper",
+          "gags": [
+            "p_tent",
+            "p_drum",
+            "p_puzzle"
+          ],
+          "room": "office",
+          "seed": 920690
+        },
+        {
+          "format": "catdog",
+          "cat": "shadow",
+          "dog": "husky",
+          "gags": [
+            "p_wallet",
+            "p_headphones",
+            "p_lunchbox"
+          ],
+          "room": "kitchen",
+          "seed": 738755
+        },
+        {
+          "format": "catdog",
+          "cat": "bean",
+          "dog": "ace",
+          "gags": [
+            "p_toyblock",
+            "p_skateboard",
+            "p_beachball"
+          ],
+          "room": "bathroom",
+          "seed": 736787
+        }
+      ],
+      "kurgu": "tournament"
     }
   ]
 }
