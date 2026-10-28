@@ -2046,6 +2046,23 @@
       ],
       "room": "office",
       "seed": 303311
+    },
+    {
+      "id": "zHwOiRoxzXg",
+      "date": "2026-10-28 21:21",
+      "kind": "short",
+      "title": "Which Pet Wins? Thunder & Hat 🏆",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "goldie",
+      "gags": [
+        "thunder",
+        "p_hat",
+        "p_toyblock"
+      ],
+      "room": "hotel",
+      "seed": 152290
     }
   ]
 }
