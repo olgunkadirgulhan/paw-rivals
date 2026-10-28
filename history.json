@@ -1996,6 +1996,23 @@
       ],
       "room": "office",
       "seed": 580802
+    },
+    {
+      "id": "ysrtaigOkoU",
+      "date": "2026-10-28 14:21",
+      "kind": "short",
+      "title": "Nail Clippers & Tambourine: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "biscuit",
+      "gags": [
+        "p_nails",
+        "p_tambourine",
+        "p_costume"
+      ],
+      "room": "greenhouse",
+      "seed": 566903
     }
   ]
 }
