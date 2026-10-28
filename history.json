@@ -2030,6 +2030,22 @@
       ],
       "room": "garage",
       "seed": 223799
+    },
+    {
+      "id": "lvxVwenPixw",
+      "date": "2026-10-28 19:10",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? Fireworks & Tape Roll 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "cloud",
+      "gags": [
+        "p_fireworks",
+        "p_tape"
+      ],
+      "room": "office",
+      "seed": 303311
     }
   ]
 }
