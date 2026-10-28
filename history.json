@@ -2013,6 +2013,23 @@
       ],
       "room": "greenhouse",
       "seed": 566903
+    },
+    {
+      "id": "6dJsR-XG_jU",
+      "date": "2026-10-28 17:21",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: New Bed & Toy Tent 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "domino",
+      "gags": [
+        "bed",
+        "p_tent",
+        "p_crayons"
+      ],
+      "room": "garage",
+      "seed": 223799
     }
   ]
 }
