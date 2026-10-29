@@ -2210,6 +2210,22 @@
       ],
       "room": "kitchen",
       "seed": 637465
+    },
+    {
+      "id": "GJcPRtq29qw",
+      "date": "2026-10-29 21:19",
+      "kind": "short",
+      "title": "Glass & Lava Lamp: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "beagle",
+      "gags": [
+        "cup",
+        "p_lavalamp"
+      ],
+      "room": "hotel",
+      "seed": 892065
     }
   ]
 }
