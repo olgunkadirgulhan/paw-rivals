@@ -2193,6 +2193,23 @@
       ],
       "room": "library",
       "seed": 97212
+    },
+    {
+      "id": "agNA22LNkSE",
+      "date": "2026-10-29 19:15",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Thunder & Teapot 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "cloud",
+      "gags": [
+        "thunder",
+        "p_teapot",
+        "p_magnet"
+      ],
+      "room": "kitchen",
+      "seed": 637465
     }
   ]
 }
