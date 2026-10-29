@@ -2159,6 +2159,23 @@
         }
       ],
       "kurgu": "day"
+    },
+    {
+      "id": "3srPSiVKpZQ",
+      "date": "2026-10-29 14:20",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Goldfish & Boomerang) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "teddy",
+      "gags": [
+        "fish",
+        "p_boomerang",
+        "p_trumpet"
+      ],
+      "room": "bathroom",
+      "seed": 177940
     }
   ]
 }
