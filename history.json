@@ -2176,6 +2176,23 @@
       ],
       "room": "bathroom",
       "seed": 177940
+    },
+    {
+      "id": "ToTMm1yWMQ8",
+      "date": "2026-10-29 17:20",
+      "kind": "short",
+      "title": "Which Pet Wins? Cucumber & Compass 🏆",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "ace",
+      "gags": [
+        "cucumber",
+        "p_compass",
+        "p_peach"
+      ],
+      "room": "library",
+      "seed": 97212
     }
   ]
 }
