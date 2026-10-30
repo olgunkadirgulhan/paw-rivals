@@ -2274,6 +2274,22 @@
       ],
       "room": "office",
       "seed": 910961
+    },
+    {
+      "id": "EdsXMoZJCsg",
+      "date": "2026-10-30 21:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Thunder & Cardboard Tube 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "domino",
+      "gags": [
+        "thunder",
+        "p_tube"
+      ],
+      "room": "studio",
+      "seed": 266124
     }
   ]
 }
