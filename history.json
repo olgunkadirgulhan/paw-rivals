@@ -2226,6 +2226,22 @@
       ],
       "room": "hotel",
       "seed": 892065
+    },
+    {
+      "id": "jUiao8ZGxiw",
+      "date": "2026-10-30 14:19",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Box & Piano 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "bruno",
+      "gags": [
+        "box",
+        "p_piano"
+      ],
+      "room": "office",
+      "seed": 299897
     }
   ]
 }
