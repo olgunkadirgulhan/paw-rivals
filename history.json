@@ -2258,6 +2258,22 @@
       ],
       "room": "kitchen",
       "seed": 85681
+    },
+    {
+      "id": "9i8CGEvN1Wo",
+      "date": "2026-10-30 18:53",
+      "kind": "short",
+      "title": "New Bed & Guitar: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "shiba",
+      "gags": [
+        "bed",
+        "p_guitar"
+      ],
+      "room": "office",
+      "seed": 910961
     }
   ]
 }
