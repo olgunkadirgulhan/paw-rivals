@@ -2324,6 +2324,22 @@
       ],
       "room": "diner",
       "seed": 789268
+    },
+    {
+      "id": "8F9RFsm3AK8",
+      "date": "2026-10-31 19:19",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Vacuum & Paper Plane 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "beagle",
+      "gags": [
+        "vacuum",
+        "p_paperplane"
+      ],
+      "room": "studio",
+      "seed": 615787
     }
   ]
 }
