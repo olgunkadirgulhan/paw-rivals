@@ -2340,6 +2340,22 @@
       ],
       "room": "studio",
       "seed": 615787
+    },
+    {
+      "id": "lvkQl6bR8Nc",
+      "date": "2026-10-31 21:20",
+      "kind": "short",
+      "title": "CAT vs DOG (Fireworks & Toy Drum) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "husky",
+      "gags": [
+        "p_fireworks",
+        "p_drum"
+      ],
+      "room": "library",
+      "seed": 777252
     }
   ]
 }
