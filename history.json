@@ -2290,6 +2290,22 @@
       ],
       "room": "studio",
       "seed": 266124
+    },
+    {
+      "id": "hCZUWVdKN_g",
+      "date": "2026-10-31 14:20",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Cucumber & Sleeping Bag) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "goldie",
+      "gags": [
+        "cucumber",
+        "p_sleepingbag"
+      ],
+      "room": "office",
+      "seed": 915180
     }
   ]
 }
