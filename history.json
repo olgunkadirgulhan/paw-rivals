@@ -2306,6 +2306,24 @@
       ],
       "room": "office",
       "seed": 915180
+    },
+    {
+      "id": "8ZVmgABwWlI",
+      "date": "2026-10-31 17:22",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Nail Clippers & Broom) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "shiba",
+      "gags": [
+        "p_nails",
+        "p_broom",
+        "p_lantern",
+        "p_soap"
+      ],
+      "room": "diner",
+      "seed": 789268
     }
   ]
 }
