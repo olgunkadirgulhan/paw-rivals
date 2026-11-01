@@ -2484,6 +2484,22 @@
       ],
       "room": "living",
       "seed": 670044
+    },
+    {
+      "id": "W1ti9xlMOE4",
+      "date": "2026-11-01 18:36",
+      "kind": "short",
+      "title": "CAT vs DOG (Thunder & Frying Pan) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "domino",
+      "gags": [
+        "thunder",
+        "p_pan"
+      ],
+      "room": "diner",
+      "seed": 942733
     }
   ]
 }
