@@ -2468,6 +2468,22 @@
       ],
       "room": "kitchen",
       "seed": 183746
+    },
+    {
+      "id": "FFjsVhyLrds",
+      "date": "2026-11-01 17:20",
+      "kind": "short",
+      "title": "Cat vs Dog: Piano & Garden Hose 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "cloud",
+      "gags": [
+        "p_piano",
+        "p_hose"
+      ],
+      "room": "living",
+      "seed": 670044
     }
   ]
 }
