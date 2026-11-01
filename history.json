@@ -2356,6 +2356,102 @@
       ],
       "room": "library",
       "seed": 777252
+    },
+    {
+      "id": "3QpWE7ZUkWg",
+      "date": "2026-11-01 00:15",
+      "kind": "episode",
+      "title": "Top 4 Cat vs Dog Chaos Moments, Ranked 🏆 | Paw Rivals Ep 11",
+      "privacy": "public",
+      "items": [
+        [
+          "p_vet"
+        ],
+        [
+          "p_boot"
+        ],
+        [
+          "p_bubbletea"
+        ],
+        [
+          "p_kiwi"
+        ],
+        [
+          "p_corn"
+        ],
+        [
+          "p_pretzel"
+        ],
+        [
+          "p_sushi"
+        ],
+        [
+          "p_bowlingball"
+        ],
+        [
+          "p_puck"
+        ],
+        [
+          "p_racket"
+        ],
+        [
+          "p_dumbbell"
+        ],
+        [
+          "p_yogamat"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "cocoa",
+          "dog": "bruno",
+          "gags": [
+            "p_vet",
+            "p_boot",
+            "p_bubbletea"
+          ],
+          "room": "hotel",
+          "seed": 287123
+        },
+        {
+          "format": "catdog",
+          "cat": "pumpkin",
+          "dog": "shiba",
+          "gags": [
+            "p_kiwi",
+            "p_corn",
+            "p_pretzel"
+          ],
+          "room": "greenhouse",
+          "seed": 114318
+        },
+        {
+          "format": "catdog",
+          "cat": "smokey",
+          "dog": "biscuit",
+          "gags": [
+            "p_sushi",
+            "p_bowlingball",
+            "p_puck"
+          ],
+          "room": "diner",
+          "seed": 212418
+        },
+        {
+          "format": "catdog",
+          "cat": "patches",
+          "dog": "teddy",
+          "gags": [
+            "p_racket",
+            "p_dumbbell",
+            "p_yogamat"
+          ],
+          "room": "office",
+          "seed": 475762
+        }
+      ],
+      "kurgu": "ranked"
     }
   ]
 }
