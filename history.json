@@ -2452,6 +2452,22 @@
         }
       ],
       "kurgu": "ranked"
+    },
+    {
+      "id": "h13lIZDWhzc",
+      "date": "2026-11-01 14:21",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? Mirror & Laundry Basket 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "choco",
+      "gags": [
+        "mirror",
+        "p_basket"
+      ],
+      "room": "kitchen",
+      "seed": 183746
     }
   ]
 }
