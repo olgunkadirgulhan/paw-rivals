@@ -2500,6 +2500,22 @@
       ],
       "room": "diner",
       "seed": 942733
+    },
+    {
+      "id": "fuu5d7MI1Bk",
+      "date": "2026-11-01 21:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Pet Carrier & Sticky Notes 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "max",
+      "gags": [
+        "p_carrier",
+        "p_stickynotes"
+      ],
+      "room": "studio",
+      "seed": 421799
     }
   ]
 }
