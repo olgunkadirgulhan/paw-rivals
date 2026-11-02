@@ -2516,6 +2516,22 @@
       ],
       "room": "studio",
       "seed": 421799
+    },
+    {
+      "id": "a9a5Lt0sIck",
+      "date": "2026-11-02 14:20",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Fireworks & Toaster) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "husky",
+      "gags": [
+        "p_fireworks",
+        "p_toaster"
+      ],
+      "room": "office",
+      "seed": 93731
     }
   ]
 }
