@@ -2549,6 +2549,22 @@
       ],
       "room": "garage",
       "seed": 685646
+    },
+    {
+      "id": "jOmqIzsoDq0",
+      "date": "2026-11-02 18:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Bath & Present 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "domino",
+      "gags": [
+        "bath",
+        "p_present"
+      ],
+      "room": "living",
+      "seed": 223768
     }
   ]
 }
