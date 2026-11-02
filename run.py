@@ -58,6 +58,41 @@ def performance(hist):
     return avg(fmt), avg(gag)
 
 
+_TW = None
+
+
+def title_weights(hist, tmpls):
+    """Başlık kalıbı başına medyan izlenme (son 80 Short, ≥20 saatlik) / genel medyan → ağırlık 0.15-3.
+    2026-11-02 veri: 'Team Cat or Team Dog' 23.8K, 'Which Pet Wins?' 5.2K, 'CAT vs DOG (…)' 5.6K. Hata → hepsi 1."""
+    global _TW
+    if _TW is not None: return _TW
+    _TW = [1.0] * len(tmpls)
+    try:
+        import re as _re, statistics as st, upload
+        if not upload.configured(): return _TW
+        now = datetime.now(timezone.utc)
+        old = [v for v in hist['videos'][-80:] if v.get('kind', 'short') == 'short' and v.get('title')
+               and (now - datetime.strptime(v['date'], '%Y-%m-%d %H:%M').replace(tzinfo=timezone.utc)).total_seconds() > 20 * 3600]
+        views = {}
+        for i in range(0, len(old), 50):
+            for it in upload.client().videos().list(part='statistics', id=','.join(v['id'] for v in old[i:i + 50])).execute()['items']:
+                views[it['id']] = int(it['statistics'].get('viewCount', 0))
+        pats = [_re.compile('^' + _re.escape(t).replace(_re.escape('{g}'), '.+') + '$') for t in tmpls]
+        by = {}
+        for v in old:
+            if v['id'] not in views: continue
+            for k, p in enumerate(pats):
+                if p.match(v['title']): by.setdefault(k, []).append(views[v['id']]); break
+        allv = [x for xs in by.values() for x in xs]
+        if len(allv) < 10: return _TW
+        m = st.median(allv)
+        _TW = [max(0.15, min(3.0, st.median(by[k]) / m)) if len(by.get(k, [])) >= 2 else 1.0 for k in range(len(tmpls))]
+        print('başlık ağırlıkları:', ', '.join(f'{tmpls[k][:22]}={w:.2f}' for k, w in enumerate(_TW)))
+    except Exception as e:
+        print('başlık ağırlıkları okunamadı:', str(e)[:150])
+    return _TW
+
+
 def weights(keys, perf, prior=None):
     """Keşif + sömürü: denenmemiş/az izlenen seçenek de şans bulur (taban 1), iyi gidenin ağırlığı en fazla 6."""
     prior = prior or {}
@@ -184,9 +219,13 @@ def metadata(plan, hist, rnd):
     g = f'{names[0]} & {names[1]}'
     cat, dog = paws.CATS[plan['cat']]['name'], paws.DOGS[plan['dog']]['name']
     used = {v['title'] for v in hist['videos']}
-    opts = [t.format(g=g) for t in TITLES[plan['format']]]
-    rnd.shuffle(opts)
-    title = next((t for t in opts if t not in used), opts[0] + f' #{len(hist["videos"]) + 1}')
+    tmpls = TITLES[plan['format']]
+    tw = title_weights(hist, tmpls)
+    cand = [(t.format(g=g), w) for t, w in zip(tmpls, tw) if t.format(g=g) not in used]
+    if cand:   # 2026-11-02: başlık kalıbı kanalın kendi izlenmesine göre ağırlıklı (zayıf kalıplar nadiren)
+        title = rnd.choices([c for c, _ in cand], weights=[w for _, w in cand])[0]
+    else:
+        title = tmpls[0].format(g=g) + f' #{len(hist["videos"]) + 1}'
     lines = '\n'.join(f'{LINES[k][0]} {LINES[k][1]}' for k in plan['gags'] if k in LINES)
     tags_h = ' '.join(f'#{LINES[k][2]}' for k in plan['gags'][:2] if k in LINES)
     desc = (f'{rnd.choice(HOOKS)}\n\n'
