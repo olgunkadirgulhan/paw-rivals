@@ -2581,6 +2581,22 @@
       ],
       "room": "bathroom",
       "seed": 907249
+    },
+    {
+      "id": "-NWjxxoiMSg",
+      "date": "2026-11-02 21:20",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? First Snow & Stapler 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "biscuit",
+      "gags": [
+        "p_snow",
+        "p_stapler"
+      ],
+      "room": "studio",
+      "seed": 520849
     }
   ]
 }
