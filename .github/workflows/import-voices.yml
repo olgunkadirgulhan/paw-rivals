@@ -1,0 +1,45 @@
+name: import-voices
+# 2026-11-02: gecmiste-sen voice-lib (her gün 09:07 UTC) ürettiği yeni Paw repliklerini alır → voices/<Ses>/lines/
+# (voice_lib Whisper ile doğrular; burada sadece repoda olmayan dosyalar eklenir, mevcutlar ezilmez)
+on:
+  schedule:
+    - cron: "47 11 * * *"
+    - cron: "47 13 * * *"
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "voice-lib run id (boş = en son başarılı)"
+        default: ""
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.run_id }}
+        run: |
+          set -e
+          id="$RUN_ID"
+          [ -z "$id" ] && id=$(gh run list -R olgunkadirgulhan/gecmiste-sen --workflow voice-lib.yml --status success -L 1 --json databaseId -q '.[0].databaseId')
+          echo "voice-lib run: $id"
+          gh run download "$id" -R olgunkadirgulhan/gecmiste-sen -n voice-lib -D vl || { echo "artifact yok"; exit 0; }
+          [ -d vl/paw ] || { echo "Paw klibi yok"; exit 0; }
+          for f in vl/paw/*/lines/*.wav; do
+            dst="voices/${f#vl/paw/}"
+            [ -e "$dst" ] || { mkdir -p "$(dirname "$dst")"; cp "$f" "$dst"; }
+          done
+          rm -rf vl
+          git config user.name "voice-bot"; git config user.email "bot@users.noreply.github.com"
+          git add voices
+          if git diff --cached --quiet; then echo "yeni ses yok"; exit 0; fi
+          echo "eklenen: $(git diff --cached --name-only | wc -l) klip"
+          git commit -qm "voices: import voice-lib $id"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 5; done

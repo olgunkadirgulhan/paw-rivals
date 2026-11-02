@@ -34,7 +34,7 @@ jobs:
       - id: g
         env:
           LOG_FILE: history.json
-          SLOTS: "14:00,16:30,18:30,20:30"   # 2026-10-13 veri: UTC 18-21 en iyi, 21-24 en zayıf → slotlar 14:00-20:30 arasına
+          SLOTS: "14:00,16:00,17:45,19:15,20:45"   # 2026-11-02: günde 5 (YPP 2027 öncesi 10M/90 gün hedefi); 18-21 UTC en iyi
           HAS_YT: ${{ secrets.YT_REFRESH_TOKEN != '' }}
         # kanal bağlanana kadar zamanlı üretim yok (yoksa her saat boşuna render olur)
         run: |

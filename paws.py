@@ -2104,6 +2104,42 @@ GAGS['p_snow']['months'] = (11, 12, 1, 2)
 GAGS['p_trickortreat']['months'] = GAGS['p_costume']['months'] = (10,)
 CLASSIC_NEW = ('p_fireworks', 'p_vet', 'p_nails', 'p_carrier', 'p_snow', 'p_trickortreat', 'p_costume')
 
+
+# 2026-11-02 sezon şakaları (kullanıcı: "Paw'ı yap, para kazanalım"; YPP 2027 eşiğinden önce 10M/90 gün hedefi)
+# Kasım-Aralık aramalarında evcil hayvan + yılbaşı/kış zirve yapar. Ay kısıtı + debut ile zamanında çıkar.
+PROWS5 = [
+    ('xmastree', 'WHEN THE CHRISTMAS TREE GOES UP', 'Christmas Tree', 'stick', (40, 140, 70), (220, 50, 60), None, '', 'knock', 'bark', 'MY TREE NOW.', 'INDOOR TREE?!'),
+    ('ornament', 'WHEN THE ORNAMENTS COME OUT', 'Ornament', 'round', (220, 40, 50), (250, 210, 60), None, '', 'bat', 'fetch', 'SHINY PREY.', 'NEW BALL!'),
+    ('wrapping', 'WHEN YOU WRAP THE PRESENTS', 'Wrapping Paper', 'box', (200, 40, 60), (60, 150, 80), None, '', 'sit_in', 'roll', 'I AM THE GIFT.', 'PAPER PARTY!'),
+    ('presents', 'WHEN THE PRESENTS ARE UNDER THE TREE', 'Presents', 'box', (60, 120, 200), (250, 210, 60), (255, 255, 255), 'GIFT', 'sleep_on', 'dig', 'GUARDING THEM.', 'IS ONE FOR ME?!'),
+    ('santahat', 'WHEN YOU PUT ON A SANTA HAT', 'Santa Hat', 'hat', (210, 40, 50), (250, 250, 250), None, '', 'hiss', 'love', 'NOT WEARING THAT.', 'I AM SANTA DOG!'),
+    ('stocking', 'WHEN THE STOCKINGS ARE HUNG', 'Stocking', 'shoe', (210, 40, 50), (250, 250, 250), None, '', 'bat', 'chew', 'SOCK PREY.', 'GIANT SOCK!'),
+    ('xmaslights', 'WHEN THE CHRISTMAS LIGHTS BLINK', 'Christmas Lights', 'stick', (250, 200, 60), (60, 200, 120), None, '', 'stare', 'bark', 'BLINKING ENEMY.', 'PARTY LIGHTS!'),
+    ('santacookies', 'WHEN YOU LEAVE COOKIES FOR SANTA', 'Cookies for Santa', 'disc', (200, 140, 80), (250, 250, 250), None, '', 'knock', 'love', 'SANTA IS LATE.', 'SANTA WON\'T MIND!'),
+    ('gingerbread', 'WHEN THE GINGERBREAD HOUSE IS DONE', 'Gingerbread House', 'box', (170, 100, 50), (250, 250, 250), None, '', 'knock', 'scared', 'FLOOR HOUSE.', 'COOKIE MAN STARED!'),
+    ('uglysweater', 'WHEN THE UGLY SWEATER COMES OUT', 'Ugly Sweater', 'box', (40, 130, 70), (220, 50, 60), None, '', 'hiss', 'love', 'FASHION CRIME.', 'MATCHING SWEATERS!'),
+    ('candycane', 'WHEN THE CANDY CANES COME OUT', 'Candy Cane', 'stick', (250, 250, 250), (220, 40, 50), None, '', 'bat', 'fetch', 'STRIPED SNAKE.', 'STRIPY STICK!'),
+    ('snowman', 'WHEN YOU BUILD A SNOWMAN', 'Snowman', 'round', (250, 252, 255), (240, 120, 40), None, '', 'stare', 'zoomies', 'COLD STRANGER.', 'NEW FRIEND!'),
+    ('fireplace', 'WHEN THE FIREPLACE IS ON', 'Fireplace', 'box', (150, 70, 50), (250, 150, 40), None, '', 'sleep_on', 'roll', 'WARM. MINE.', 'COZY ROLL!'),
+    ('scarf', 'WHEN YOU WRAP A WINTER SCARF', 'Scarf', 'stick', (60, 90, 180), (250, 250, 250), None, '', 'bat', 'fetch', 'TAIL PREY.', 'TUG OF WAR!'),
+    ('turkey', 'WHEN THE THANKSGIVING TURKEY IS READY', 'Thanksgiving Turkey', 'disc', (180, 110, 50), (230, 170, 90), None, '', 'stare', 'love', 'I WILL WAIT.', 'THANKFUL FOR TURKEY!'),
+    ('guests', 'WHEN THE HOLIDAY GUESTS ARRIVE', 'Holiday Guests', 'box', (200, 60, 70), (60, 120, 80), None, '', 'hiss', 'zoomies', 'TOO MANY HUMANS.', 'NEW FRIENDS! ALL OF THEM!'),
+    ('partyhat', 'WHEN THE NEW YEAR COUNTDOWN STARTS', 'New Year Countdown', 'hat', (250, 200, 60), (60, 60, 160), None, '', 'sleep_on', 'bark', 'WAKE ME NEXT YEAR.', 'TEN! NINE! WOOF!'),
+]
+register_pfactory(PROWS5, debut0='2026-11-02', per_group=50)
+for _k in ('xmastree', 'ornament', 'wrapping', 'presents', 'santahat', 'stocking', 'xmaslights', 'santacookies',
+           'gingerbread', 'uglysweater', 'candycane'):
+    GAGS['p_' + _k]['months'] = (11, 12)
+    GAGS['p_' + _k]['debut'] = '2026-11-14'      # yılbaşı aramaları Kasım ortası başlar
+for _k in ('snowman', 'fireplace', 'scarf'):
+    GAGS['p_' + _k]['months'] = (11, 12, 1, 2)
+GAGS['p_turkey']['months'] = (11,)
+GAGS['p_turkey']['debut'] = '2026-11-12'          # Şükran Günü 26 Kasım
+GAGS['p_guests']['months'] = (11, 12)
+GAGS['p_partyhat']['months'] = (12, 1)
+GAGS['p_partyhat']['debut'] = '2026-12-26'
+CLASSIC_NEW = CLASSIC_NEW + tuple('p_' + r[0] for r in PROWS5)
+
 rng = np.random.default_rng(1)
 def t_arr(d): return np.arange(int(SR * d)) / SR
 def noise(d): return rng.uniform(-1, 1, int(SR * d))
