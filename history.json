@@ -2565,6 +2565,22 @@
       ],
       "room": "living",
       "seed": 223768
+    },
+    {
+      "id": "F8q9rkddSMw",
+      "date": "2026-11-02 19:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Doorbell & Hot Dog 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "choco",
+      "gags": [
+        "doorbell",
+        "p_hotdog"
+      ],
+      "room": "bathroom",
+      "seed": 907249
     }
   ]
 }
