@@ -2532,6 +2532,23 @@
       ],
       "room": "office",
       "seed": 93731
+    },
+    {
+      "id": "h3N66nPoHII",
+      "date": "2026-11-02 16:22",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Nail Clippers & Whisk 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "corgi",
+      "gags": [
+        "p_nails",
+        "p_whisk",
+        "p_hat"
+      ],
+      "room": "garage",
+      "seed": 685646
     }
   ]
 }
