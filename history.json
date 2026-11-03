@@ -2664,6 +2664,22 @@
       ],
       "room": "kitchen",
       "seed": 956094
+    },
+    {
+      "id": "lbl6X0Bplsk",
+      "date": "2026-11-03 21:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Fireplace & Cucumber 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "pepper",
+      "gags": [
+        "p_fireplace",
+        "cucumber"
+      ],
+      "room": "hotel",
+      "seed": 416551
     }
   ]
 }
