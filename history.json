@@ -2632,6 +2632,22 @@
       ],
       "room": "diner",
       "seed": 843028
+    },
+    {
+      "id": "VvcAVyLrpW4",
+      "date": "2026-11-03 18:21",
+      "kind": "short",
+      "title": "Cats vs Dogs: Box & Snow Globe Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "beagle",
+      "gags": [
+        "box",
+        "p_snowglobe"
+      ],
+      "room": "living",
+      "seed": 477986
     }
   ]
 }
