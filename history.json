@@ -2597,6 +2597,23 @@
       ],
       "room": "studio",
       "seed": 520849
+    },
+    {
+      "id": "IpaE4aKztiQ",
+      "date": "2026-11-03 14:21",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: New Bed & Sandal 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "corgi",
+      "gags": [
+        "bed",
+        "p_sandal",
+        "p_tube"
+      ],
+      "room": "kitchen",
+      "seed": 50751
     }
   ]
 }
