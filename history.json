@@ -2614,6 +2614,24 @@
       ],
       "room": "kitchen",
       "seed": 50751
+    },
+    {
+      "id": "fIvb1PRvNYM",
+      "date": "2026-11-03 16:22",
+      "kind": "short",
+      "title": "Cat vs Dog: Vacuum & Mail 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "shiba",
+      "gags": [
+        "vacuum",
+        "mail",
+        "p_tablet",
+        "p_wallet"
+      ],
+      "room": "diner",
+      "seed": 843028
     }
   ]
 }
