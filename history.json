@@ -2648,6 +2648,22 @@
       ],
       "room": "living",
       "seed": 477986
+    },
+    {
+      "id": "ZphKXnwzLO4",
+      "date": "2026-11-03 19:21",
+      "kind": "short",
+      "title": "Bath & Xylophone: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "husky",
+      "gags": [
+        "bath",
+        "p_xylophone"
+      ],
+      "room": "kitchen",
+      "seed": 956094
     }
   ]
 }
