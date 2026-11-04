@@ -2680,6 +2680,22 @@
       ],
       "room": "hotel",
       "seed": 416551
+    },
+    {
+      "id": "GzXv7Zj87hY",
+      "date": "2026-11-04 14:21",
+      "kind": "short",
+      "title": "Cats vs Dogs: Mirror & Maracas Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "teddy",
+      "gags": [
+        "mirror",
+        "p_maracas"
+      ],
+      "room": "diner",
+      "seed": 834992
     }
   ]
 }
