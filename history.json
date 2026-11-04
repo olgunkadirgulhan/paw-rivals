@@ -2744,6 +2744,23 @@
       ],
       "room": "kitchen",
       "seed": 348635
+    },
+    {
+      "id": "sio8aKfkEtM",
+      "date": "2026-11-04 21:21",
+      "kind": "short",
+      "title": "Thunder & New Bed: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "cloud",
+      "gags": [
+        "thunder",
+        "bed",
+        "p_cushion"
+      ],
+      "room": "diner",
+      "seed": 895991
     }
   ]
 }
