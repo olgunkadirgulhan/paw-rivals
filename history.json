@@ -2728,6 +2728,22 @@
       ],
       "room": "office",
       "seed": 634355
+    },
+    {
+      "id": "DXNOglHOqps",
+      "date": "2026-11-04 19:19",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Doorbell & Nail Clippers 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "beagle",
+      "gags": [
+        "doorbell",
+        "p_nails"
+      ],
+      "room": "kitchen",
+      "seed": 348635
     }
   ]
 }
