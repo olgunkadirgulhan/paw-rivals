@@ -2696,6 +2696,22 @@
       ],
       "room": "diner",
       "seed": 834992
+    },
+    {
+      "id": "CDwRO2L8UVU",
+      "date": "2026-11-04 16:20",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? Fireworks & Headphones 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "cloud",
+      "gags": [
+        "p_fireworks",
+        "p_headphones"
+      ],
+      "room": "studio",
+      "seed": 522141
     }
   ]
 }
