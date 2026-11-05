@@ -2761,6 +2761,24 @@
       ],
       "room": "diner",
       "seed": 895991
+    },
+    {
+      "id": "aS85MhtVJbs",
+      "date": "2026-11-05 14:20",
+      "kind": "short",
+      "title": "Vacuum & Teddy: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "goldie",
+      "gags": [
+        "vacuum",
+        "p_teddy",
+        "p_flashlight",
+        "p_broom"
+      ],
+      "room": "cafe",
+      "seed": 540051
     }
   ]
 }
