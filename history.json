@@ -2828,6 +2828,23 @@
       ],
       "room": "cafe",
       "seed": 178213
+    },
+    {
+      "id": "LCEXxIIkU94",
+      "date": "2026-11-05 20:53",
+      "kind": "short",
+      "title": "Cat vs Dog: Glass & Boomerang 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "pepper",
+      "gags": [
+        "cup",
+        "p_boomerang",
+        "p_sandal"
+      ],
+      "room": "studio",
+      "seed": 435031
     }
   ]
 }
