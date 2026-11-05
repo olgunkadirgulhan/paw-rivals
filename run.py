@@ -20,7 +20,10 @@ TITLES = {
     'catdog': ['Cat vs Dog: {g} 😂', 'CAT vs DOG ({g}) 🐱🐶', 'How Cats vs Dogs React to {g} 😂', 'Team Cat or Team Dog? {g} 🤔',
                'Cats vs Dogs: {g} Edition 😹', '{g}: Cat vs Dog 🐶🐱', 'Cat Logic vs Dog Logic: {g} 🤣',
                'Cat Owners vs Dog Owners Know This ({g}) 😂', 'Which Pet Wins? {g} 🏆', 'Cat vs Dog Reaction: {g} 😳',
-               'POV: Your Cat vs Your Dog ({g}) 🐾', 'Same Situation, Cat vs Dog: {g} 😂'],
+               'POV: Your Cat vs Your Dog ({g}) 🐾', 'Same Situation, Cat vs Dog: {g} 😂',
+               # 2026-11-05: karakter adlı başlıklar (Bloop'ta 'Nova: Normal vs Psycho' 37K) → isimler öne
+               '{cat} the Cat vs {dog} the Dog: {g} 😂', '{cat} vs {dog}: Who Handled {g} Better? 🐾',
+               'Team {cat} or Team {dog}? {g} 🤔'],
 }
 TAGS = {'catdog': 'catvsdog'}
 
@@ -77,7 +80,7 @@ def title_weights(hist, tmpls):
         for i in range(0, len(old), 50):
             for it in upload.client().videos().list(part='statistics', id=','.join(v['id'] for v in old[i:i + 50])).execute()['items']:
                 views[it['id']] = int(it['statistics'].get('viewCount', 0))
-        pats = [_re.compile('^' + _re.escape(t).replace(_re.escape('{g}'), '.+') + '$') for t in tmpls]
+        pats = [_re.compile('^' + _re.sub(r'\\\{\w+\\\}', '.+', _re.escape(t)) + '$') for t in tmpls]
         by = {}
         for v in old:
             if v['id'] not in views: continue
@@ -221,11 +224,11 @@ def metadata(plan, hist, rnd):
     used = {v['title'] for v in hist['videos']}
     tmpls = TITLES[plan['format']]
     tw = title_weights(hist, tmpls)
-    cand = [(t.format(g=g), w) for t, w in zip(tmpls, tw) if t.format(g=g) not in used]
+    cand = [(t.format(g=g, cat=cat, dog=dog), w) for t, w in zip(tmpls, tw) if t.format(g=g, cat=cat, dog=dog) not in used]
     if cand:   # 2026-11-02: başlık kalıbı kanalın kendi izlenmesine göre ağırlıklı (zayıf kalıplar nadiren)
         title = rnd.choices([c for c, _ in cand], weights=[w for _, w in cand])[0]
     else:
-        title = tmpls[0].format(g=g) + f' #{len(hist["videos"]) + 1}'
+        title = tmpls[0].format(g=g, cat=cat, dog=dog) + f' #{len(hist["videos"]) + 1}'
     lines = '\n'.join(f'{LINES[k][0]} {LINES[k][1]}' for k in plan['gags'] if k in LINES)
     tags_h = ' '.join(f'#{LINES[k][2]}' for k in plan['gags'][:2] if k in LINES)
     desc = (f'{rnd.choice(HOOKS)}\n\n'
