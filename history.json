@@ -2779,6 +2779,22 @@
       ],
       "room": "cafe",
       "seed": 540051
+    },
+    {
+      "id": "Tkb8Bl2M0Rs",
+      "date": "2026-11-05 16:20",
+      "kind": "short",
+      "title": "Cats vs Dogs: Laser & Yarn Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "teddy",
+      "gags": [
+        "laser",
+        "yarn"
+      ],
+      "room": "bedroom",
+      "seed": 605180
     }
   ]
 }
