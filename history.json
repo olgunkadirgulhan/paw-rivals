@@ -2812,6 +2812,22 @@
       ],
       "room": "living",
       "seed": 705878
+    },
+    {
+      "id": "TUPfXsJy-mU",
+      "date": "2026-11-05 19:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Holiday Guests & Water Bottle 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "shiba",
+      "gags": [
+        "p_guests",
+        "p_bottle"
+      ],
+      "room": "cafe",
+      "seed": 178213
     }
   ]
 }
