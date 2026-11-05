@@ -2795,6 +2795,23 @@
       ],
       "room": "bedroom",
       "seed": 605180
+    },
+    {
+      "id": "7dcJnFZ4W-I",
+      "date": "2026-11-05 18:21",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Goldfish & Lunchbox 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "choco",
+      "gags": [
+        "fish",
+        "p_lunchbox",
+        "p_sleepingbag"
+      ],
+      "room": "living",
+      "seed": 705878
     }
   ]
 }
