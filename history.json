@@ -2893,6 +2893,22 @@
       ],
       "room": "office",
       "seed": 847348
+    },
+    {
+      "id": "m57QH1WkIvA",
+      "date": "2026-11-06 19:20",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Ornament & Box) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "biscuit",
+      "gags": [
+        "p_ornament",
+        "box"
+      ],
+      "room": "cafe",
+      "seed": 422112
     }
   ]
 }
