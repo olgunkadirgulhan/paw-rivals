@@ -2877,6 +2877,22 @@
       ],
       "room": "living",
       "seed": 780186
+    },
+    {
+      "id": "zwEgP6mxRRU",
+      "date": "2026-11-06 18:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: New Bed & Microphone 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "husky",
+      "gags": [
+        "bed",
+        "p_microphone"
+      ],
+      "room": "office",
+      "seed": 847348
     }
   ]
 }
