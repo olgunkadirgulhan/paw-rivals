@@ -2845,6 +2845,22 @@
       ],
       "room": "studio",
       "seed": 435031
+    },
+    {
+      "id": "ZdA7raXOO9A",
+      "date": "2026-11-06 14:20",
+      "kind": "short",
+      "title": "Milo vs Bruno: Who Handled Pet Carrier & Water Bottle Better? 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "bruno",
+      "gags": [
+        "p_carrier",
+        "p_bottle"
+      ],
+      "room": "bathroom",
+      "seed": 124992
     }
   ]
 }
