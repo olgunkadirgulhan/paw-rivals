@@ -2861,6 +2861,22 @@
       ],
       "room": "bathroom",
       "seed": 124992
+    },
+    {
+      "id": "4ssz-uhwRMo",
+      "date": "2026-11-06 16:20",
+      "kind": "short",
+      "title": "Cat vs Dog: Bath & Bird Feeder 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "shiba",
+      "gags": [
+        "bath",
+        "p_birdfeeder"
+      ],
+      "room": "living",
+      "seed": 780186
     }
   ]
 }
