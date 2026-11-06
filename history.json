@@ -2909,6 +2909,22 @@
       ],
       "room": "cafe",
       "seed": 422112
+    },
+    {
+      "id": "ldqgPjWx3HQ",
+      "date": "2026-11-06 21:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Snowman & Stickers 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "bruno",
+      "gags": [
+        "p_snowman",
+        "p_stickers"
+      ],
+      "room": "living",
+      "seed": 855880
     }
   ]
 }
