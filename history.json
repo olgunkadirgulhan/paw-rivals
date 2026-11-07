@@ -2973,6 +2973,22 @@
       ],
       "room": "library",
       "seed": 171035
+    },
+    {
+      "id": "WnSGbKfLmhE",
+      "date": "2026-11-07 19:19",
+      "kind": "short",
+      "title": "CAT vs DOG (Laser & Lamp) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "biscuit",
+      "gags": [
+        "laser",
+        "p_lamp"
+      ],
+      "room": "living",
+      "seed": 88129
     }
   ]
 }
