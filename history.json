@@ -2957,6 +2957,22 @@
       ],
       "room": "bedroom",
       "seed": 766994
+    },
+    {
+      "id": "9DifF079yVo",
+      "date": "2026-11-07 18:20",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Vacuum & Pretzel 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "beagle",
+      "gags": [
+        "vacuum",
+        "p_pretzel"
+      ],
+      "room": "library",
+      "seed": 171035
     }
   ]
 }
