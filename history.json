@@ -2941,6 +2941,22 @@
       ],
       "room": "bathroom",
       "seed": 236414
+    },
+    {
+      "id": "JLPraCvGBnY",
+      "date": "2026-11-07 16:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Doorbell & Towel 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "teddy",
+      "gags": [
+        "doorbell",
+        "p_towel"
+      ],
+      "room": "bedroom",
+      "seed": 766994
     }
   ]
 }
