@@ -235,6 +235,7 @@ def metadata(plan, hist, rnd):
             f'Starring {cat} the cat and {dog} the dog:\n{lines}\n\n'
             f'{rnd.choice(ASKS)}\n\n'
             f'New Paw Rivals cat vs dog Shorts every day. Subscribe and pick your side! 🐾\n\n'
+            f'Make your own animated video from one idea, 3 free videos: https://fennecvideo.com (our tool)\n\n'
             f'#shorts #catvsdog #funnyanimals {tags_h}')
     tags = ['paw rivals', 'cat vs dog', 'cats vs dogs', 'funny cats', 'funny dogs', 'funny animals', 'pet animation',
             'animated shorts', 'cat logic', 'dog logic', 'team cat', 'team dog', cat.lower(), dog.lower()] + [n.lower() for n in names]
