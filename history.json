@@ -2989,6 +2989,23 @@
       ],
       "room": "living",
       "seed": 88129
+    },
+    {
+      "id": "zA3TYAN00DA",
+      "date": "2026-11-07 21:21",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Glass & Shovel 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "corgi",
+      "gags": [
+        "cup",
+        "p_shovel",
+        "p_trumpet"
+      ],
+      "room": "hotel",
+      "seed": 578487
     }
   ]
 }
