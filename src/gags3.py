@@ -513,7 +513,7 @@ register_pfactory(PROWS5, debut0='2026-11-02', per_group=50)
 for _k in ('xmastree', 'ornament', 'wrapping', 'presents', 'santahat', 'stocking', 'xmaslights', 'santacookies',
            'gingerbread', 'uglysweater', 'candycane'):
     GAGS['p_' + _k]['months'] = (11, 12)
-    GAGS['p_' + _k]['debut'] = '2026-11-14'      # yılbaşı aramaları Kasım ortası başlar
+    GAGS['p_' + _k]['debut'] = '2026-11-08'      # 2026-11-07: 'christmas animation' arama medyanı şimdiden 124K → erken başla
 for _k in ('snowman', 'fireplace', 'scarf'):
     GAGS['p_' + _k]['months'] = (11, 12, 1, 2)
 GAGS['p_turkey']['months'] = (11,)
