@@ -2925,6 +2925,22 @@
       ],
       "room": "living",
       "seed": 855880
+    },
+    {
+      "id": "04-54JVRWqo",
+      "date": "2026-11-07 14:19",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Holiday Guests & Playing Cards) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "biscuit",
+      "gags": [
+        "p_guests",
+        "p_cards"
+      ],
+      "room": "bathroom",
+      "seed": 236414
     }
   ]
 }
