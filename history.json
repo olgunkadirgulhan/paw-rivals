@@ -3071,6 +3071,22 @@
       ],
       "room": "bedroom",
       "seed": 268661
+    },
+    {
+      "id": "fud5j-PBd8k",
+      "date": "2026-11-08 21:19",
+      "kind": "short",
+      "title": "Cats vs Dogs: Bath & Crayons Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "ace",
+      "gags": [
+        "bath",
+        "p_crayons"
+      ],
+      "room": "cafe",
+      "seed": 235582
     }
   ]
 }
