@@ -3055,6 +3055,22 @@
       ],
       "room": "greenhouse",
       "seed": 653360
+    },
+    {
+      "id": "dU8dynZMCss",
+      "date": "2026-11-08 19:19",
+      "kind": "short",
+      "title": "Cats vs Dogs: Mirror & Hanger Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "domino",
+      "gags": [
+        "mirror",
+        "p_hanger"
+      ],
+      "room": "bedroom",
+      "seed": 268661
     }
   ]
 }
