@@ -3038,6 +3038,23 @@
       ],
       "room": "studio",
       "seed": 926504
+    },
+    {
+      "id": "wVMvH-M1rOg",
+      "date": "2026-11-08 18:21",
+      "kind": "short",
+      "title": "Cat vs Dog: Scarf & Vacuum 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "husky",
+      "gags": [
+        "p_scarf",
+        "vacuum",
+        "p_flashlight"
+      ],
+      "room": "greenhouse",
+      "seed": 653360
     }
   ]
 }
