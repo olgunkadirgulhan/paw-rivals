@@ -3022,6 +3022,22 @@
       ],
       "room": "bathroom",
       "seed": 278024
+    },
+    {
+      "id": "ZY_UtWx_B_4",
+      "date": "2026-11-08 16:20",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? Fireworks & Traffic Cone 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "domino",
+      "gags": [
+        "p_fireworks",
+        "p_trafficcone"
+      ],
+      "room": "studio",
+      "seed": 926504
     }
   ]
 }
