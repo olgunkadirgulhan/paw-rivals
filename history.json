@@ -3006,6 +3006,22 @@
       ],
       "room": "hotel",
       "seed": 578487
+    },
+    {
+      "id": "fU8Hy0helSM",
+      "date": "2026-11-08 14:19",
+      "kind": "short",
+      "title": "Goldfish & Cardboard Tube: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "pepper",
+      "gags": [
+        "fish",
+        "p_tube"
+      ],
+      "room": "bathroom",
+      "seed": 278024
     }
   ]
 }
