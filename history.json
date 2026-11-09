@@ -3248,6 +3248,22 @@
       ],
       "room": "bathroom",
       "seed": 796115
+    },
+    {
+      "id": "eoJky-zqPTk",
+      "date": "2026-11-09 21:20",
+      "kind": "short",
+      "title": "Cat vs Dog: Stocking & Thermos 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "goldie",
+      "gags": [
+        "p_stocking",
+        "p_thermos"
+      ],
+      "room": "diner",
+      "seed": 850743
     }
   ]
 }
