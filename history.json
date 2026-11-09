@@ -3199,6 +3199,22 @@
       ],
       "room": "bedroom",
       "seed": 575157
+    },
+    {
+      "id": "n6DKvUj5Etg",
+      "date": "2026-11-09 16:19",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Pet Carrier & Suitcase 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "bruno",
+      "gags": [
+        "p_carrier",
+        "p_suitcase"
+      ],
+      "room": "hotel",
+      "seed": 209338
     }
   ]
 }
