@@ -3232,6 +3232,22 @@
       ],
       "room": "library",
       "seed": 797499
+    },
+    {
+      "id": "gOlDx3JKa1E",
+      "date": "2026-11-09 20:21",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Mirror & Calculator) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "cloud",
+      "gags": [
+        "mirror",
+        "p_calculator"
+      ],
+      "room": "bathroom",
+      "seed": 796115
     }
   ]
 }
