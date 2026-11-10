@@ -3264,6 +3264,22 @@
       ],
       "room": "diner",
       "seed": 850743
+    },
+    {
+      "id": "sPhx7vTAulg",
+      "date": "2026-11-10 14:19",
+      "kind": "short",
+      "title": "Milo vs Koda: Who Handled Holiday Guests & Necktie Better? 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "husky",
+      "gags": [
+        "p_guests",
+        "p_necktie"
+      ],
+      "room": "library",
+      "seed": 75913
     }
   ]
 }
