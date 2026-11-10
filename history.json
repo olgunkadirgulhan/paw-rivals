@@ -3329,6 +3329,22 @@
       ],
       "room": "library",
       "seed": 406833
+    },
+    {
+      "id": "IkAuBuBEthM",
+      "date": "2026-11-10 21:20",
+      "kind": "short",
+      "title": "CAT vs DOG (Scarf & Burger) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "pepper",
+      "gags": [
+        "p_scarf",
+        "p_burger"
+      ],
+      "room": "garage",
+      "seed": 336364
     }
   ]
 }
