@@ -3313,6 +3313,22 @@
       ],
       "room": "bedroom",
       "seed": 990360
+    },
+    {
+      "id": "Bw9fft7opyc",
+      "date": "2026-11-10 19:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: First Snow & Christmas Lights 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "domino",
+      "gags": [
+        "p_snow",
+        "p_xmaslights"
+      ],
+      "room": "library",
+      "seed": 406833
     }
   ]
 }
