@@ -3280,6 +3280,23 @@
       ],
       "room": "library",
       "seed": 75913
+    },
+    {
+      "id": "fnG6AFytycY",
+      "date": "2026-11-10 16:21",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Goldfish & Laser 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "teddy",
+      "gags": [
+        "fish",
+        "laser",
+        "p_stapler"
+      ],
+      "room": "studio",
+      "seed": 115026
     }
   ]
 }
