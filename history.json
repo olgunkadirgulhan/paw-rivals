@@ -3297,6 +3297,22 @@
       ],
       "room": "studio",
       "seed": 115026
+    },
+    {
+      "id": "f7QN4fTv_E4",
+      "date": "2026-11-10 18:21",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Mirror & Sandal 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "ace",
+      "gags": [
+        "mirror",
+        "p_sandal"
+      ],
+      "room": "bedroom",
+      "seed": 990360
     }
   ]
 }
