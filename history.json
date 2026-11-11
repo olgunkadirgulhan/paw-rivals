@@ -3345,6 +3345,23 @@
       ],
       "room": "garage",
       "seed": 336364
+    },
+    {
+      "id": "qQnaHtxCr0U",
+      "date": "2026-11-11 14:21",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Glass & Lamp) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "cloud",
+      "gags": [
+        "cup",
+        "p_lamp",
+        "p_fishbowl"
+      ],
+      "room": "library",
+      "seed": 300855
     }
   ]
 }
