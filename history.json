@@ -3395,6 +3395,22 @@
       ],
       "room": "office",
       "seed": 463895
+    },
+    {
+      "id": "E6xko4GH3kU",
+      "date": "2026-11-11 19:20",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Ornament & Soccer Ball 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "teddy",
+      "gags": [
+        "p_ornament",
+        "p_soccer"
+      ],
+      "room": "studio",
+      "seed": 526394
     }
   ]
 }
