@@ -3411,6 +3411,23 @@
       ],
       "room": "studio",
       "seed": 526394
+    },
+    {
+      "id": "-h7AStdjHj4",
+      "date": "2026-11-11 21:20",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? Cookies for Santa & Fishbowl 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "corgi",
+      "gags": [
+        "p_santacookies",
+        "p_fishbowl",
+        "p_plant"
+      ],
+      "room": "kitchen",
+      "seed": 643981
     }
   ]
 }
