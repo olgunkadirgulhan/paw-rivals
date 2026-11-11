@@ -3362,6 +3362,22 @@
       ],
       "room": "library",
       "seed": 300855
+    },
+    {
+      "id": "64oCp84ryfI",
+      "date": "2026-11-11 16:19",
+      "kind": "short",
+      "title": "Team Ginger or Team Domino? Goldfish & Phone 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "domino",
+      "gags": [
+        "fish",
+        "p_phone2"
+      ],
+      "room": "hotel",
+      "seed": 698364
     }
   ]
 }
