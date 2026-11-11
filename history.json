@@ -3378,6 +3378,23 @@
       ],
       "room": "hotel",
       "seed": 698364
+    },
+    {
+      "id": "A1dtCEhNuOc",
+      "date": "2026-11-11 18:22",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Thunder & Marbles) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "corgi",
+      "gags": [
+        "thunder",
+        "p_marbles",
+        "p_speaker"
+      ],
+      "room": "office",
+      "seed": 463895
     }
   ]
 }
