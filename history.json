@@ -3476,6 +3476,23 @@
       ],
       "room": "diner",
       "seed": 688753
+    },
+    {
+      "id": "dRcIhYXKtmw",
+      "date": "2026-11-12 19:22",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Stocking & Water Bottle) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "ace",
+      "gags": [
+        "p_stocking",
+        "p_bottle",
+        "p_blender"
+      ],
+      "room": "garage",
+      "seed": 922461
     }
   ]
 }
