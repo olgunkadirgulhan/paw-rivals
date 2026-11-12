@@ -3493,6 +3493,24 @@
       ],
       "room": "garage",
       "seed": 922461
+    },
+    {
+      "id": "wMJAXx-2Rog",
+      "date": "2026-11-12 21:11",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Scarf & Trumpet 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "corgi",
+      "gags": [
+        "p_scarf",
+        "p_trumpet",
+        "doorbell",
+        "p_tape"
+      ],
+      "room": "living",
+      "seed": 537355
     }
   ]
 }
