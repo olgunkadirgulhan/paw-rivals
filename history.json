@@ -3428,6 +3428,22 @@
       ],
       "room": "kitchen",
       "seed": 643981
+    },
+    {
+      "id": "HOWQOYlGqIs",
+      "date": "2026-11-12 14:19",
+      "kind": "short",
+      "title": "Ugly Sweater & Present: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "biscuit",
+      "gags": [
+        "p_uglysweater",
+        "p_present"
+      ],
+      "room": "office",
+      "seed": 225788
     }
   ]
 }
