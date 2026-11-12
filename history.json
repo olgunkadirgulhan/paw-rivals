@@ -3444,6 +3444,22 @@
       ],
       "room": "office",
       "seed": 225788
+    },
+    {
+      "id": "OJpczdzyKfs",
+      "date": "2026-11-12 16:20",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Nail Clippers & Toy Tent 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "bruno",
+      "gags": [
+        "p_nails",
+        "p_tent"
+      ],
+      "room": "greenhouse",
+      "seed": 863513
     }
   ]
 }
