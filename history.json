@@ -3460,6 +3460,22 @@
       ],
       "room": "greenhouse",
       "seed": 863513
+    },
+    {
+      "id": "vDjhzJiRxhQ",
+      "date": "2026-11-12 18:20",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Mail & Boomerang 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "beagle",
+      "gags": [
+        "mail",
+        "p_boomerang"
+      ],
+      "room": "diner",
+      "seed": 688753
     }
   ]
 }
