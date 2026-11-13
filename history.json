@@ -3545,6 +3545,24 @@
       ],
       "room": "cafe",
       "seed": 840245
+    },
+    {
+      "id": "rxDWEyOn4sc",
+      "date": "2026-11-13 18:20",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Wrapping Paper & Tambourine 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "husky",
+      "gags": [
+        "p_wrapping",
+        "p_tambourine",
+        "p_lamp",
+        "bath"
+      ],
+      "room": "library",
+      "seed": 605603
     }
   ]
 }
