@@ -3528,6 +3528,23 @@
       ],
       "room": "bathroom",
       "seed": 209709
+    },
+    {
+      "id": "-p-9nDwCWcA",
+      "date": "2026-11-13 16:22",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (New Bed & Calculator) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "goldie",
+      "gags": [
+        "bed",
+        "p_calculator",
+        "p_snowglobe"
+      ],
+      "room": "cafe",
+      "seed": 840245
     }
   ]
 }
