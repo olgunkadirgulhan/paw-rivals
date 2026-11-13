@@ -3563,6 +3563,22 @@
       ],
       "room": "library",
       "seed": 605603
+    },
+    {
+      "id": "uWBcgZkUPwI",
+      "date": "2026-11-13 19:20",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Box & Golf Ball) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "cloud",
+      "gags": [
+        "box",
+        "p_golfball"
+      ],
+      "room": "cafe",
+      "seed": 452879
     }
   ]
 }
