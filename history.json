@@ -3579,6 +3579,22 @@
       ],
       "room": "cafe",
       "seed": 452879
+    },
+    {
+      "id": "MZgvkWdPjSs",
+      "date": "2026-11-13 21:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Christmas Lights & Vacuum 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "biscuit",
+      "gags": [
+        "p_xmaslights",
+        "vacuum"
+      ],
+      "room": "hotel",
+      "seed": 706567
     }
   ]
 }
