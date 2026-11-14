@@ -3612,6 +3612,22 @@
       ],
       "room": "library",
       "seed": 104406
+    },
+    {
+      "id": "56w699BfqOI",
+      "date": "2026-11-14 17:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Mirror & Glove 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "teddy",
+      "gags": [
+        "mirror",
+        "p_glove"
+      ],
+      "room": "bathroom",
+      "seed": 599088
     }
   ]
 }
