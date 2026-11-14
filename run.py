@@ -134,6 +134,13 @@ HEROES = ('thunder', 'bed', 'bath', 'cucumber', 'vacuum', 'laser', 'food', 'cup'
 def hero_pool(pool, gperf, recent):
     """kanıtlanmış klasikler + kendi verisinde ortalaması 40K'yı geçen durumlar + yeni klasik tetikleyiciler (havai fişek, veteriner…)"""
     proven = set(HEROES) | {k for k, v in gperf.items() if v >= 40000}
+    # 2026-11-14 ölçüm (2-12 günlük Shorts): yılbaşı şakasıyla açılanlar medyan 2.9K, klasik açılış 5.4K
+    # (süpürge ~20K, lazer/bardak/yatak/kapı zili 8-13K). Yılbaşı aramaları Aralık'ta zirve → 10 Aralık'a kadar
+    # yılbaşı/kış şakaları açılışa (başlığa) girmez, videonun içinde kalır.
+    holiday = {'p_' + r[0] for r in getattr(paws, 'PROWS5', [])} | {'p_snowglobe', 'p_snow', 'p_snowball'}
+    if datetime.now(timezone.utc).strftime('%m-%d') < '12-10' and datetime.now(timezone.utc).month >= 11:
+        proven -= holiday
+        return [k for k in pool if (k in proven or (k in paws.CLASSIC_NEW and k not in holiday)) and k not in recent]
     return [k for k in pool if (k in proven or k in paws.CLASSIC_NEW) and k not in recent]
 
 
