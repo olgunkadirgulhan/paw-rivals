@@ -3645,6 +3645,23 @@
       ],
       "room": "library",
       "seed": 861573
+    },
+    {
+      "id": "8ULZZY6s2vw",
+      "date": "2026-11-14 19:19",
+      "kind": "short",
+      "title": "Smokey the Cat vs Ace the Dog: Glass & Pizza Slice 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "ace",
+      "gags": [
+        "cup",
+        "p_pizza",
+        "p_tent"
+      ],
+      "room": "bedroom",
+      "seed": 32911
     }
   ]
 }
