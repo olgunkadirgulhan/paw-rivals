@@ -3628,6 +3628,23 @@
       ],
       "room": "bathroom",
       "seed": 599088
+    },
+    {
+      "id": "zUC8qAJ0wm0",
+      "date": "2026-11-14 18:19",
+      "kind": "short",
+      "title": "Which Pet Wins? Laser & Homework 🏆",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "domino",
+      "gags": [
+        "laser",
+        "p_homework",
+        "p_laptop"
+      ],
+      "room": "library",
+      "seed": 861573
     }
   ]
 }
