@@ -34,7 +34,7 @@ jobs:
       - id: g
         env:
           LOG_FILE: history.json
-          SLOTS: "14:00,17:00,18:00,19:00,19:45"   # 2026-11-14: 2-12 günlük veri: yayın 18-20 UTC medyan 6.4-12K, 16 UTC 2.6K, 21 UTC 2.3K → zayıf iki slot 17-20 UTCye
+          SLOTS: "14:00,16:30,17:30,18:30,19:30"   # tetik her saat :41 → yayın ~15,17,18,19,20 UTC. 2026-11-14: 2-12 günlük veri: yayın 18-20 UTC medyan 6.4-12K, 16 UTC 2.6K, 21 UTC 2.3K → zayıf iki slot 17-20 UTCye
           HAS_YT: ${{ secrets.YT_REFRESH_TOKEN != '' }}
         # kanal bağlanana kadar zamanlı üretim yok (yoksa her saat boşuna render olur)
         run: |
