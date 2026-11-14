@@ -3595,6 +3595,23 @@
       ],
       "room": "hotel",
       "seed": 706567
+    },
+    {
+      "id": "dQf0Pagr3SY",
+      "date": "2026-11-14 14:20",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Vet Visit & Raincoat) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "cloud",
+      "gags": [
+        "p_vet",
+        "p_raincoat",
+        "p_puzzle"
+      ],
+      "room": "library",
+      "seed": 104406
     }
   ]
 }
