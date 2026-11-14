@@ -3662,6 +3662,22 @@
       ],
       "room": "bedroom",
       "seed": 32911
+    },
+    {
+      "id": "wO_qqE4AQ70",
+      "date": "2026-11-14 20:19",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to Thunder & Gumball 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "beagle",
+      "gags": [
+        "thunder",
+        "p_gumball"
+      ],
+      "room": "studio",
+      "seed": 987075
     }
   ]
 }
