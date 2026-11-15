@@ -3695,6 +3695,22 @@
       ],
       "room": "bedroom",
       "seed": 451660
+    },
+    {
+      "id": "_Z1yQBfvgO0",
+      "date": "2026-11-15 17:19",
+      "kind": "short",
+      "title": "How Cats vs Dogs React to New Bed & Globe 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "domino",
+      "gags": [
+        "bed",
+        "p_globe"
+      ],
+      "room": "garage",
+      "seed": 935723
     }
   ]
 }
