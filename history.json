@@ -3745,6 +3745,22 @@
       ],
       "room": "studio",
       "seed": 510256
+    },
+    {
+      "id": "ILJ7ZuU-N7g",
+      "date": "2026-11-15 20:20",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Vet Visit & Umbrella 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "biscuit",
+      "gags": [
+        "p_vet",
+        "p_umbrella"
+      ],
+      "room": "kitchen",
+      "seed": 190685
     }
   ]
 }
