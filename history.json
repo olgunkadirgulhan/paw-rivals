@@ -3678,6 +3678,23 @@
       ],
       "room": "studio",
       "seed": 987075
+    },
+    {
+      "id": "vPoIQN3heXg",
+      "date": "2026-11-15 14:21",
+      "kind": "short",
+      "title": "Team Ginger or Team Bruno? Vacuum & Tambourine 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "bruno",
+      "gags": [
+        "vacuum",
+        "p_tambourine",
+        "p_fan"
+      ],
+      "room": "bedroom",
+      "seed": 451660
     }
   ]
 }
