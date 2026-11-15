@@ -3729,6 +3729,22 @@
       ],
       "room": "bedroom",
       "seed": 226058
+    },
+    {
+      "id": "I7KHh39NDmM",
+      "date": "2026-11-15 19:19",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Box & Milk Carton 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "cloud",
+      "gags": [
+        "box",
+        "p_milk"
+      ],
+      "room": "studio",
+      "seed": 510256
     }
   ]
 }
