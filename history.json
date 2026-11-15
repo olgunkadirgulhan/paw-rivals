@@ -3711,6 +3711,24 @@
       ],
       "room": "garage",
       "seed": 935723
+    },
+    {
+      "id": "jDw0Tf65j5Q",
+      "date": "2026-11-15 18:23",
+      "kind": "short",
+      "title": "Team Pumpkin or Team Max? Goldfish & Sunflower 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "max",
+      "gags": [
+        "fish",
+        "p_sunflower",
+        "p_burger",
+        "p_raincoat"
+      ],
+      "room": "bedroom",
+      "seed": 226058
     }
   ]
 }
