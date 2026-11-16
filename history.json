@@ -3857,6 +3857,22 @@
         }
       ],
       "kurgu": "matchups"
+    },
+    {
+      "id": "7Rhv5jYxWRY",
+      "date": "2026-11-16 14:20",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Birthday Cake & Yoga Mat 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "shiba",
+      "gags": [
+        "cake",
+        "p_yogamat"
+      ],
+      "room": "living",
+      "seed": 589846
     }
   ]
 }
