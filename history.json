@@ -3761,6 +3761,102 @@
       ],
       "room": "kitchen",
       "seed": 190685
+    },
+    {
+      "id": "kket2AvHK-E",
+      "date": "2026-11-16 01:06",
+      "kind": "episode",
+      "title": "Cat vs Dog: WHEN YOU FLIP PANCAKES, WHEN YOU BAKE COOKIES, WHEN YOU TAKE OUT THE TRASH & More 🐱🐶 | P",
+      "privacy": "public",
+      "items": [
+        [
+          "p_spatula"
+        ],
+        [
+          "p_rollingpin"
+        ],
+        [
+          "p_trashcan"
+        ],
+        [
+          "p_iron"
+        ],
+        [
+          "p_sweater"
+        ],
+        [
+          "p_sunhat"
+        ],
+        [
+          "p_magicwand"
+        ],
+        [
+          "p_sponge"
+        ],
+        [
+          "p_toothbrush"
+        ],
+        [
+          "p_comb"
+        ],
+        [
+          "p_nightlight"
+        ],
+        [
+          "p_roses"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "patches",
+          "dog": "max",
+          "gags": [
+            "p_spatula",
+            "p_rollingpin",
+            "p_trashcan"
+          ],
+          "room": "diner",
+          "seed": 853092
+        },
+        {
+          "format": "catdog",
+          "cat": "milo",
+          "dog": "cloud",
+          "gags": [
+            "p_iron",
+            "p_sweater",
+            "p_sunhat"
+          ],
+          "room": "library",
+          "seed": 91504
+        },
+        {
+          "format": "catdog",
+          "cat": "shadow",
+          "dog": "pepper",
+          "gags": [
+            "p_magicwand",
+            "p_sponge",
+            "p_toothbrush"
+          ],
+          "room": "hotel",
+          "seed": 240984
+        },
+        {
+          "format": "catdog",
+          "cat": "milo",
+          "dog": "shiba",
+          "gags": [
+            "p_comb",
+            "p_nightlight",
+            "p_roses"
+          ],
+          "room": "bathroom",
+          "seed": 677714
+        }
+      ],
+      "kurgu": "matchups"
     }
   ]
 }
