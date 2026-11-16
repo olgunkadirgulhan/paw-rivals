@@ -3907,6 +3907,22 @@
       ],
       "room": "greenhouse",
       "seed": 99055
+    },
+    {
+      "id": "m08Jq6kjA3g",
+      "date": "2026-11-16 19:19",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Dinner & Basketball 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "goldie",
+      "gags": [
+        "food",
+        "p_basketball"
+      ],
+      "room": "office",
+      "seed": 71430
     }
   ]
 }
