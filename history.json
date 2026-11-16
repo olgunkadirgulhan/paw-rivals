@@ -3923,6 +3923,23 @@
       ],
       "room": "office",
       "seed": 71430
+    },
+    {
+      "id": "AAyQ89z8MYc",
+      "date": "2026-11-16 20:19",
+      "kind": "short",
+      "title": "Cats vs Dogs: Doorbell & Headphones Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "beagle",
+      "gags": [
+        "doorbell",
+        "p_headphones",
+        "p_laptop"
+      ],
+      "room": "greenhouse",
+      "seed": 968986
     }
   ]
 }
