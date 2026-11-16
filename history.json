@@ -3873,6 +3873,23 @@
       ],
       "room": "living",
       "seed": 589846
+    },
+    {
+      "id": "_uBfA3LGMqo",
+      "date": "2026-11-16 17:21",
+      "kind": "short",
+      "title": "Team Luna or Team Max? Mail & Sponge 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "max",
+      "gags": [
+        "mail",
+        "p_sponge",
+        "p_carrier"
+      ],
+      "room": "bathroom",
+      "seed": 279060
     }
   ]
 }
