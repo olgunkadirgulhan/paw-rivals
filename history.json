@@ -3890,6 +3890,23 @@
       ],
       "room": "bathroom",
       "seed": 279060
+    },
+    {
+      "id": "wmXfo_mZGtY",
+      "date": "2026-11-16 18:20",
+      "kind": "short",
+      "title": "Nala the Cat vs Cloud the Dog: Thunder & Pickle Jar 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "cloud",
+      "gags": [
+        "thunder",
+        "p_picklejar",
+        "p_mug"
+      ],
+      "room": "greenhouse",
+      "seed": 99055
     }
   ]
 }
