@@ -4005,6 +4005,22 @@
       ],
       "room": "diner",
       "seed": 713572
+    },
+    {
+      "id": "lZCx-usvCNk",
+      "date": "2026-11-17 20:19",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Birthday Cake & Paint Brush) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "ace",
+      "gags": [
+        "cake",
+        "p_paintbrush"
+      ],
+      "room": "bedroom",
+      "seed": 956452
     }
   ]
 }
