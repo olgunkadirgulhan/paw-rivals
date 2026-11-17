@@ -3940,6 +3940,23 @@
       ],
       "room": "greenhouse",
       "seed": 968986
+    },
+    {
+      "id": "QLbjYZm1P8g",
+      "date": "2026-11-17 14:20",
+      "kind": "short",
+      "title": "Mochi vs Koda: Who Handled Thunder & Sunflower Better? 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "husky",
+      "gags": [
+        "thunder",
+        "p_sunflower",
+        "p_teddy"
+      ],
+      "room": "bedroom",
+      "seed": 725586
     }
   ]
 }
