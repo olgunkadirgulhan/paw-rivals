@@ -3973,6 +3973,22 @@
       ],
       "room": "garage",
       "seed": 7056
+    },
+    {
+      "id": "wGjFp3EtMDU",
+      "date": "2026-11-17 18:20",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Vet Visit & Lunchbox) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "ace",
+      "gags": [
+        "p_vet",
+        "p_lunchbox"
+      ],
+      "room": "bedroom",
+      "seed": 729503
     }
   ]
 }
