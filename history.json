@@ -3989,6 +3989,22 @@
       ],
       "room": "bedroom",
       "seed": 729503
+    },
+    {
+      "id": "puvq-KGbk1w",
+      "date": "2026-11-17 19:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Glass & Hair Dryer 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "max",
+      "gags": [
+        "cup",
+        "p_hairdryer"
+      ],
+      "room": "diner",
+      "seed": 713572
     }
   ]
 }
