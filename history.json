@@ -3957,6 +3957,22 @@
       ],
       "room": "bedroom",
       "seed": 725586
+    },
+    {
+      "id": "XFeF2z0JnRk",
+      "date": "2026-11-17 17:19",
+      "kind": "short",
+      "title": "Cat vs Dog: Goldfish & Scarf 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "goldie",
+      "gags": [
+        "fish",
+        "p_scarf"
+      ],
+      "room": "garage",
+      "seed": 7056
     }
   ]
 }
