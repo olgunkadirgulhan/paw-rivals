@@ -4021,6 +4021,23 @@
       ],
       "room": "bedroom",
       "seed": 956452
+    },
+    {
+      "id": "dbNaIOJwM8Q",
+      "date": "2026-11-18 14:21",
+      "kind": "short",
+      "title": "Cats vs Dogs: Mail & Umbrella Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "max",
+      "gags": [
+        "mail",
+        "p_umbrella",
+        "p_picklejar"
+      ],
+      "room": "office",
+      "seed": 906473
     }
   ]
 }
