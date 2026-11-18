@@ -4089,6 +4089,24 @@
       ],
       "room": "diner",
       "seed": 434005
+    },
+    {
+      "id": "LqdldsP4hb0",
+      "date": "2026-11-18 20:21",
+      "kind": "short",
+      "title": "Cat vs Dog: Doorbell & Traffic Cone 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "cloud",
+      "gags": [
+        "doorbell",
+        "p_trafficcone",
+        "p_scarf",
+        "p_cupcake"
+      ],
+      "room": "studio",
+      "seed": 371466
     }
   ]
 }
