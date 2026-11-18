@@ -4038,6 +4038,23 @@
       ],
       "room": "office",
       "seed": 906473
+    },
+    {
+      "id": "UNPDQQS3eyc",
+      "date": "2026-11-18 17:21",
+      "kind": "short",
+      "title": "CAT vs DOG (Vacuum & Tambourine) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "pepper",
+      "gags": [
+        "vacuum",
+        "p_tambourine",
+        "p_gingerbread"
+      ],
+      "room": "diner",
+      "seed": 820284
     }
   ]
 }
