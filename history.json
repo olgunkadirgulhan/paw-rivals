@@ -4055,6 +4055,24 @@
       ],
       "room": "diner",
       "seed": 820284
+    },
+    {
+      "id": "584UXjjIxYo",
+      "date": "2026-11-18 18:21",
+      "kind": "short",
+      "title": "Bath & Marker: Cat vs Dog 🐶🐱",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "max",
+      "gags": [
+        "bath",
+        "p_marker",
+        "p_sweater",
+        "p_santahat"
+      ],
+      "room": "living",
+      "seed": 423904
     }
   ]
 }
