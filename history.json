@@ -4073,6 +4073,22 @@
       ],
       "room": "living",
       "seed": 423904
+    },
+    {
+      "id": "gNuySeK-OFk",
+      "date": "2026-11-18 19:19",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Thunder & Ugly Sweater) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "beagle",
+      "gags": [
+        "thunder",
+        "p_uglysweater"
+      ],
+      "room": "diner",
+      "seed": 434005
     }
   ]
 }
