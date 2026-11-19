@@ -4173,6 +4173,22 @@
       ],
       "room": "living",
       "seed": 972072
+    },
+    {
+      "id": "2i_GuXkDpDs",
+      "date": "2026-11-19 20:19",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Box & Lamp 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "tux",
+      "dog": "corgi",
+      "gags": [
+        "box",
+        "p_lamp"
+      ],
+      "room": "library",
+      "seed": 929043
     }
   ]
 }
