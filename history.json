@@ -4140,6 +4140,22 @@
       ],
       "room": "kitchen",
       "seed": 607134
+    },
+    {
+      "id": "yy8b2_KsW4M",
+      "date": "2026-11-19 18:20",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Bath & Sleeping Bag) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "beagle",
+      "gags": [
+        "bath",
+        "p_sleepingbag"
+      ],
+      "room": "greenhouse",
+      "seed": 262117
     }
   ]
 }
