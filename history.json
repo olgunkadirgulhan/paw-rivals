@@ -4107,6 +4107,22 @@
       ],
       "room": "studio",
       "seed": 371466
+    },
+    {
+      "id": "seFvdSlauJ0",
+      "date": "2026-11-19 14:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Laser & Suitcase 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "goldie",
+      "gags": [
+        "laser",
+        "p_suitcase"
+      ],
+      "room": "greenhouse",
+      "seed": 365833
     }
   ]
 }
