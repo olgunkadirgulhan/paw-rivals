@@ -4123,6 +4123,23 @@
       ],
       "room": "greenhouse",
       "seed": 365833
+    },
+    {
+      "id": "7nAUX6oyFYA",
+      "date": "2026-11-19 17:20",
+      "kind": "short",
+      "title": "Which Pet Wins? Fireworks & Birthday Cake 🏆",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "domino",
+      "gags": [
+        "p_fireworks",
+        "cake",
+        "p_wateringcan"
+      ],
+      "room": "kitchen",
+      "seed": 607134
     }
   ]
 }
