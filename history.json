@@ -4156,6 +4156,23 @@
       ],
       "room": "greenhouse",
       "seed": 262117
+    },
+    {
+      "id": "7CjgIZy6SKw",
+      "date": "2026-11-19 19:20",
+      "kind": "short",
+      "title": "Cats vs Dogs: New Bed & Catnip Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "husky",
+      "gags": [
+        "bed",
+        "p_catnip",
+        "p_carrier"
+      ],
+      "room": "living",
+      "seed": 972072
     }
   ]
 }
