@@ -4254,6 +4254,23 @@
       ],
       "room": "hotel",
       "seed": 166573
+    },
+    {
+      "id": "VRQNVfg336c",
+      "date": "2026-11-20 20:21",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Goldfish & Frying Pan 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "pepper",
+      "gags": [
+        "fish",
+        "p_pan",
+        "p_roses"
+      ],
+      "room": "greenhouse",
+      "seed": 319897
     }
   ]
 }
