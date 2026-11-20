@@ -4221,6 +4221,23 @@
       ],
       "room": "cafe",
       "seed": 35762
+    },
+    {
+      "id": "1AY1HnmRr4o",
+      "date": "2026-11-20 18:20",
+      "kind": "short",
+      "title": "Cat vs Dog: Vet Visit & Sunflower 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "husky",
+      "gags": [
+        "p_vet",
+        "p_sunflower",
+        "p_xmastree"
+      ],
+      "room": "library",
+      "seed": 67405
     }
   ]
 }
