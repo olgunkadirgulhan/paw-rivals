@@ -4205,6 +4205,22 @@
       ],
       "room": "office",
       "seed": 794283
+    },
+    {
+      "id": "nx4-F2BiItU",
+      "date": "2026-11-20 17:20",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Mirror & Burger 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "corgi",
+      "gags": [
+        "mirror",
+        "p_burger"
+      ],
+      "room": "cafe",
+      "seed": 35762
     }
   ]
 }
