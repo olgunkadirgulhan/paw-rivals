@@ -4189,6 +4189,22 @@
       ],
       "room": "library",
       "seed": 929043
+    },
+    {
+      "id": "YcRnlLl2h6M",
+      "date": "2026-11-20 14:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Vacuum & Candy Cane 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "patches",
+      "dog": "ace",
+      "gags": [
+        "vacuum",
+        "p_candycane"
+      ],
+      "room": "office",
+      "seed": 794283
     }
   ]
 }
