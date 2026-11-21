@@ -4287,6 +4287,24 @@
       ],
       "room": "bedroom",
       "seed": 403905
+    },
+    {
+      "id": "cWKmEbsBwlk",
+      "date": "2026-11-21 17:22",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Laser & Gingerbread House 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "choco",
+      "gags": [
+        "laser",
+        "p_gingerbread",
+        "p_gamepad",
+        "p_clipboard"
+      ],
+      "room": "hotel",
+      "seed": 277163
     }
   ]
 }
