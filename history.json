@@ -4339,6 +4339,24 @@
       ],
       "room": "bathroom",
       "seed": 292118
+    },
+    {
+      "id": "Jn4hofcqhRk",
+      "date": "2026-11-21 20:20",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Vacuum & Holiday Guests) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "ace",
+      "gags": [
+        "vacuum",
+        "p_guests",
+        "p_laptop",
+        "p_plant"
+      ],
+      "room": "cafe",
+      "seed": 705979
     }
   ]
 }
