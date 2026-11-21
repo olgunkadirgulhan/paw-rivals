@@ -4305,6 +4305,24 @@
       ],
       "room": "hotel",
       "seed": 277163
+    },
+    {
+      "id": "H6lOP6GdTpQ",
+      "date": "2026-11-21 18:21",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Thunder & Cactus) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "beagle",
+      "gags": [
+        "thunder",
+        "p_cactus",
+        "p_yogamat",
+        "p_pillow"
+      ],
+      "room": "library",
+      "seed": 438152
     }
   ]
 }
