@@ -4271,6 +4271,22 @@
       ],
       "room": "greenhouse",
       "seed": 319897
+    },
+    {
+      "id": "OMveGmF1jFw",
+      "date": "2026-11-21 14:19",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Box & Towel 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "goldie",
+      "gags": [
+        "box",
+        "p_towel"
+      ],
+      "room": "bedroom",
+      "seed": 403905
     }
   ]
 }
