@@ -4407,6 +4407,24 @@
       ],
       "room": "office",
       "seed": 275124
+    },
+    {
+      "id": "Wdi4bE29xDY",
+      "date": "2026-11-22 19:21",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Bath & Towel 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "choco",
+      "gags": [
+        "bath",
+        "p_towel",
+        "p_roses",
+        "cake"
+      ],
+      "room": "bedroom",
+      "seed": 697599
     }
   ]
 }
