@@ -4425,6 +4425,22 @@
       ],
       "room": "bedroom",
       "seed": 697599
+    },
+    {
+      "id": "rotrgWYckYs",
+      "date": "2026-11-22 20:20",
+      "kind": "short",
+      "title": "CAT vs DOG (Mail & Paper Bag) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "cloud",
+      "gags": [
+        "mail",
+        "p_paperbag"
+      ],
+      "room": "library",
+      "seed": 561115
     }
   ]
 }
