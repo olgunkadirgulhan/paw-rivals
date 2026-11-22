@@ -4357,6 +4357,24 @@
       ],
       "room": "cafe",
       "seed": 705979
+    },
+    {
+      "id": "ylg8hWUqLNU",
+      "date": "2026-11-22 14:20",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Box & Lemon 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "beagle",
+      "gags": [
+        "box",
+        "p_lemon",
+        "p_magicwand",
+        "p_bubbletea"
+      ],
+      "room": "greenhouse",
+      "seed": 554810
     }
   ]
 }
