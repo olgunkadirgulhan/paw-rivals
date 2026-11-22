@@ -4375,6 +4375,22 @@
       ],
       "room": "greenhouse",
       "seed": 554810
+    },
+    {
+      "id": "TWNsIdcGmJQ",
+      "date": "2026-11-22 17:21",
+      "kind": "short",
+      "title": "Cat vs Dog Reaction: Mirror & Alarm Clock 😳",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "max",
+      "gags": [
+        "mirror",
+        "p_clock"
+      ],
+      "room": "bathroom",
+      "seed": 760928
     }
   ]
 }
