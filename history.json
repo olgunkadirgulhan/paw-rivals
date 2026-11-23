@@ -4441,6 +4441,102 @@
       ],
       "room": "library",
       "seed": 561115
+    },
+    {
+      "id": "aZSGNQdh290",
+      "date": "2026-11-23 01:47",
+      "kind": "episode",
+      "title": "Sage vs Ace: Cat vs Dog Rivalry, 12 Rounds 🐱🐶 | Paw Rivals Ep 14",
+      "privacy": "public",
+      "items": [
+        [
+          "thunder"
+        ],
+        [
+          "p_gingerbread"
+        ],
+        [
+          "p_jacket"
+        ],
+        [
+          "cucumber"
+        ],
+        [
+          "p_dice"
+        ],
+        [
+          "p_hose"
+        ],
+        [
+          "p_fireworks"
+        ],
+        [
+          "doorbell"
+        ],
+        [
+          "p_burger"
+        ],
+        [
+          "p_bucket"
+        ],
+        [
+          "p_bubblewrap"
+        ],
+        [
+          "p_hulahoop"
+        ]
+      ],
+      "parts": [
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "ace",
+          "gags": [
+            "thunder",
+            "p_gingerbread",
+            "p_jacket"
+          ],
+          "room": "studio",
+          "seed": 661870
+        },
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "ace",
+          "gags": [
+            "cucumber",
+            "p_dice",
+            "p_hose"
+          ],
+          "room": "living",
+          "seed": 592942
+        },
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "ace",
+          "gags": [
+            "p_fireworks",
+            "doorbell",
+            "p_burger"
+          ],
+          "room": "bedroom",
+          "seed": 736478
+        },
+        {
+          "format": "catdog",
+          "cat": "sage",
+          "dog": "ace",
+          "gags": [
+            "p_bucket",
+            "p_bubblewrap",
+            "p_hulahoop"
+          ],
+          "room": "bathroom",
+          "seed": 33302
+        }
+      ],
+      "kurgu": "rivalry"
     }
   ]
 }
