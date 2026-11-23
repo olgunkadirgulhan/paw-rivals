@@ -4571,6 +4571,22 @@
       ],
       "room": "library",
       "seed": 89135
+    },
+    {
+      "id": "HTpIKj9gZ8A",
+      "date": "2026-11-23 18:19",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Doorbell & Suitcase 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "beagle",
+      "gags": [
+        "doorbell",
+        "p_suitcase"
+      ],
+      "room": "bathroom",
+      "seed": 504111
     }
   ]
 }
