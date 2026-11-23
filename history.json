@@ -4554,6 +4554,23 @@
       ],
       "room": "studio",
       "seed": 512186
+    },
+    {
+      "id": "09srY0jXqIU",
+      "date": "2026-11-23 17:21",
+      "kind": "short",
+      "title": "Team Shadow or Team Waffles? Thunder & Sled 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "shadow",
+      "dog": "corgi",
+      "gags": [
+        "thunder",
+        "p_sled",
+        "p_sunflower"
+      ],
+      "room": "library",
+      "seed": 89135
     }
   ]
 }
