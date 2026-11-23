@@ -4537,6 +4537,23 @@
         }
       ],
       "kurgu": "rivalry"
+    },
+    {
+      "id": "Ww0uh_4Za3A",
+      "date": "2026-11-23 14:20",
+      "kind": "short",
+      "title": "Mochi the Cat vs Koda the Dog: Box & Candy Cane 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "husky",
+      "gags": [
+        "box",
+        "p_candycane",
+        "p_lantern"
+      ],
+      "room": "studio",
+      "seed": 512186
     }
   ]
 }
