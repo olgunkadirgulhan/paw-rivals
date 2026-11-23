@@ -4587,6 +4587,22 @@
       ],
       "room": "bathroom",
       "seed": 504111
+    },
+    {
+      "id": "JRiHqT88C4M",
+      "date": "2026-11-23 19:19",
+      "kind": "short",
+      "title": "Which Pet Wins? Glass & Piggy Bank 🏆",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "ace",
+      "gags": [
+        "cup",
+        "p_piggybank"
+      ],
+      "room": "living",
+      "seed": 644522
     }
   ]
 }
