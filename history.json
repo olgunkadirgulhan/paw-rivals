@@ -4603,6 +4603,22 @@
       ],
       "room": "living",
       "seed": 644522
+    },
+    {
+      "id": "kKYE2BoGKXw",
+      "date": "2026-11-23 20:20",
+      "kind": "short",
+      "title": "Same Situation, Cat vs Dog: Box & Dinner 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "teddy",
+      "gags": [
+        "box",
+        "food"
+      ],
+      "room": "kitchen",
+      "seed": 628602
     }
   ]
 }
