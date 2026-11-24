@@ -4653,6 +4653,22 @@
       ],
       "room": "studio",
       "seed": 535984
+    },
+    {
+      "id": "H7PVPqwP0pM",
+      "date": "2026-11-24 18:20",
+      "kind": "short",
+      "title": "Pumpkin vs Kenji: Who Handled Birthday Cake & Toy Mouse Better? 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "shiba",
+      "gags": [
+        "cake",
+        "p_toymouse"
+      ],
+      "room": "living",
+      "seed": 575395
     }
   ]
 }
