@@ -4619,6 +4619,23 @@
       ],
       "room": "kitchen",
       "seed": 628602
+    },
+    {
+      "id": "6taSY4hTJM0",
+      "date": "2026-11-24 14:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Mail & Tissue Box 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "biscuit",
+      "gags": [
+        "mail",
+        "p_tissuebox",
+        "p_newspaper"
+      ],
+      "room": "diner",
+      "seed": 905865
     }
   ]
 }
