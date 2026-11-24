@@ -4669,6 +4669,23 @@
       ],
       "room": "living",
       "seed": 575395
+    },
+    {
+      "id": "IbhmmshzQL8",
+      "date": "2026-11-24 19:20",
+      "kind": "short",
+      "title": "Nala the Cat vs Domino the Dog: Vet Visit & Lemon 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "domino",
+      "gags": [
+        "p_vet",
+        "p_lemon",
+        "sunbeam"
+      ],
+      "room": "library",
+      "seed": 510769
     }
   ]
 }
