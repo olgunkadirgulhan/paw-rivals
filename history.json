@@ -4686,6 +4686,23 @@
       ],
       "room": "library",
       "seed": 510769
+    },
+    {
+      "id": "DXEXnkqyjHo",
+      "date": "2026-11-24 20:20",
+      "kind": "short",
+      "title": "Team Cat or Team Dog? Cucumber & Compass 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "choco",
+      "gags": [
+        "cucumber",
+        "p_compass",
+        "p_yogamat"
+      ],
+      "room": "living",
+      "seed": 839849
     }
   ]
 }
