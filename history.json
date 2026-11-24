@@ -4636,6 +4636,23 @@
       ],
       "room": "diner",
       "seed": 905865
+    },
+    {
+      "id": "LsCvjEDhGwo",
+      "date": "2026-11-24 17:19",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Glass & Pizza Box) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "corgi",
+      "gags": [
+        "cup",
+        "p_pizzabox",
+        "p_picklejar"
+      ],
+      "room": "studio",
+      "seed": 535984
     }
   ]
 }
