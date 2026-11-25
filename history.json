@@ -4719,6 +4719,23 @@
       ],
       "room": "greenhouse",
       "seed": 595233
+    },
+    {
+      "id": "tMRDkDObi6g",
+      "date": "2026-11-25 17:20",
+      "kind": "short",
+      "title": "CAT vs DOG (New Bed & Tiny Pine Tree) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "max",
+      "gags": [
+        "bed",
+        "p_pinetree",
+        "p_glasses"
+      ],
+      "room": "office",
+      "seed": 814494
     }
   ]
 }
