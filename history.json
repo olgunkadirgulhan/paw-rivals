@@ -4703,6 +4703,22 @@
       ],
       "room": "living",
       "seed": 839849
+    },
+    {
+      "id": "kbGAQ4_e3jE",
+      "date": "2026-11-25 14:20",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Thunder & Hot Dog) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "biscuit",
+      "gags": [
+        "thunder",
+        "p_hotdog"
+      ],
+      "room": "greenhouse",
+      "seed": 595233
     }
   ]
 }
