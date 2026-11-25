@@ -4736,6 +4736,22 @@
       ],
       "room": "office",
       "seed": 814494
+    },
+    {
+      "id": "apsy_-2ZzPM",
+      "date": "2026-11-25 18:20",
+      "kind": "short",
+      "title": "Cats vs Dogs: Mirror & Telescope Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "pumpkin",
+      "dog": "teddy",
+      "gags": [
+        "mirror",
+        "p_telescope"
+      ],
+      "room": "hotel",
+      "seed": 51091
     }
   ]
 }
