@@ -4752,6 +4752,22 @@
       ],
       "room": "hotel",
       "seed": 51091
+    },
+    {
+      "id": "0xlTRWzpODQ",
+      "date": "2026-11-25 19:20",
+      "kind": "short",
+      "title": "Cats vs Dogs: Mail & Birthday Cake Edition 😹",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "smokey",
+      "dog": "husky",
+      "gags": [
+        "mail",
+        "cake"
+      ],
+      "room": "studio",
+      "seed": 957611
     }
   ]
 }
