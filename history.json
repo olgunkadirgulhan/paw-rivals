@@ -4768,6 +4768,22 @@
       ],
       "room": "studio",
       "seed": 957611
+    },
+    {
+      "id": "08YrN07Cyo4",
+      "date": "2026-11-25 20:20",
+      "kind": "short",
+      "title": "Nala the Cat vs Rocky the Dog: Bath & Spatula 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "beagle",
+      "gags": [
+        "bath",
+        "p_spatula"
+      ],
+      "room": "living",
+      "seed": 205840
     }
   ]
 }
