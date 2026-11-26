@@ -4819,6 +4819,23 @@
       ],
       "room": "office",
       "seed": 488448
+    },
+    {
+      "id": "1UPxSdxwJMc",
+      "date": "2026-11-26 18:20",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Doorbell & Microphone) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "cloud",
+      "gags": [
+        "doorbell",
+        "p_microphone",
+        "p_beachball"
+      ],
+      "room": "cafe",
+      "seed": 267853
     }
   ]
 }
