@@ -4836,6 +4836,23 @@
       ],
       "room": "cafe",
       "seed": 267853
+    },
+    {
+      "id": "niNWEgLtFSM",
+      "date": "2026-11-26 19:20",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Glass & Globe) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "nala",
+      "dog": "husky",
+      "gags": [
+        "cup",
+        "p_globe",
+        "p_mango"
+      ],
+      "room": "bedroom",
+      "seed": 942081
     }
   ]
 }
