@@ -4801,6 +4801,24 @@
       ],
       "room": "studio",
       "seed": 301157
+    },
+    {
+      "id": "-ZYA9nPmkPI",
+      "date": "2026-11-26 17:21",
+      "kind": "short",
+      "title": "Cat vs Dog: Laser & Paper Plane 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "max",
+      "gags": [
+        "laser",
+        "p_paperplane",
+        "p_sunflower",
+        "p_picklejar"
+      ],
+      "room": "office",
+      "seed": 488448
     }
   ]
 }
