@@ -4853,6 +4853,23 @@
       ],
       "room": "bedroom",
       "seed": 942081
+    },
+    {
+      "id": "B_OWSnH2eZU",
+      "date": "2026-11-26 20:20",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Cucumber & Camera 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "goldie",
+      "gags": [
+        "cucumber",
+        "p_camera",
+        "p_hose"
+      ],
+      "room": "living",
+      "seed": 545069
     }
   ]
 }
