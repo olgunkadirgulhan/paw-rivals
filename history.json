@@ -4784,6 +4784,23 @@
       ],
       "room": "living",
       "seed": 205840
+    },
+    {
+      "id": "3Jccg2ZGeLk",
+      "date": "2026-11-26 14:20",
+      "kind": "short",
+      "title": "Luna the Cat vs Waffles the Dog: Vacuum & Umbrella 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "luna",
+      "dog": "corgi",
+      "gags": [
+        "vacuum",
+        "p_umbrella",
+        "p_tube"
+      ],
+      "room": "studio",
+      "seed": 301157
     }
   ]
 }
