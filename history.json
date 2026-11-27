@@ -4935,6 +4935,22 @@
       ],
       "room": "hotel",
       "seed": 716762
+    },
+    {
+      "id": "3LMua3Ae-20",
+      "date": "2026-11-27 20:20",
+      "kind": "short",
+      "title": "Team Cocoa or Team Pepper? Vacuum & Sushi 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "cocoa",
+      "dog": "pepper",
+      "gags": [
+        "vacuum",
+        "p_sushi"
+      ],
+      "room": "studio",
+      "seed": 88037
     }
   ]
 }
