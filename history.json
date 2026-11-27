@@ -4903,6 +4903,22 @@
       ],
       "room": "cafe",
       "seed": 188671
+    },
+    {
+      "id": "htm1AFBqpwA",
+      "date": "2026-11-27 18:19",
+      "kind": "short",
+      "title": "Which Pet Wins? Vet Visit & Bubble Wrap 🏆",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "sage",
+      "dog": "pepper",
+      "gags": [
+        "p_vet",
+        "p_bubblewrap"
+      ],
+      "room": "greenhouse",
+      "seed": 205653
     }
   ]
 }
