@@ -4870,6 +4870,22 @@
       ],
       "room": "living",
       "seed": 545069
+    },
+    {
+      "id": "pAsG-sRJRTk",
+      "date": "2026-11-27 14:19",
+      "kind": "short",
+      "title": "Team Milo or Team Ace? Thunder & Tissue Box 🤔",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "milo",
+      "dog": "ace",
+      "gags": [
+        "thunder",
+        "p_tissuebox"
+      ],
+      "room": "library",
+      "seed": 217963
     }
   ]
 }
