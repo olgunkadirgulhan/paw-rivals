@@ -4919,6 +4919,22 @@
       ],
       "room": "greenhouse",
       "seed": 205653
+    },
+    {
+      "id": "Mz4RIlFacxo",
+      "date": "2026-11-27 19:19",
+      "kind": "short",
+      "title": "POV: Your Cat vs Your Dog (Birthday Cake & Candy Cane) 🐾",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "bean",
+      "dog": "husky",
+      "gags": [
+        "cake",
+        "p_candycane"
+      ],
+      "room": "hotel",
+      "seed": 716762
     }
   ]
 }
