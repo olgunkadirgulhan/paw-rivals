@@ -4886,6 +4886,23 @@
       ],
       "room": "library",
       "seed": 217963
+    },
+    {
+      "id": "MpZNcClA46M",
+      "date": "2026-11-27 17:22",
+      "kind": "short",
+      "title": "CAT vs DOG (Bath & Whisk) 🐱🐶",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "mochi",
+      "dog": "shiba",
+      "gags": [
+        "bath",
+        "p_whisk",
+        "p_map"
+      ],
+      "room": "cafe",
+      "seed": 188671
     }
   ]
 }
