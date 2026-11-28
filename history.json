@@ -4951,6 +4951,24 @@
       ],
       "room": "studio",
       "seed": 88037
+    },
+    {
+      "id": "bXbfj7t30KA",
+      "date": "2026-11-28 14:21",
+      "kind": "short",
+      "title": "Cat Logic vs Dog Logic: Mirror & Bird Feeder 🤣",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "ginger",
+      "dog": "corgi",
+      "gags": [
+        "mirror",
+        "p_birdfeeder",
+        "p_maracas",
+        "p_crayons"
+      ],
+      "room": "office",
+      "seed": 360684
     }
   ]
 }
