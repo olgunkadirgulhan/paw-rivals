@@ -4969,6 +4969,22 @@
       ],
       "room": "office",
       "seed": 360684
+    },
+    {
+      "id": "e0ZRmsxYZHg",
+      "date": "2026-11-28 17:20",
+      "kind": "short",
+      "title": "Cat Owners vs Dog Owners Know This (Nail Clippers & Pizza Slice) 😂",
+      "privacy": "public",
+      "format": "catdog",
+      "cat": "oreo",
+      "dog": "husky",
+      "gags": [
+        "p_nails",
+        "p_pizza"
+      ],
+      "room": "cafe",
+      "seed": 656787
     }
   ]
 }
